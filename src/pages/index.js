@@ -10,7 +10,7 @@ export default (() => {
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
 		<Helmet>
 			<title>
-				Quarkly export
+				Graphite — Create real sites
 			</title>
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
@@ -38,7 +38,13 @@ export default (() => {
 						justify-content="center"
 						quarkly-title="Logo"
 					>
-						<Image src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Logo.svg?v=2021-05-05T10:20:19.531Z" width="136px" height="auto" quarkly-title="Logo-Image" />
+						<Image
+							loading="lazy"
+							src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Logo.svg?v=2021-05-05T10:20:19.531Z"
+							width="136px"
+							height="auto"
+							quarkly-title="Logo-Image"
+						/>
 					</Link>
 				</Box>
 				<Box
@@ -219,7 +225,7 @@ export default (() => {
 					hd-width="60%"
 				>
 					<Box
-						background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/editor%20depreceated.png?v=2021-05-06T06:05:50.830Z) center right/contain no-repeat scroll padding-box"
+						background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/editor%20depreceated-min.png?v=2021-05-08T16:00:40.999Z) center right/contain no-repeat scroll padding-box"
 						height="100%"
 						min-height="600px"
 						box-shadow="0 20px 80px 20px rgb(0 0 0 / 5%), 0 30px 60px 0 rgb(0 0 0 / 15%)"
@@ -319,12 +325,12 @@ export default (() => {
 					quarkly-title="Cart"
 				>
 					<Box display="flex" flex-direction="column" align-items="flex-start" margin="0px 60px 0px 0px">
-						<Image src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/GemIcon.svg?v=2021-05-06T08:52:10.293Z" />
+						<Image loading="lazy" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/GemIcon.svg?v=2021-05-06T08:52:10.293Z" />
 						<Text margin="40px 0px 0px 0px" font="--headline4" color="--white" as="h4">
-							Design freedom{"\n\n"}
+							Design freedom
 						</Text>
 						<Text margin="12px 0px 0px 0px" font="--base" color="--gray">
-							Customize the hell out of your responsive grid and switch between absolute and auto-layout positioning on the fly.{"\n\n"}
+							Customize the hell out of your responsive grid and switch between absolute and auto-layout positioning on the fly.
 						</Text>
 					</Box>
 				</Box>
@@ -338,12 +344,12 @@ export default (() => {
 					quarkly-title="Cart"
 				>
 					<Box display="flex" flex-direction="column" align-items="flex-start" margin="0px 60px 0px 0px">
-						<Image src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/GemIcon-1.svg?v=2021-05-08T07:51:05.642Z" />
+						<Image loading="lazy" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/GemIcon-1.svg?v=2021-05-08T07:51:05.642Z" />
 						<Text margin="40px 0px 0px 0px" font="--headline4" color="--white" as="h4">
-							Familiar tools{"\n\n"}
+							Familiar tools
 						</Text>
 						<Text margin="12px 0px 0px 0px" font="--base" color="--gray">
-							The comfort of graphic design tools and the power of modern frontend technologies – combined in one seamless experience.{"\n\n"}
+							The comfort of graphic design tools and the power of modern frontend technologies – combined in one seamless experience.
 						</Text>
 					</Box>
 				</Box>
@@ -357,12 +363,12 @@ export default (() => {
 					quarkly-title="Cart"
 				>
 					<Box display="flex" flex-direction="column" align-items="flex-start" margin="0px 60px 0px 0px">
-						<Image src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/GemIcon-2.svg?v=2021-05-08T07:51:12.825Z" />
+						<Image loading="lazy" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/GemIcon-2.svg?v=2021-05-08T07:51:12.825Z" />
 						<Text margin="40px 0px 0px 0px" font="--headline4" color="--white" as="h4">
-							Instant publishing{"\n\n"}
+							Instant publishing
 						</Text>
 						<Text margin="12px 0px 0px 0px" font="--base" color="--gray">
-							What would it take to transform your most daring design idea into a live web-page? One click and a couple of seconds.{"\n\n"}
+							What would it take to transform your most daring design idea into a live web-page? One click and a couple of seconds.
 						</Text>
 					</Box>
 				</Box>
@@ -377,7 +383,7 @@ export default (() => {
 				>
 					<Box display="flex" flex-direction="column" align-items="flex-start" margin="0px 60px 0px 0px">
 						<Text margin="0px 0px 0px 0px" font="--headline3" color="--white" as="h4">
-							Only 3 steps standing between you and your best web-page yet{"\n\n"}
+							Only 3 steps standing between you and your best web-page yet
 						</Text>
 						<Link
 							href="/signup"
@@ -395,7 +401,7 @@ export default (() => {
 							hover-background="transparent"
 							hover-color="--orange"
 						>
-							Get started{"\n\n"}
+							Get started
 						</Link>
 					</Box>
 				</Box>
@@ -430,11 +436,11 @@ export default (() => {
 						<Box display="flex" flex-direction="column" align-items="flex-start" margin="0px 60px 0px 0px">
 							<Box position="relative" z-index="2" background="#0D0A1A" padding="0px 36px 0px 36px">
 								<Text margin="0px 0px 0px 0px" font="--headline3" color="--white" as="h4">
-									1{"\n\n"}
+									1
 								</Text>
 							</Box>
 							<Text margin="18px 0px 0px 36px" font="--lead" color="--gray">
-								Pick a template or start from scratch{"\n\n"}
+								Pick a template or start from scratch
 							</Text>
 						</Box>
 					</Box>
@@ -451,11 +457,11 @@ export default (() => {
 						<Box display="flex" flex-direction="column" align-items="flex-start" margin="0px 60px 0px 0px">
 							<Box position="relative" z-index="2" background="#0D0A1A" padding="0px 36px 0px 36px">
 								<Text margin="0px 0px 0px 0px" font="--headline3" color="--white" as="h4">
-									2{"\n\n"}
+									2
 								</Text>
 							</Box>
 							<Text margin="18px 0px 0px 36px" font="--lead" color="--gray">
-								Use familiar tools to design a web-page{"\n\n"}
+								Use familiar tools to design a web-page
 							</Text>
 						</Box>
 					</Box>
@@ -472,11 +478,11 @@ export default (() => {
 						<Box display="flex" flex-direction="column" align-items="flex-start" margin="0px 60px 0px 0px">
 							<Box position="relative" z-index="2" background="#0D0A1A" padding="0px 36px 0px 36px">
 								<Text margin="0px 0px 0px 0px" font="--headline3" color="--white" as="h4">
-									3{"\n\n"}
+									3
 								</Text>
 							</Box>
 							<Text margin="18px 0px 0px 36px" font="--lead" color="--gray">
-								Publish your web-page in one click{"\n\n"}
+								Publish your web-page in one click
 							</Text>
 						</Box>
 					</Box>
@@ -513,7 +519,7 @@ export default (() => {
 						text-transform="uppercase"
 						letter-spacing="1.2px"
 					>
-						Top feature{"\n\n"}
+						Top feature
 					</Text>
 					<Text
 						margin="36px 0px 120px 0px"
@@ -525,7 +531,7 @@ export default (() => {
 					>
 						The ultimate web
 						<br />
-						design experience{"\n\n"}
+						design experience
 					</Text>
 				</Box>
 			</Box>
@@ -553,10 +559,10 @@ export default (() => {
 							as="h1"
 							letter-spacing="-0.01em"
 						>
-							Hybrid grid{"\n\n"}
+							Hybrid grid
 						</Text>
 						<Text margin="24px 0px 0px 0px" font="--lead" color="#3C3F4F" width="77%">
-							Get the best out of both worlds: switch between absolute and grid-based positioning on the fly, or combine them in one workspace with the extremely versatile Hybrid Grid technology.{"\n\n"}
+							Get the best out of both worlds: switch between absolute and grid-based positioning on the fly, or combine them in one workspace with the extremely versatile Hybrid Grid technology.
 						</Text>
 						<Box width="100%" margin="42px 0px 0px 0px" display="flex" flex-wrap="wrap">
 							<Box
@@ -569,9 +575,9 @@ export default (() => {
 								padding="15px 15px 15px 15px"
 								flex-direction="column"
 							>
-								<Image src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Icon.svg?v=2021-05-06T18:59:57.227Z" width="24px" height="24px" />
+								<Image loading="lazy" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Icon.svg?v=2021-05-06T18:59:57.227Z" width="24px" height="24px" />
 								<Text margin="15px 0px 0px 0px" font="600 14px/18px --fontFamily-googleInter" color="--spaceGray">
-									Fully customizable{"\n\n"}
+									Fully customizable
 								</Text>
 							</Box>
 							<Box
@@ -584,9 +590,9 @@ export default (() => {
 								padding="15px 15px 15px 15px"
 								flex-direction="column"
 							>
-								<Image src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Icon1.svg?v=2021-05-06T19:04:41.145Z" width="24px" height="24px" />
+								<Image loading="lazy" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Icon1.svg?v=2021-05-06T19:04:41.145Z" width="24px" height="24px" />
 								<Text margin="15px 0px 0px 0px" font="600 14px/18px --fontFamily-googleInter" color="--spaceGray">
-									Precise and consistent{"\n\n"}
+									Precise and consistent
 								</Text>
 							</Box>
 							<Box
@@ -600,9 +606,9 @@ export default (() => {
 								flex-direction="column"
 								hd-margin="0px 30px 0px 0px"
 							>
-								<Image src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Icon2.svg?v=2021-05-06T19:04:51.315Z" width="24px" height="24px" />
+								<Image loading="lazy" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Icon2.svg?v=2021-05-06T19:04:51.315Z" width="24px" height="24px" />
 								<Text margin="15px 0px 0px 0px" font="600 14px/18px --fontFamily-googleInter" color="--spaceGray">
-									Responsive by design{"\n\n"}
+									Responsive by design
 								</Text>
 							</Box>
 						</Box>
@@ -623,7 +629,7 @@ export default (() => {
 								hover-background="transparent"
 								hover-color="--orange"
 							>
-								Try it today{"\n\n"}
+								Try it today
 							</Link>
 						</Box>
 					</Box>
@@ -639,7 +645,7 @@ export default (() => {
 				hd-align-items="flex-start"
 			>
 				<Image
-					src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Video-min.png?v=2021-05-06T18:22:18.732Z"
+					src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Video-min.webp?v=2021-05-08T16:00:56.889Z"
 					left="auto"
 					right="0px"
 					bottom="auto"
@@ -695,7 +701,7 @@ export default (() => {
 							text-transform="uppercase"
 							letter-spacing="1.2px"
 						>
-							Features{"\n\n"}
+							Features
 						</Text>
 					</Box>
 					<Box
@@ -713,7 +719,13 @@ export default (() => {
 							z-index="2"
 							align-items="center"
 						>
-							<Image width="62px" height="62px" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/colors.svg?v=2021-05-06T19:28:32.611Z" margin="-10px 0px 0px 0px" />
+							<Image
+								loading="lazy"
+								width="62px"
+								height="62px"
+								src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/colors.svg?v=2021-05-06T19:28:32.611Z"
+								margin="-10px 0px 0px 0px"
+							/>
 							<Text
 								margin="0px 0px 0px 40px"
 								font="--features"
@@ -723,7 +735,7 @@ export default (() => {
 								width="100%"
 								hd-font="700 68px/72px &quot;Epilogue&quot;, sans-serif"
 							>
-								Design system{"\n\n"}
+								Design system
 							</Text>
 						</Box>
 						<Text
@@ -735,7 +747,7 @@ export default (() => {
 							width="100%"
 							hd-font="700 68px/72px &quot;Epilogue&quot;, sans-serif"
 						>
-							Animation{"\n\n"}
+							Animation
 						</Text>
 						<Text
 							margin="24px 0px 0px 0px"
@@ -746,7 +758,7 @@ export default (() => {
 							width="100%"
 							hd-font="700 68px/72px &quot;Epilogue&quot;, sans-serif"
 						>
-							Components{"\n\n"}
+							Components
 						</Text>
 						<Text
 							margin="24px 0px 0px 0px"
@@ -757,7 +769,7 @@ export default (() => {
 							width="100%"
 							hd-font="700 68px/72px &quot;Epilogue&quot;, sans-serif"
 						>
-							Publishing{"\n\n"}
+							Publishing
 						</Text>
 						<Box display="flex" margin="90px 0px 0px 0px" quarkly-title="Buttons">
 							<Link
@@ -776,7 +788,7 @@ export default (() => {
 								hover-background="transparent"
 								hover-color="--orange"
 							>
-								Try it today{"\n\n"}
+								Try it today
 							</Link>
 						</Box>
 					</Box>
@@ -792,7 +804,7 @@ export default (() => {
 				flex-direction="column"
 			>
 				<Image
-					src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Video1.png?v=2021-05-06T19:22:07.263Z"
+					src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Video1.webp?v=2021-05-08T16:01:07.948Z"
 					left="auto"
 					right="0px"
 					bottom="auto"
@@ -804,7 +816,7 @@ export default (() => {
 					border-radius="8px"
 				/>
 				<Text margin="24px 0px 0px 0px" font="--lead" color="#7F8A9E">
-					Create custom presets and introduce changes across multiple projects at any scale necessary.{"\n\n"}
+					Create custom presets and introduce changes across multiple projects at any scale necessary.
 				</Text>
 			</Box>
 			{" "}
@@ -840,7 +852,7 @@ export default (() => {
 							text-transform="uppercase"
 							letter-spacing="1.2px"
 						>
-							Web ecosystem{"\n\n"}
+							Web ecosystem
 						</Text>
 					</Box>
 					<Box
@@ -864,10 +876,9 @@ export default (() => {
 							<Span color="--white">
 								One Solution
 							</Span>
-							{"\n\n"}
 						</Text>
 						<Text margin="30px 0px 0px 0px" font="--lead" color="--gray">
-							From an occasional freelance gig to a full-fledged web design studio – Graphite has all the tools necessary to get the job done. Everything you need – packed in one versatile reliable solution.{"\n\n"}
+							From an occasional freelance gig to a full-fledged web design studio – Graphite has all the tools necessary to get the job done. Everything you need – packed in one versatile reliable solution.
 						</Text>
 						<Box display="flex" margin="90px 0px 0px 0px" quarkly-title="Buttons">
 							<Link
@@ -886,7 +897,7 @@ export default (() => {
 								hover-background="transparent"
 								hover-color="--orange"
 							>
-								Get started{"\n\n"}
+								Get started
 							</Link>
 						</Box>
 					</Box>
@@ -914,10 +925,10 @@ export default (() => {
 					>
 						<Box width="50%">
 							<Text margin="0px 0px 0px 0px" font="--menu" color="--white">
-								Layout engine{"\n\n"}
+								Layout engine
 							</Text>
 							<Text margin="10px 0px 0px 0px" font="--footer" color="--gray">
-								Build your website using auto layout and grid tools{"\n\n"}
+								Build your website using auto layout and grid tools
 							</Text>
 						</Box>
 					</Box>
@@ -931,10 +942,10 @@ export default (() => {
 					>
 						<Box width="50%">
 							<Text margin="0px 0px 0px 0px" font="--menu" color="--white">
-								Code tools{"\n\n"}
+								Code tools
 							</Text>
 							<Text margin="10px 0px 0px 0px" font="--footer" color="--gray">
-								Embed live HTML code to your website{"\n\n"}
+								Embed live HTML code to your website
 							</Text>
 						</Box>
 					</Box>
@@ -948,10 +959,10 @@ export default (() => {
 					>
 						<Box width="80%">
 							<Text margin="0px 0px 0px 0px" font="--menu" color="--white">
-								Design system{"\n\n"}
+								Design system
 							</Text>
 							<Text margin="10px 0px 0px 0px" font="--footer" color="--gray">
-								Maintain visual consistency of your websites{"\n\n"}
+								Maintain visual consistency of your websites
 							</Text>
 						</Box>
 					</Box>
@@ -964,7 +975,13 @@ export default (() => {
 						min-height="260px"
 						background="linear-gradient(0deg,rgba(0, 0, 0, 0.3) 0%,rgba(0, 0, 0, 0.3) 57.1%),rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Figure3.svg?v=2021-05-08T06:54:57.985Z) center center/contain no-repeat scroll padding-box"
 					>
-						<Image src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/LogoKub.svg?v=2021-05-08T07:01:45.955Z" width="100%" max-width="115px" height="auto" />
+						<Image
+							loading="lazy"
+							src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/LogoKub.svg?v=2021-05-08T07:01:45.955Z"
+							width="100%"
+							max-width="115px"
+							height="auto"
+						/>
 					</Box>
 					<Box
 						display="flex"
@@ -976,10 +993,10 @@ export default (() => {
 					>
 						<Box width="80%" margin="0px 0px 0px 10px">
 							<Text margin="0px 0px 0px 0px" font="--menu" color="--white">
-								Content management{"\n\n"}
+								Content management
 							</Text>
 							<Text margin="10px 0px 0px 0px" font="--footer" color="--gray">
-								Integrate your data from a headless CMS with your website{"\n\n"}
+								Integrate your data from a headless CMS with your website
 							</Text>
 						</Box>
 					</Box>
@@ -993,10 +1010,10 @@ export default (() => {
 					>
 						<Box width="60%">
 							<Text margin="0px 0px 0px 0px" font="--menu" color="--white">
-								Asset managment{"\n\n"}
+								Asset managment
 							</Text>
 							<Text margin="10px 0px 0px 0px" font="--footer" color="--gray">
-								Keep your images, vector, shapes and icons in one place{"\n\n"}
+								Keep your images, vector, shapes and icons in one place
 							</Text>
 						</Box>
 					</Box>
@@ -1010,10 +1027,10 @@ export default (() => {
 					>
 						<Box width="60%" margin="20px 0px 0px 0px">
 							<Text margin="0px 0px 0px 0px" font="--menu" color="--white">
-								Hosting, domains, and SSL{"\n\n"}
+								Hosting, domains, and SSL
 							</Text>
 							<Text margin="10px 0px 0px 0px" font="--footer" color="--gray">
-								Get your website live{"\n\n"}
+								Get your website live
 							</Text>
 						</Box>
 					</Box>
@@ -1056,7 +1073,7 @@ export default (() => {
 						text-transform="uppercase"
 						letter-spacing="1.2px"
 					>
-						UPcOMING FeATURES{"\n\n"}
+						UPcOMING FeATURES
 					</Text>
 					<Text
 						margin="36px 0px 120px 0px"
@@ -1066,7 +1083,7 @@ export default (() => {
 						letter-spacing="-0.01em"
 						hd-font="normal 700 50px/60px &quot;Epilogue&quot;, sans-serif"
 					>
-						Roadmap{"\n\n"}
+						Roadmap
 					</Text>
 				</Box>
 			</Box>
@@ -1102,7 +1119,7 @@ export default (() => {
 					width="100%"
 				>
 					<Components.Masks font="--decs">
-						You’ll love it{"\n\n"}
+						You’ll love it
 					</Components.Masks>
 				</Box>
 				<Box
@@ -1113,24 +1130,42 @@ export default (() => {
 					width="33.3333%"
 				>
 					<Text margin="0px 0px 24px 0px" color="--white" font="--lead">
-						Comfort{"\n\n"}
+						Comfort
 					</Text>
 					<Box display="flex" align-items="center" margin="0px 0px 9px 0px">
-						<Image width="10px" height="10px" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape1.svg?v=2021-05-06T20:00:22.309Z" margin="0px 12px 0px 0px" />
+						<Image
+							loading="lazy"
+							width="10px"
+							height="10px"
+							src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape1.svg?v=2021-05-06T20:00:22.309Z"
+							margin="0px 12px 0px 0px"
+						/>
 						<Text margin="0px 0px 0px 0px" color="--gray" font="--base">
-							Familiar look and feel{"\n\n"}
+							Familiar look and feel
 						</Text>
 					</Box>
 					<Box display="flex" align-items="center" margin="0px 0px 9px 0px">
-						<Image width="10px" height="10px" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape1.svg?v=2021-05-06T20:00:22.309Z" margin="0px 12px 0px 0px" />
+						<Image
+							loading="lazy"
+							width="10px"
+							height="10px"
+							src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape1.svg?v=2021-05-06T20:00:22.309Z"
+							margin="0px 12px 0px 0px"
+						/>
 						<Text margin="0px 0px 0px 0px" color="--gray" font="--base">
-							Design system{"\n\n"}
+							Design system
 						</Text>
 					</Box>
 					<Box display="flex" align-items="center" margin="0px 0px 9px 0px">
-						<Image width="10px" height="10px" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape1.svg?v=2021-05-06T20:00:22.309Z" margin="0px 12px 0px 0px" />
+						<Image
+							loading="lazy"
+							width="10px"
+							height="10px"
+							src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape1.svg?v=2021-05-06T20:00:22.309Z"
+							margin="0px 12px 0px 0px"
+						/>
 						<Text margin="0px 0px 0px 0px" color="--gray" font="--base">
-							Absolute & Auto-Layout{"\n\n"}
+							Absolute & Auto-Layout
 						</Text>
 					</Box>
 				</Box>
@@ -1142,24 +1177,42 @@ export default (() => {
 					width="33.3333%"
 				>
 					<Text margin="0px 0px 24px 0px" color="--white" font="--lead">
-						Comfort{"\n\n"}
+						Comfort
 					</Text>
 					<Box display="flex" align-items="center" margin="0px 0px 9px 0px">
-						<Image width="10px" height="10px" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape1.svg?v=2021-05-06T20:00:22.309Z" margin="0px 12px 0px 0px" />
+						<Image
+							loading="lazy"
+							width="10px"
+							height="10px"
+							src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape1.svg?v=2021-05-06T20:00:22.309Z"
+							margin="0px 12px 0px 0px"
+						/>
 						<Text margin="0px 0px 0px 0px" color="--gray" font="--base">
-							Familiar look and feel{"\n\n"}
+							Familiar look and feel
 						</Text>
 					</Box>
 					<Box display="flex" align-items="center" margin="0px 0px 9px 0px">
-						<Image width="10px" height="10px" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape1.svg?v=2021-05-06T20:00:22.309Z" margin="0px 12px 0px 0px" />
+						<Image
+							loading="lazy"
+							width="10px"
+							height="10px"
+							src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape1.svg?v=2021-05-06T20:00:22.309Z"
+							margin="0px 12px 0px 0px"
+						/>
 						<Text margin="0px 0px 0px 0px" color="--gray" font="--base">
-							Design system{"\n\n"}
+							Design system
 						</Text>
 					</Box>
 					<Box display="flex" align-items="center" margin="0px 0px 9px 0px">
-						<Image width="10px" height="10px" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape1.svg?v=2021-05-06T20:00:22.309Z" margin="0px 12px 0px 0px" />
+						<Image
+							loading="lazy"
+							width="10px"
+							height="10px"
+							src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape1.svg?v=2021-05-06T20:00:22.309Z"
+							margin="0px 12px 0px 0px"
+						/>
 						<Text margin="0px 0px 0px 0px" color="--gray" font="--base">
-							Absolute & Auto-Layout{"\n\n"}
+							Absolute & Auto-Layout
 						</Text>
 					</Box>
 				</Box>
@@ -1171,24 +1224,42 @@ export default (() => {
 					width="33.3333%"
 				>
 					<Text margin="0px 0px 24px 0px" color="--white" font="--lead">
-						Comfort{"\n\n"}
+						Comfort
 					</Text>
 					<Box display="flex" align-items="center" margin="0px 0px 9px 0px">
-						<Image width="10px" height="10px" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape1.svg?v=2021-05-06T20:00:22.309Z" margin="0px 12px 0px 0px" />
+						<Image
+							loading="lazy"
+							width="10px"
+							height="10px"
+							src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape1.svg?v=2021-05-06T20:00:22.309Z"
+							margin="0px 12px 0px 0px"
+						/>
 						<Text margin="0px 0px 0px 0px" color="--gray" font="--base">
-							Familiar look and feel{"\n\n"}
+							Familiar look and feel
 						</Text>
 					</Box>
 					<Box display="flex" align-items="center" margin="0px 0px 9px 0px">
-						<Image width="10px" height="10px" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape1.svg?v=2021-05-06T20:00:22.309Z" margin="0px 12px 0px 0px" />
+						<Image
+							loading="lazy"
+							width="10px"
+							height="10px"
+							src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape1.svg?v=2021-05-06T20:00:22.309Z"
+							margin="0px 12px 0px 0px"
+						/>
 						<Text margin="0px 0px 0px 0px" color="--gray" font="--base">
-							Design system{"\n\n"}
+							Design system
 						</Text>
 					</Box>
 					<Box display="flex" align-items="center" margin="0px 0px 9px 0px">
-						<Image width="10px" height="10px" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape1.svg?v=2021-05-06T20:00:22.309Z" margin="0px 12px 0px 0px" />
+						<Image
+							loading="lazy"
+							width="10px"
+							height="10px"
+							src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape1.svg?v=2021-05-06T20:00:22.309Z"
+							margin="0px 12px 0px 0px"
+						/>
 						<Text margin="0px 0px 0px 0px" color="--gray" font="--base">
-							Absolute & Auto-Layout{"\n\n"}
+							Absolute & Auto-Layout
 						</Text>
 					</Box>
 				</Box>
@@ -1209,7 +1280,7 @@ export default (() => {
 						letter-spacing="-0.01em"
 						hd-font="normal 700 50px/60px &quot;Epilogue&quot;, sans-serif"
 					>
-						Try an entirely new approach{" \n\n"}
+						Try an entirely new approach{" "}
 					</Text>
 					<Text
 						margin="0px 0px 36px 0px"
@@ -1218,7 +1289,7 @@ export default (() => {
 						letter-spacing="-0.01em"
 						hd-font="normal 500 20px/27px &quot;Inter&quot;, sans-serif"
 					>
-						to site-building and create your first website now{"\n\n"}
+						to site-building and create your first website now
 					</Text>
 					<Link
 						href="/signup"
@@ -1236,7 +1307,7 @@ export default (() => {
 						hover-background="transparent"
 						hover-color="--orange"
 					>
-						Get started{"\n\n"}
+						Get started
 					</Link>
 				</Box>
 			</Box>
@@ -1287,7 +1358,7 @@ export default (() => {
 							text-decoration-line="initial"
 							margin="0px 18px 0px 18px"
 						>
-							Facebook{"\n\n"}
+							Facebook
 						</Link>
 						<Link
 							href="#"
@@ -1296,7 +1367,7 @@ export default (() => {
 							text-decoration-line="initial"
 							margin="0px 18px 0px 18px"
 						>
-							Twitter{"\n\n"}
+							Twitter
 						</Link>
 						<Link
 							href="#"
@@ -1305,7 +1376,7 @@ export default (() => {
 							text-decoration-line="initial"
 							margin="0px 18px 0px 18px"
 						>
-							Youtube{"\n\n"}
+							Youtube
 						</Link>
 					</Box>
 					<Box
@@ -1322,7 +1393,7 @@ export default (() => {
 							text-decoration-line="initial"
 							margin="0px 18px 0px 18px"
 						>
-							Terms of use{"\n\n"}
+							Terms of use
 						</Link>
 						<Link
 							href="#"
@@ -1331,7 +1402,7 @@ export default (() => {
 							text-decoration-line="initial"
 							margin="0px 18px 0px 18px"
 						>
-							Privacy policy{"\n\n"}
+							Privacy policy
 						</Link>
 						<Link
 							href="#"
@@ -1343,9 +1414,15 @@ export default (() => {
 							Contact us
 						</Link>
 					</Box>
-					<Image src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Logo-footer.svg?v=2021-05-07T06:54:22.374Z" width="100%" max-width="90px" height="auto" />
+					<Image
+						loading="lazy"
+						src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Logo-footer.svg?v=2021-05-07T06:54:22.374Z"
+						width="100%"
+						max-width="90px"
+						height="auto"
+					/>
 					<Text margin="21px 0px 0px 0px" color="#4A5060" font="--footer" letter-spacing="-0.01em">
-						© 2020{"\n\n"}
+						© 2020
 					</Text>
 				</Box>
 			</Box>

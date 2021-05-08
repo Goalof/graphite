@@ -26,6 +26,8 @@ export default {
 		"styles": {
 			"background": ""
 		},
-		"seo": {}
+		"seo": {
+			"title": "Graphite — Create real sites"
+		}
 	}
 }
