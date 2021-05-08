@@ -321,11 +321,11 @@ export default (() => {
 					flex-direction="column"
 					align-items="flex-start"
 					padding="0px 0px 0px 0px"
-					justify-content="center"
+					justify-content="flex-start"
 					quarkly-title="Cart"
 				>
 					<Box display="flex" flex-direction="column" align-items="flex-start" margin="0px 60px 0px 0px">
-						<Image loading="lazy" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/GemIcon.svg?v=2021-05-06T08:52:10.293Z" />
+						<Image loading="lazy" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/GemIcon.svg?v=2021-05-06T08:52:10.293Z" width="83px" height="83px" />
 						<Text margin="40px 0px 0px 0px" font="--headline4" color="--white" as="h4">
 							Design freedom
 						</Text>
@@ -344,7 +344,7 @@ export default (() => {
 					quarkly-title="Cart"
 				>
 					<Box display="flex" flex-direction="column" align-items="flex-start" margin="0px 60px 0px 0px">
-						<Image loading="lazy" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/GemIcon-1.svg?v=2021-05-08T07:51:05.642Z" />
+						<Image loading="lazy" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/GemIcon-1.svg?v=2021-05-08T07:51:05.642Z" width="83px" height="83px" />
 						<Text margin="40px 0px 0px 0px" font="--headline4" color="--white" as="h4">
 							Familiar tools
 						</Text>
@@ -363,7 +363,7 @@ export default (() => {
 					quarkly-title="Cart"
 				>
 					<Box display="flex" flex-direction="column" align-items="flex-start" margin="0px 60px 0px 0px">
-						<Image loading="lazy" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/GemIcon-2.svg?v=2021-05-08T07:51:12.825Z" />
+						<Image loading="lazy" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/GemIcon-2.svg?v=2021-05-08T07:51:12.825Z" width="83px" height="83px" />
 						<Text margin="40px 0px 0px 0px" font="--headline4" color="--white" as="h4">
 							Instant publishing
 						</Text>
@@ -975,13 +975,7 @@ export default (() => {
 						min-height="260px"
 						background="linear-gradient(0deg,rgba(0, 0, 0, 0.3) 0%,rgba(0, 0, 0, 0.3) 57.1%),rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Figure3.svg?v=2021-05-08T06:54:57.985Z) center center/contain no-repeat scroll padding-box"
 					>
-						<Image
-							loading="lazy"
-							src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/LogoKub.svg?v=2021-05-08T07:01:45.955Z"
-							width="100%"
-							max-width="115px"
-							height="auto"
-						/>
+						<Image loading="lazy" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/LogoKub.svg?v=2021-05-08T07:01:45.955Z" width="115px" height="auto" />
 					</Box>
 					<Box
 						display="flex"
@@ -1417,7 +1411,7 @@ export default (() => {
 					<Image
 						loading="lazy"
 						src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Logo-footer.svg?v=2021-05-07T06:54:22.374Z"
-						width="100%"
+						width="90px"
 						max-width="90px"
 						height="auto"
 					/>
