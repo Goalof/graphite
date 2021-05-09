@@ -24,7 +24,8 @@ export default {
 	"projectType": "gatsby",
 	"site": {
 		"styles": {
-			"background": ""
+			"background": "",
+			"overflow-x": "hidden"
 		},
 		"seo": {
 			"title": "Graphite — Create real sites"

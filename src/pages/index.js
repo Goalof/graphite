@@ -16,7 +16,7 @@ export default (() => {
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
 		<Box padding="0px 0px 0px 0px" background="--color-background" quarkly-title="Background">
-			<Section padding="44px 0 44px 0" quarkly-title="Header">
+			<Section padding="44px 0 44px 0" quarkly-title="Header" sm-padding="37px 0 37px 0">
 				<Override
 					slot="SectionContent"
 					max-width="1600px"
@@ -33,6 +33,7 @@ export default (() => {
 					justify-content="flex-start"
 					quarkly-title="logo-head"
 					md-width="25%"
+					sm-width="50%"
 				>
 					<Link
 						href="/"
@@ -57,8 +58,178 @@ export default (() => {
 					justify-content="flex-end"
 					quarkly-title="menu-head"
 					md-width="75%"
+					sm-width="50%"
 				>
-					<Box quarkly-title="Menu" display="flex">
+					<Box
+						quarkly-title="MobileMenu"
+						display="none"
+						sm-display="flex"
+						sm-align-items="center"
+						sm-justify-content="center"
+					>
+						<Components.MobileSide2
+							flex="1 0 auto"
+							lg-position="relative"
+							lg-z-index="5"
+							lg-display="flex"
+							lg-justify-content="flex-end"
+							lg-align-items="center"
+							display="flex"
+							align-items="center"
+							justify-content="flex-end"
+						>
+							<Override
+								slot="Content"
+								display="flex"
+								align-items="center"
+								lg-position="fixed"
+								lg-top={0}
+								lg-left={0}
+								lg-z-index="1"
+								lg-width="100%"
+								lg-height="100%"
+								lg-background="white"
+								lg-flex-direction="column"
+								sm-background="--color-background"
+							/>
+							<Override
+								slot="Button"
+								display="none"
+								lg-display="block"
+								lg-width="44px"
+								lg-height="28px"
+								lg-position="relative"
+								lg-z-index="6"
+								md-margin="0px 0px 0px 0px"
+								sm-width="38px"
+							/>
+							<Override
+								slot="Button Line"
+								lg-background="black"
+								lg-min-height="4px"
+								lg-position="absolute"
+								sm-left="0px"
+								sm-background="--color-snow"
+							/>
+							<Override
+								slot="Button Line1"
+								lg-width="44px"
+								lg-top="0px"
+								lg-right="0px"
+								sm-border-radius="12px"
+								sm-width="38px"
+							/>
+							<Override
+								slot="Button Line2"
+								lg-top="12px"
+								lg-right="0px"
+								sm-left="0px"
+								sm-border-radius="12px"
+								sm-width="29px"
+							/>
+							<Override
+								slot="Button Line3"
+								lg-top="24px"
+								lg-right="0px"
+								sm-border-radius="12px"
+								sm-width="20px"
+							/>
+							<Override slot="Button Line1 :closed" lg-width="44px" />
+							<Override slot="Button Line2 :closed" lg-width="32px" />
+							<Override slot="Button Line3 :closed" lg-width="20px" />
+							<Override slot="Button Line2 :open" lg-opacity="0" lg-width="32px" />
+							<Override slot="Button Line1 :open" lg-width="36px" lg-transform="translateY(12px) rotate(225deg)" />
+							<Override slot="Button Line3 :open" lg-width="36px" lg-transform="translateY(-12px) rotate(135deg)" md-margin="0px 0px 0px 0px" />
+							<Override slot="Content :closed" lg-opacity="0" lg-transition="transform --transitionDuration-normal step-end 0s,opacity --transitionDuration-normal --transitionTimingFunction-easeOut" lg-transform="translateY(-100%)" />
+							<Override slot="Content :open" lg-transform="translateY(0%)" lg-transition="transform --transitionDuration-normal step-start 0s,opacity --transitionDuration-normal --transitionTimingFunction-easeOut" lg-opacity="1" />
+							<Override slot="Button :open" lg-position="fixed" md-margin="14px 0px 0px 0px" />
+							<Box
+								display="flex"
+								align-items="center"
+								justify-content="center"
+								lg-flex-direction="column"
+								lg-margin="80px 0px 0px 0px"
+								lg-width="100%"
+							>
+								<Link
+									href="/home#about"
+									text-decoration-line="initial"
+									color="#000000"
+									font="600 20px --fontFamily-googleMontserrat"
+									padding="10px 13px 10px 12px"
+									transition="opacity 0.4s ease 0s"
+									lg-margin="0px 0px 8px 0px"
+									lg-font="600 24px --fontFamily-googleMontserrat"
+									sm-font="600 20px --fontFamily-googleMontserrat"
+									sm-text-align="center"
+									hover-color="#001A51"
+								>
+									О нас
+								</Link>
+								<Link
+									href="/home#categories"
+									text-decoration-line="initial"
+									color="#000000"
+									font="600 20px --fontFamily-googleMontserrat"
+									padding="10px 13px 10px 12px"
+									transition="opacity 0.4s ease 0s"
+									lg-margin="0px 0px 8px 0px"
+									lg-font="600 24px --fontFamily-googleMontserrat"
+									sm-font="600 20px --fontFamily-googleMontserrat"
+									sm-text-align="center"
+									hover-color="#001A51"
+								>
+									Категории игр
+								</Link>
+								<Link
+									href="/home#team"
+									text-decoration-line="initial"
+									color="#000000"
+									font="600 20px --fontFamily-googleMontserrat"
+									padding="10px 13px 10px 12px"
+									transition="opacity 0.4s ease 0s"
+									lg-margin="0px 0px 8px 0px"
+									lg-font="600 24px --fontFamily-googleMontserrat"
+									sm-font="600 20px --fontFamily-googleMontserrat"
+									sm-text-align="center"
+									hover-color="#001A51"
+								>
+									Состав Союза
+								</Link>
+								<Link
+									href="/home#event"
+									text-decoration-line="initial"
+									color="#000000"
+									font="600 20px --fontFamily-googleMontserrat"
+									padding="10px 13px 10px 12px"
+									transition="opacity 0.4s ease 0s"
+									lg-margin="0px 0px 8px 0px"
+									lg-font="600 24px --fontFamily-googleMontserrat"
+									sm-font="600 20px --fontFamily-googleMontserrat"
+									sm-text-align="center"
+									hover-color="#001A51"
+								>
+									События
+								</Link>
+								<Link
+									href="/home#partners"
+									text-decoration-line="initial"
+									color="#000000"
+									font="600 20px --fontFamily-googleMontserrat"
+									padding="10px 13px 10px 12px"
+									transition="opacity 0.4s ease 0s"
+									lg-margin="0px 0px 8px 0px"
+									lg-font="600 24px --fontFamily-googleMontserrat"
+									sm-font="600 20px --fontFamily-googleMontserrat"
+									sm-text-align="center"
+									hover-color="#001A51"
+								>
+									Партнеры
+								</Link>
+							</Box>
+						</Components.MobileSide2>
+					</Box>
+					<Box quarkly-title="Menu" display="flex" sm-display="none">
 						<Link
 							href="#"
 							text-decoration-line="initial"
@@ -90,7 +261,13 @@ export default (() => {
 							About us
 						</Link>
 					</Box>
-					<Box display="flex" quarkly-title="Button-Log" margin="0px 0px 0px 66px" md-margin="0px 0px 0px 20px">
+					<Box
+						display="flex"
+						quarkly-title="Button-Log"
+						margin="0px 0px 0px 66px"
+						md-margin="0px 0px 0px 20px"
+						sm-display="none"
+					>
 						<Link
 							href="/signup"
 							text-decoration-line="initial"
@@ -137,19 +314,19 @@ export default (() => {
 					hd-margin="0px 0px 0px 90px"
 					max-width="1600px"
 					width="100%"
-					background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Figure.svg?v=2021-05-06T06:17:36.425Z) center right/contain no-repeat scroll padding-box"
 					padding="70px 0px 70px 0px"
 					hd-width="100%"
 					hd-max-width="1600px"
 					lg-margin="0px 0px 0px 45px"
-					lg-padding="70px 0px 70px 0px"
+					lg-padding="35px 0px 35px 0px"
 					md-margin="0px 50px 0px 50px"
 					md-background="none"
 					md-padding="0px 0px 0px 0px"
+					sm-margin="0px 30px 0px 30px"
 				/>
 				<Box
 					display="flex"
-					width="45%"
+					width="40%"
 					flex-direction="column"
 					align-items="flex-start"
 					padding="0px 0px 0px 0px"
@@ -158,19 +335,26 @@ export default (() => {
 					lg-width="45%"
 					md-width="100%"
 					md-align-items="center"
-					md-margin="0px 0px 60px 0px"
+					md-margin="0px 0px 66px 0px"
 				>
 					<Box
 						display="flex"
 						flex-direction="column"
 						align-items="flex-start"
-						margin="0px 110px 0px 0px"
-						lg-margin="0px 30px 0px 0px"
+						margin="0px 70px 0px 0px"
+						lg-margin="0px 50px 0px 0px"
 						md-align-items="center"
 						md-justify-content="center"
 						md-margin="0px 60px 0px 60px"
+						sm-margin="0px 0px 0px 0px"
 					>
-						<Components.Masks as="h3" font="--decs" />
+						<Components.Masks
+							as="h3"
+							font="--decs"
+							sm-text-align="center"
+							sm-width="110%"
+							sm-font="600 13px/21px &quot;Inter&quot;, sans-serif"
+						/>
 						<Text
 							margin="30px 0px 0px 0px"
 							font="--headline2"
@@ -182,11 +366,19 @@ export default (() => {
 							md-text-align="center"
 							md-font="normal 800 60px/66px &quot;Epilogue&quot;, sans-serif"
 							letter-spacing=" -0.01em"
+							sm-width="100%"
+							sm-font="normal 800 35px/42px &quot;Epilogue&quot;, sans-serif"
 						>
 							Make web design feel like home
 						</Text>
-						<Text margin="12px 0px 0px 0px" font="--lead" color="--gray" md-text-align="center">
-							Use familiar graphic editor tools to create pixel-perfect Web Pages, and not just mockups. Focus on the creative part, and we'll take care of the rest.{"\n\n"}
+						<Text
+							margin="12px 0px 0px 0px"
+							font="--lead"
+							color="--gray"
+							md-text-align="center"
+							sm-font="normal 400 20px/27px &quot;Inter&quot;, sans-serif"
+						>
+							Use familiar graphic editor tools to create pixel-perfect Web Pages, and not just mockups. Focus on the creative part, and we'll take care of the rest.
 						</Text>
 					</Box>
 					<Box display="flex" margin="54px 0px 0px 0px" quarkly-title="Buttons">
@@ -205,6 +397,7 @@ export default (() => {
 							transition="background-color 0.3s ease 0s"
 							hover-background="transparent"
 							hover-color="--orange"
+							sm-padding="9px 15px 9px 15px"
 						>
 							Try for free
 						</Link>
@@ -222,6 +415,7 @@ export default (() => {
 							transition="background-color 0.3s ease 0s"
 							hover-background="--color-space"
 							hover-color="--white"
+							sm-padding="9px 15px 9px 15px"
 						>
 							Watch video
 						</Link>
@@ -229,7 +423,7 @@ export default (() => {
 				</Box>
 				<Box
 					display="flex"
-					width="55%"
+					width="60%"
 					position="relative"
 					align-items="center"
 					justify-content="flex-end"
@@ -240,22 +434,30 @@ export default (() => {
 					md-width="100%"
 				>
 					<Box
-						background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/editor%20depreceated-min.png?v=2021-05-08T16:00:40.999Z) center right/contain no-repeat scroll padding-box"
 						height="100%"
-						min-height="600px"
-						box-shadow="0 20px 80px 20px rgb(0 0 0 / 5%), 0 30px 60px 0 rgb(0 0 0 / 15%)"
 						border-radius="8px"
-						width="783px"
+						width="100%"
 						display="flex"
 						align-items="center"
 						justify-content="center"
 						lg-min-height="400px"
 						lg-box-shadow="none"
 						lg-text-shadow="none"
-						lg-width="100%"
-						md-background="none"
-						md-position="relative"
 						md-min-height="520px"
+						hd-box-shadow="none"
+						md-padding="5px 0px 5px 0px"
+						md-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Figure.svg?v=2021-05-06T06:17:36.425Z) center center/contain no-repeat scroll padding-box"
+						sm-min-height="250px"
+						sm-padding="5px 0px 5px 0px"
+						max-width="1066px"
+						background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Figure.svg?v=2021-05-06T06:17:36.425Z) center center/contain no-repeat scroll padding-box"
+						min-height="600px"
+						padding="34px 0px 34px 0px"
+						hd-padding="14px 0px 14px 0px"
+						lg-width="100%"
+						lg-padding="44px 0px 44px 0px"
+						md-align-items="center"
+						md-justify-content="center"
 					>
 						<Box
 							box-shadow="0px 90px 240px 100px #000000"
@@ -268,25 +470,38 @@ export default (() => {
 							top="-13px"
 						/>
 						<Image
-							width="64px"
-							height="64px"
 							md-width="100%"
 							md-position="absolute"
 							md-height="auto"
 							md-border-radius="5px"
-							display="none"
 							md-display="inline-block"
 							md-max-width="670px"
 							md-min-height="420px"
+							sm-min-height="205px"
+							src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/editor%20depreceated.webp?v=2021-05-09T17:41:31.199Z"
+							width="100%"
+							height="auto"
+							position="absolute"
+							box-shadow=" 0 30px 60px 0 rgb(0 0 0 / 15%),0 20px 80px 20px rgb(0 0 0 / 5%)"
+							lg-width="135%"
+							lg-right="-35%"
+							hd-width="110%"
+							hd-right="-10%"
+							md-right="auto"
+							md-bottom="auto"
+							md-top="auto"
+							md-left="auto"
 						/>
 						<Components.PopUp
 							position="relative"
 							z-index="2"
 							left="80px"
-							md-left="45px"
+							md-left="05px"
 							md-top="-20px"
 							md-right="auto"
 							md-bottom="auto"
+							sm-left="0px"
+							sm-top="0px"
 						>
 							<Override
 								slot="close"
@@ -339,20 +554,31 @@ export default (() => {
 						hd-right="-78px"
 						lg-right="-130px"
 						lg-top="50px"
-						md-right="-35px"
+						md-right="-15px"
+						sm-max-height="90px"
+						sm-right="-20px"
+						sm-top="60px"
+						md-max-height="186px"
+						md-top="110px"
 					/>
 					<Image
 						src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/image%2035.svg?v=2021-05-06T06:03:05.929Z"
 						position="absolute"
-						left="40px"
+						left="20px"
 						right="0px"
 						bottom="auto"
 						top="70px"
 						lg-left="-30px"
 						lg-width="144px"
 						lg-height="306px"
-						lg-top="0px"
-						md-top="80px"
+						lg-top="70px"
+						md-top="110px"
+						sm-width="66px"
+						sm-height="auto"
+						sm-left="-10px"
+						sm-top="60px"
+						hd-left="-20px"
+						hd-top="100px"
 					/>
 				</Box>
 				{" "}
@@ -369,85 +595,106 @@ export default (() => {
 					hd-width="100%"
 					hd-max-width="1600px"
 					lg-margin="0px 45px 0px 45px"
-					md-margin="0px https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/editor%20depreceated-min.png?v=2021-05-08T16:00:40.999Z 0px 30px"
+					md-margin="0px 30px 0px 30px"
 					md-align-items="center"
 					md-justify-content="center"
 				/>
-				<Box
-					display="flex"
-					width="33.333333%"
-					flex-direction="column"
-					align-items="flex-start"
-					padding="0px 0px 0px 0px"
-					justify-content="flex-start"
-					quarkly-title="Cart"
-				>
+				<Box display="flex" align-items="flex-start" justify-content="center" flex-wrap="wrap">
 					<Box
 						display="flex"
+						width="33.333333%"
 						flex-direction="column"
 						align-items="flex-start"
-						margin="0px 60px 0px 0px"
-						md-margin="0px 20px 0px 0px"
+						padding="0px 0px 0px 0px"
+						justify-content="flex-start"
+						quarkly-title="Cart"
+						md-width="50%"
+						md-margin="0px 0px 60px 0px"
+						sm-width="100%"
+						sm-margin="0px 0px 30px 0px"
 					>
-						<Image loading="lazy" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/GemIcon.svg?v=2021-05-06T08:52:10.293Z" width="83px" height="83px" />
-						<Text margin="40px 0px 0px 0px" font="--headline4" color="--white" as="h4">
-							Design freedom
-						</Text>
-						<Text margin="12px 0px 0px 0px" font="--base" color="--gray">
-							Customize the hell out of your responsive grid and switch between absolute and auto-layout positioning on the fly.
-						</Text>
+						<Box
+							display="flex"
+							flex-direction="column"
+							align-items="flex-start"
+							margin="0px 60px 0px 0px"
+							md-margin="0px 0px 0px 0px"
+							md-text-align="center"
+							md-align-items="center"
+							md-justify-content="center"
+						>
+							<Image loading="lazy" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/GemIcon.svg?v=2021-05-06T08:52:10.293Z" width="83px" height="83px" />
+							<Text margin="40px 0px 0px 0px" font="--headline4" color="--white" as="h4">
+								Design freedom
+							</Text>
+							<Text margin="12px 0px 0px 0px" font="--base" color="--gray">
+								Customize the hell out of your responsive grid and switch between absolute and auto-layout positioning on the fly.
+							</Text>
+						</Box>
 					</Box>
-				</Box>
-				<Box
-					display="flex"
-					width="33.333333%"
-					flex-direction="column"
-					align-items="flex-start"
-					padding="0px 0px 0px 0px"
-					justify-content="center"
-					quarkly-title="Cart"
-					md-justify-content="flex-start"
-				>
 					<Box
 						display="flex"
+						width="33.333333%"
 						flex-direction="column"
 						align-items="flex-start"
-						margin="0px 60px 0px 0px"
-						md-margin="0px 20px 0px 0px"
+						padding="0px 0px 0px 0px"
+						justify-content="center"
+						quarkly-title="Cart"
+						md-justify-content="flex-start"
+						md-width="50%"
+						md-margin="0px 0px 60px 0px"
+						sm-width="100%"
+						sm-margin="0px 0px 30px 0px"
 					>
-						<Image loading="lazy" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/GemIcon-1.svg?v=2021-05-08T07:51:05.642Z" width="83px" height="83px" />
-						<Text margin="40px 0px 0px 0px" font="--headline4" color="--white" as="h4">
-							Familiar tools
-						</Text>
-						<Text margin="12px 0px 0px 0px" font="--base" color="--gray">
-							The comfort of graphic design tools and the power of modern frontend technologies – combined in one seamless experience.
-						</Text>
+						<Box
+							display="flex"
+							flex-direction="column"
+							align-items="flex-start"
+							margin="0px 60px 0px 0px"
+							md-margin="0px 0px 0px 0px"
+							md-text-align="center"
+							md-align-items="center"
+							md-justify-content="center"
+						>
+							<Image loading="lazy" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/GemIcon-1.svg?v=2021-05-08T07:51:05.642Z" width="83px" height="83px" />
+							<Text margin="40px 0px 0px 0px" font="--headline4" color="--white" as="h4">
+								Familiar tools
+							</Text>
+							<Text margin="12px 0px 0px 0px" font="--base" color="--gray">
+								The comfort of graphic design tools and the power of modern frontend technologies – combined in one seamless experience.
+							</Text>
+						</Box>
 					</Box>
-				</Box>
-				<Box
-					display="flex"
-					width="33.333333%"
-					flex-direction="column"
-					align-items="flex-start"
-					padding="0px 0px 0px 0px"
-					justify-content="center"
-					quarkly-title="Cart"
-					md-justify-content="flex-start"
-				>
 					<Box
 						display="flex"
+						width="33.333333%"
 						flex-direction="column"
 						align-items="flex-start"
-						margin="0px 60px 0px 0px"
-						md-margin="0px 20px 0px 0px"
+						padding="0px 0px 0px 0px"
+						justify-content="center"
+						quarkly-title="Cart"
+						md-justify-content="flex-start"
+						md-width="50%"
+						sm-width="100%"
 					>
-						<Image loading="lazy" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/GemIcon-2.svg?v=2021-05-08T07:51:12.825Z" width="83px" height="83px" />
-						<Text margin="40px 0px 0px 0px" font="--headline4" color="--white" as="h4">
-							Instant publishing
-						</Text>
-						<Text margin="12px 0px 0px 0px" font="--base" color="--gray">
-							What would it take to transform your most daring design idea into a live web-page? One click and a couple of seconds.
-						</Text>
+						<Box
+							display="flex"
+							flex-direction="column"
+							align-items="flex-start"
+							margin="0px 60px 0px 0px"
+							md-margin="0px 0px 0px 0px"
+							md-text-align="center"
+							md-align-items="center"
+							md-justify-content="center"
+						>
+							<Image loading="lazy" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/GemIcon-2.svg?v=2021-05-08T07:51:12.825Z" width="83px" height="83px" />
+							<Text margin="40px 0px 0px 0px" font="--headline4" color="--white" as="h4">
+								Instant publishing
+							</Text>
+							<Text margin="12px 0px 0px 0px" font="--base" color="--gray">
+								What would it take to transform your most daring design idea into a live web-page? One click and a couple of seconds.
+							</Text>
+						</Box>
 					</Box>
 				</Box>
 				<Box
@@ -461,6 +708,7 @@ export default (() => {
 					lg-margin="120px 0px 0px 0px"
 					lg-width="30%"
 					md-width="100%"
+					sm-margin="97px 0px 0px 0px"
 				>
 					<Box
 						display="flex"
@@ -472,6 +720,7 @@ export default (() => {
 						md-justify-content="center"
 						md-padding="0px 60px 0px 60px"
 						md-flex-wrap="wrap"
+						sm-padding="0px 0px 0px 0px"
 					>
 						<Text
 							margin="0px 0px 0px 0px"
@@ -495,6 +744,7 @@ export default (() => {
 					md-width="100%"
 					md-margin="30px 0px 0px 0px"
 					md-text-align="center"
+					sm-flex-wrap="wrap"
 				>
 					<Hr
 						width="70%"
@@ -506,8 +756,9 @@ export default (() => {
 						left="36px"
 						right="auto"
 						z-index="1"
-						md-width="75%"
-						md-margin="16px 0px 16px 40px"
+						md-width="70%"
+						md-margin="16px 0px 16px 60px"
+						sm-display="none"
 					/>
 					<Box
 						display="flex"
@@ -519,6 +770,8 @@ export default (() => {
 						hd-width="40%"
 						margin="0px 0px 0px 0px"
 						md-padding="0px 0px 0px 0px"
+						sm-width="100%"
+						sm-margin="0px 0px 30px 0px"
 					>
 						<Box
 							display="flex"
@@ -527,6 +780,8 @@ export default (() => {
 							margin="0px 60px 0px 0px"
 							lg-margin="0px 10px 0px 0px"
 							md-align-items="center"
+							sm-margin="0px 0px 0px 0px"
+							sm-padding="0px 25px 0px 25px"
 						>
 							<Box position="relative" z-index="2" background="#0D0A1A" padding="0px 36px 0px 36px">
 								<Text margin="0px 0px 0px 0px" font="--headline3" color="--white" as="h4">
@@ -554,6 +809,8 @@ export default (() => {
 						hd-width="40%"
 						margin="0px 0px 0px 0px"
 						md-padding="0px 0px 0px 0px"
+						sm-width="100%"
+						sm-margin="0px 0px 30px 0px"
 					>
 						<Box
 							display="flex"
@@ -562,6 +819,8 @@ export default (() => {
 							margin="0px 60px 0px 0px"
 							lg-margin="0px 10px 0px 0px"
 							md-align-items="center"
+							sm-margin="0px 0px 0px 0px"
+							sm-padding="0px 25px 0px 25px"
 						>
 							<Box position="relative" z-index="2" background="#0D0A1A" padding="0px 36px 0px 36px">
 								<Text margin="0px 0px 0px 0px" font="--headline3" color="--white" as="h4">
@@ -588,6 +847,8 @@ export default (() => {
 						justify-content="flex-start"
 						hd-width="40%"
 						margin="0px 0px 0px 0px"
+						sm-width="100%"
+						sm-margin="0px 0px 30px 0px"
 					>
 						<Box
 							display="flex"
@@ -596,6 +857,8 @@ export default (() => {
 							margin="0px 60px 0px 0px"
 							lg-margin="0px 10px 0px 0px"
 							md-align-items="center"
+							sm-margin="0px 0px 0px 0px"
+							sm-padding="0px 25px 0px 25px"
 						>
 							<Box position="relative" z-index="2" background="#0D0A1A" padding="0px 36px 0px 36px">
 								<Text margin="0px 0px 0px 0px" font="--headline3" color="--white" as="h4">
@@ -631,13 +894,20 @@ export default (() => {
 					hover-color="--orange"
 					md-text-align="center"
 					md-margin="60px auto 0px auto"
+					sm-margin="24px auto 0px auto"
 				>
 					Get started
 				</Link>
 				{" "}
 			</Section>
 		</Box>
-		<Section quarkly-title="Hybrid" padding="120px 0 150px 0" background="--color-white" lg-padding="120px 0 90px 0">
+		<Section
+			quarkly-title="Hybrid"
+			padding="120px 0 150px 0"
+			background="--color-white"
+			lg-padding="120px 0 90px 0"
+			sm-padding="72px 0 72px 0"
+		>
 			<Override
 				slot="SectionContent"
 				flex-direction="row"
@@ -660,7 +930,13 @@ export default (() => {
 				padding="0px 0px 0px 0px"
 				justify-content="center"
 			>
-				<Box display="flex" flex-direction="column" align-items="flex-start" margin="0px 70px 0px 0px">
+				<Box
+					display="flex"
+					flex-direction="column"
+					align-items="flex-start"
+					margin="0px 70px 0px 0px"
+					sm-margin="0px 0px 0px 0px"
+				>
 					<Text
 						margin="0px 0px 0px 0px"
 						font="--decs"
@@ -680,10 +956,11 @@ export default (() => {
 						lg-font="normal 800 71px/76px &quot;Epilogue&quot;, sans-serif"
 						md-font="normal 800 60px/66px &quot;Epilogue&quot;, sans-serif"
 						md-margin="36px 0px 60px 0px"
+						sm-font="normal 800 50px/57px &quot;Epilogue&quot;, sans-serif"
+						width="80%"
+						md-width="100%"
 					>
-						The ultimate web
-						<br />
-						design experience
+						The ultimate web design experience
 					</Text>
 				</Box>
 			</Box>
@@ -697,6 +974,7 @@ export default (() => {
 				hd-width="45%"
 				md-width="100%"
 				md-margin="0px 0px 72px 0px"
+				sm-flex-wrap="wrap"
 			>
 				<Box
 					padding="0px 68px 0px 0px"
@@ -705,6 +983,7 @@ export default (() => {
 					hd-padding="0px 70px 0px 0px"
 					lg-padding="0px 20px 0px 0px"
 					md-padding="0px 0px 0px 0px"
+					sm-flex-wrap="wrap"
 				>
 					<Box
 						display="flex"
@@ -713,6 +992,7 @@ export default (() => {
 						margin="0px 0px 0px 0px"
 						hd-margin="0px 0px 0px 0px"
 						md-align-items="flex-start"
+						sm-flex-wrap="wrap"
 					>
 						<Text
 							margin="0px 0px 0px 0px"
@@ -722,6 +1002,7 @@ export default (() => {
 							letter-spacing="-0.01em"
 							lg-font="normal 700 42px/51px &quot;Epilogue&quot;, sans-serif"
 							md-font="normal 700 50px/57px &quot;Epilogue&quot;, sans-serif"
+							sm-font="normal 700 35px/42px &quot;Epilogue&quot;, sans-serif"
 						>
 							Hybrid grid
 						</Text>
@@ -743,6 +1024,7 @@ export default (() => {
 							md-flex-wrap="nowrap"
 							md-justify-content="center"
 							md-align-items="center"
+							sm-flex-wrap="wrap"
 						>
 							<Box
 								width="190px"
@@ -756,6 +1038,7 @@ export default (() => {
 								lg-width="125px"
 								md-width="100%"
 								md-margin="0px 30px 0px 0px"
+								sm-margin="0px 0px 10px 0px"
 							>
 								<Image loading="lazy" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Icon.svg?v=2021-05-06T18:59:57.227Z" width="24px" height="24px" />
 								<Text margin="15px 0px 0px 0px" font="600 14px/18px --fontFamily-googleInter" color="--spaceGray">
@@ -774,6 +1057,7 @@ export default (() => {
 								lg-width="125px"
 								md-margin="0px 30px 0px 0px"
 								md-width="100%"
+								sm-margin="0px 0px 10px 0px"
 							>
 								<Image loading="lazy" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Icon1.svg?v=2021-05-06T19:04:41.145Z" width="24px" height="24px" />
 								<Text margin="15px 0px 0px 0px" font="600 14px/18px --fontFamily-googleInter" color="--spaceGray">
@@ -866,6 +1150,7 @@ export default (() => {
 			background="--color-black"
 			lg-padding="120px 0 120px 0"
 			md-padding="72px 0 95px 0"
+			sm-padding="72px 0 72px 0"
 		>
 			<Override
 				slot="SectionContent"
@@ -1039,6 +1324,7 @@ export default (() => {
 			background="--color-black"
 			lg-padding="100px 0 160px 0"
 			md-padding="72px 0 100px 0"
+			sm-padding="58px 0 70px 0px"
 		>
 			<Override
 				slot="SectionContent"
@@ -1074,6 +1360,8 @@ export default (() => {
 					flex-direction="column"
 					md-align-items="center"
 					md-justify-content="center"
+					sm-align-items="flex-start"
+					sm-justify-content="flex-start"
 				>
 					<Box display="flex" flex-direction="column" align-items="flex-start" margin="0px 0px 0px 0px">
 						<Text
@@ -1096,6 +1384,8 @@ export default (() => {
 						md-margin="0px 0px 0px 0px"
 						md-padding="0px 30px 0px 30px"
 						md-align-items="center"
+						sm-padding="0px 0px 0px 0px"
+						sm-align-items="flex-start"
 					>
 						<Text
 							margin="24px 0px 0px 0px"
@@ -1107,6 +1397,8 @@ export default (() => {
 							hd-font="normal 700 50px/60px &quot;Epilogue&quot;, sans-serif"
 							lg-font="normal 700 42px/51px &quot;Epilogue&quot;, sans-serif"
 							md-text-align="center"
+							sm-text-align="left"
+							sm-font="normal 700 35px/40px &quot;Epilogue&quot;, sans-serif"
 						>
 							One Vision
 							<br />
@@ -1114,7 +1406,13 @@ export default (() => {
 								One Solution
 							</Span>
 						</Text>
-						<Text margin="30px 0px 0px 0px" font="--lead" color="--gray" md-text-align="center">
+						<Text
+							margin="30px 0px 0px 0px"
+							font="--lead"
+							color="--gray"
+							md-text-align="center"
+							sm-text-align="left"
+						>
 							From an occasional freelance gig to a full-fledged web design studio – Graphite has all the tools necessary to get the job done. Everything you need – packed in one versatile reliable solution.
 						</Text>
 						<Box display="flex" margin="90px 0px 0px 0px" quarkly-title="Buttons" md-margin="60px 0px 0px 0px">
@@ -1161,6 +1459,7 @@ export default (() => {
 					align-items="center"
 					margin="0px 0px 0px 90px"
 					lg-margin="0px 0px 0px 0px"
+					sm-align-items="flex-start"
 				>
 					<Box
 						display="flex"
@@ -1169,8 +1468,10 @@ export default (() => {
 						padding="0px 0px 0px 0px"
 						align-items="center"
 						justify-content="center"
+						sm-margin="0px 4% 30px 0%"
+						sm-width="46%"
 					>
-						<Box width="50%">
+						<Box width="50%" sm-width="100%" sm-margin="0px 0px 0px 0px" sm-padding="0px 0px 0px 0px">
 							<Text margin="0px 0px 0px 0px" font="--menu" color="--white">
 								Layout engine
 							</Text>
@@ -1186,8 +1487,10 @@ export default (() => {
 						padding="0px 0px 0px 0px"
 						align-items="center"
 						justify-content="center"
+						sm-margin="0px 0% 30px 4%"
+						sm-width="46%"
 					>
-						<Box width="50%">
+						<Box width="50%" sm-width="100%" sm-padding="0px 0px 0px 0px" sm-margin="0px 0px 0px 0px">
 							<Text margin="0px 0px 0px 0px" font="--menu" color="--white">
 								Code tools
 							</Text>
@@ -1203,8 +1506,10 @@ export default (() => {
 						padding="0px 0px 0px 0px"
 						align-items="flex-end"
 						justify-content="center"
+						sm-width="46%"
+						sm-margin="0px 4% 30px 0%"
 					>
-						<Box width="80%">
+						<Box width="80%" sm-width="100%" sm-margin="10px 0px 0px 0px" sm-padding="0px 0px 0px 0px">
 							<Text margin="0px 0px 0px 0px" font="--menu" color="--white">
 								Design system
 							</Text>
@@ -1221,6 +1526,7 @@ export default (() => {
 						justify-content="center"
 						min-height="260px"
 						background="linear-gradient(0deg,rgba(0, 0, 0, 0.3) 0%,rgba(0, 0, 0, 0.3) 57.1%),rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Figure3.svg?v=2021-05-08T06:54:57.985Z) center center/contain no-repeat scroll padding-box"
+						sm-display="none"
 					>
 						<Image loading="lazy" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/LogoKub.svg?v=2021-05-08T07:01:45.955Z" width="115px" height="auto" />
 					</Box>
@@ -1232,8 +1538,16 @@ export default (() => {
 						align-items="flex-start"
 						justify-content="center"
 						lg-align-items="flex-end"
+						sm-width="46%"
+						sm-margin="0px 0% 30px 4%"
 					>
-						<Box width="80%" margin="0px 0px 0px 10px">
+						<Box
+							width="80%"
+							margin="0px 0px 0px 10px"
+							sm-margin="0px 0px 0px 0px"
+							sm-width="100%"
+							sm-padding="0px 0px 0px 0px"
+						>
 							<Text margin="0px 0px 0px 0px" font="--menu" color="--white">
 								Content management
 							</Text>
@@ -1249,8 +1563,10 @@ export default (() => {
 						padding="0px 0px 0px 0px"
 						align-items="center"
 						justify-content="center"
+						sm-margin="0px 4% 0px 0%"
+						sm-width="46%"
 					>
-						<Box width="60%">
+						<Box width="60%" sm-width="100%" sm-padding="0px 0px 0px 0px" sm-margin="0px 0px 0px 0px">
 							<Text margin="0px 0px 0px 0px" font="--menu" color="--white">
 								Asset managment
 							</Text>
@@ -1266,8 +1582,16 @@ export default (() => {
 						padding="0px 0px 0px 0px"
 						align-items="center"
 						justify-content="center"
+						sm-margin="0px 0% 0px 4%"
+						sm-width="46%"
 					>
-						<Box width="60%" margin="20px 0px 0px 0px">
+						<Box
+							width="60%"
+							margin="20px 0px 0px 0px"
+							sm-width="100%"
+							sm-margin="0px 0px 0px 0px"
+							sm-padding="0px 0px 0px 0px"
+						>
 							<Text margin="0px 0px 0px 0px" font="--menu" color="--white">
 								Hosting, domains, and SSL
 							</Text>
@@ -1292,6 +1616,7 @@ export default (() => {
 				hd-width="100%"
 				hd-max-width="1600px"
 				hd-flex-wrap="wrap"
+				sm-margin="0px 30px 0px 30px"
 			/>
 			<Box
 				display="flex"
@@ -1307,6 +1632,7 @@ export default (() => {
 					align-items="flex-start"
 					margin="0px 70px 0px 0px"
 					width="100%"
+					sm-margin="0px 0px 0px 0px"
 				>
 					<Text
 						margin="0px 0px 0px 0px"
@@ -1331,7 +1657,13 @@ export default (() => {
 			</Box>
 			{" "}
 		</Section>
-		<Section quarkly-title="LoveIt" padding="90px 0 130px 0" background="--color-black" md-padding="90px 0 100px 0">
+		<Section
+			quarkly-title="LoveIt"
+			padding="90px 0 130px 0"
+			background="--color-black"
+			md-padding="90px 0 100px 0"
+			sm-padding="60px 0 100px 0"
+		>
 			<Override
 				slot="SectionContent"
 				flex-direction="row"
@@ -1345,6 +1677,7 @@ export default (() => {
 				hd-flex-wrap="wrap"
 				lg-margin="0px 45px 0px 45px"
 				md-margin="0px 30px 0px 30px"
+				sm-margin="0px 0px 0px 0px"
 			/>
 			<Box
 				display="flex"
@@ -1359,8 +1692,13 @@ export default (() => {
 					display="flex"
 					flex-direction="column"
 					align-items="center"
-					margin="0px 70px 42px 0px"
+					margin="0px 0px 42px 0px"
 					width="100%"
+					sm-margin="0px 0px 42px 0px"
+					md-margin="0px 0px 42px 0px"
+					sm-text-align="left"
+					sm-align-items="flex-start"
+					sm-padding="0px 30px 0px 30px"
 				>
 					<Components.Masks font="--decs">
 						You’ll love it
@@ -1372,6 +1710,9 @@ export default (() => {
 					align-items="flex-start"
 					margin="0px 0px 0px 0px"
 					width="33.3333%"
+					sm-width="100%"
+					sm-margin="0px 0px 30px 0px"
+					sm-padding="0px 30px 0px 30px"
 				>
 					<Text margin="0px 0px 24px 0px" color="--white" font="--lead">
 						Comfort
@@ -1419,9 +1760,12 @@ export default (() => {
 					align-items="flex-start"
 					margin="0px 0px 0px 0px"
 					width="33.3333%"
+					sm-width="100%"
+					sm-margin="0px 0px 30px 0px"
+					sm-padding="0px 30px 0px 30px"
 				>
 					<Text margin="0px 0px 24px 0px" color="--white" font="--lead">
-						Comfort
+						Power{"\n\n"}
 					</Text>
 					<Box display="flex" align-items="center" margin="0px 0px 9px 0px">
 						<Image
@@ -1432,7 +1776,7 @@ export default (() => {
 							margin="0px 12px 0px 0px"
 						/>
 						<Text margin="0px 0px 0px 0px" color="--gray" font="--base">
-							Familiar look and feel
+							Top-notch animation{"\n\n"}
 						</Text>
 					</Box>
 					<Box display="flex" align-items="center" margin="0px 0px 9px 0px">
@@ -1444,7 +1788,7 @@ export default (() => {
 							margin="0px 12px 0px 0px"
 						/>
 						<Text margin="0px 0px 0px 0px" color="--gray" font="--base">
-							Design system
+							Pixel-perfect rendering{"\n\n"}
 						</Text>
 					</Box>
 					<Box display="flex" align-items="center" margin="0px 0px 9px 0px">
@@ -1456,7 +1800,7 @@ export default (() => {
 							margin="0px 12px 0px 0px"
 						/>
 						<Text margin="0px 0px 0px 0px" color="--gray" font="--base">
-							Absolute & Auto-Layout
+							CSS/Flexbox firepower{"\n\n"}
 						</Text>
 					</Box>
 				</Box>
@@ -1466,9 +1810,11 @@ export default (() => {
 					align-items="flex-start"
 					margin="0px 0px 0px 0px"
 					width="33.3333%"
+					sm-width="100%"
+					sm-padding="0px 30px 0px 30px"
 				>
 					<Text margin="0px 0px 24px 0px" color="--white" font="--lead">
-						Comfort
+						Efficiency{"\n\n"}
 					</Text>
 					<Box display="flex" align-items="center" margin="0px 0px 9px 0px">
 						<Image
@@ -1479,7 +1825,7 @@ export default (() => {
 							margin="0px 12px 0px 0px"
 						/>
 						<Text margin="0px 0px 0px 0px" color="--gray" font="--base">
-							Familiar look and feel
+							Bulk adjustments{"\n\n"}
 						</Text>
 					</Box>
 					<Box display="flex" align-items="center" margin="0px 0px 9px 0px">
@@ -1491,7 +1837,7 @@ export default (() => {
 							margin="0px 12px 0px 0px"
 						/>
 						<Text margin="0px 0px 0px 0px" color="--gray" font="--base">
-							Design system
+							Reusable components{"\n\n"}
 						</Text>
 					</Box>
 					<Box display="flex" align-items="center" margin="0px 0px 9px 0px">
@@ -1503,7 +1849,7 @@ export default (() => {
 							margin="0px 12px 0px 0px"
 						/>
 						<Text margin="0px 0px 0px 0px" color="--gray" font="--base">
-							Absolute & Auto-Layout
+							Instant publishing{"\n\n"}
 						</Text>
 					</Box>
 				</Box>
@@ -1517,6 +1863,8 @@ export default (() => {
 					padding="150px 0px 150px 0px"
 					background="linear-gradient(0deg,rgba(0, 0, 0, 0.7) 0%,rgba(0, 0, 0, 0.7) 57.1%),rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Figure2.svg?v=2021-05-06T20:06:00.273Z) center center/contain no-repeat scroll padding-box"
 					md-padding="100px 0px 100px 0px"
+					sm-width="100%"
+					sm-padding="100px 0px30px 100px 30px"
 				>
 					<Text
 						margin="0px 0px 18px 0px"
@@ -1527,6 +1875,7 @@ export default (() => {
 						lg-font="normal 700 50px/60px &quot;Epilogue&quot;, sans-serif"
 						md-font="normal 700 60px/66px &quot;Epilogue&quot;, sans-serif"
 						md-text-align="center"
+						sm-font="normal 700 35px/42px &quot;Epilogue&quot;, sans-serif"
 					>
 						Try an entirely new approach{" "}
 					</Text>
@@ -1536,6 +1885,7 @@ export default (() => {
 						font="--headline4"
 						letter-spacing="-0.01em"
 						hd-font="normal 500 20px/27px &quot;Inter&quot;, sans-serif"
+						sm-text-align="center"
 					>
 						to site-building and create your first website now
 					</Text>
@@ -1573,6 +1923,7 @@ export default (() => {
 				hd-width="100%"
 				hd-max-width="1600px"
 				hd-flex-wrap="wrap"
+				sm-margin="0px 30px 0px 30px"
 			/>
 			<Box
 				display="flex"
@@ -1598,6 +1949,7 @@ export default (() => {
 						justify-content="center"
 						quarkly-title="SocialMedia"
 						margin="0px 0px 36px 0px"
+						sm-flex-direction="column"
 					>
 						<Link
 							href="#"
@@ -1605,6 +1957,7 @@ export default (() => {
 							color="--white"
 							text-decoration-line="initial"
 							margin="0px 18px 0px 18px"
+							sm-margin="0px 18px 24px 18px"
 						>
 							Facebook
 						</Link>
@@ -1614,6 +1967,7 @@ export default (() => {
 							color="--white"
 							text-decoration-line="initial"
 							margin="0px 18px 0px 18px"
+							sm-margin="0px 18px 24px 18px"
 						>
 							Twitter
 						</Link>
@@ -1640,6 +1994,8 @@ export default (() => {
 							color="#7F8A9E"
 							text-decoration-line="initial"
 							margin="0px 18px 0px 18px"
+							sm-text-align="center"
+							sm-margin="0px 18px 0px 0px"
 						>
 							Terms of use
 						</Link>
@@ -1649,6 +2005,7 @@ export default (() => {
 							color="#7F8A9E"
 							text-decoration-line="initial"
 							margin="0px 18px 0px 18px"
+							sm-text-align="center"
 						>
 							Privacy policy
 						</Link>
@@ -1658,6 +2015,8 @@ export default (() => {
 							color="#7F8A9E"
 							text-decoration-line="initial"
 							margin="0px 18px 0px 18px"
+							sm-text-align="center"
+							sm-margin="0px 0px 0px 18px"
 						>
 							Contact us
 						</Link>
