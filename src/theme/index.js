@@ -4,19 +4,19 @@ export default {
 		"sm": [
 			{
 				"type": "max-width",
-				"value": 576
+				"value": "700"
 			}
 		],
 		"md": [
 			{
 				"type": "max-width",
-				"value": 768
+				"value": "1000"
 			}
 		],
 		"lg": [
 			{
 				"type": "max-width",
-				"value": 992
+				"value": "1200"
 			}
 		],
 		"hd": [
@@ -70,7 +70,7 @@ export default {
 		"headline2": "normal 800 68px/72px --fontFamily-googleEpilogue",
 		"headline3": "normal 500 29px/39px --fontFamily-googleEpilogue",
 		"base": "normal 400 17px/24px --fontFamily-googleInter",
-		"lead": "normal 400 20px/27px --fontFamily-googleInter",
+		"lead": "normal 500 20px/27px --fontFamily-googleInter",
 		"headline25": "normal 700 60px/72px --fontFamily-googleEpilogue",
 		"headline4": "normal 500 24px/30px --fontFamily-googleInter",
 		"menu": "600 17px/24px --fontFamily-googleInter",
@@ -220,5 +220,5 @@ export default {
 			}
 		}
 	},
-	"version": 61
+	"version": 68
 }

@@ -138,7 +138,13 @@ const BurgerMenu = props => {
 		            
 		<Button {...override('button')} onPointerDown={() => setOpen(true)}>
 			                
-			{override('button').children || <Image width="50px" height="50px" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/triangle.svg?v=2021-05-06T08:09:55.261Z" />}
+			{override('button').children || <Image
+				width="50px"
+				height="50px"
+				lg-width="40px"
+				lg-height="32px"
+				src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/triangle.svg?v=2021-05-06T08:09:55.261Z"
+			/>}
 			            
 		</Button>
 		            
