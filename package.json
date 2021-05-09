@@ -27,6 +27,7 @@
         "react": "^16.13.0",
         "@quarkly/components": "0.2.48",
         "@quarkly/widgets": "0.2.48",
+        "@quarkly/community-kit": "latest",
         "react-dom": "^16.13.0",
         "@quarkly/atomize": "1.0.8",
         "styled-components": "^5.0.1",
