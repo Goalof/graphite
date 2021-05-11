@@ -586,7 +586,7 @@ export default (() => {
 									</Components.PopUp>
 								</Box>
 								<Image
-									src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/image%2033%20(1).svg?v=2021-05-08T07:44:47.173Z"
+									src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/image%2033.png?v=2021-05-11T11:40:50.491Z"
 									position="absolute"
 									left="auto"
 									right="-15px"
@@ -608,7 +608,7 @@ export default (() => {
 									md-top="110px"
 								/>
 								<Image
-									src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/image%2035.svg?v=2021-05-06T06:03:05.929Z"
+									src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/image%2035.png?v=2021-05-11T11:40:47.549Z"
 									position="absolute"
 									left="-20px"
 									right="0px"
@@ -1206,7 +1206,7 @@ export default (() => {
 					border-radius="8px"
 				/>
 				<Image
-					src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Panel.svg?v=2021-05-06T18:28:25.785Z"
+					src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Panel.png?v=2021-05-11T11:41:45.948Z"
 					position="absolute"
 					left="-140px"
 					right="0px"
