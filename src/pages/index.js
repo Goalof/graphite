@@ -440,6 +440,7 @@ export default (() => {
 						duration="1.3s"
 						timingFunction="linear"
 						trigger="onload"
+						iteration="infinite"
 					>
 						<Box
 							display="flex"
@@ -510,13 +511,15 @@ export default (() => {
 								<Components.PopUp
 									position="relative"
 									z-index="2"
-									left="80px"
+									left="-20px"
 									md-left="05px"
 									md-top="-20px"
 									md-right="auto"
 									md-bottom="auto"
 									sm-left="0px"
 									sm-top="0px"
+									top="-20px"
+									hd-left="20px"
 								>
 									<Override
 										slot="close"
@@ -1229,6 +1232,7 @@ export default (() => {
 								height="62px"
 								src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/colors.svg?v=2021-05-06T19:28:32.611Z"
 								margin="-10px 0px 0px 0px"
+								sm-display="none"
 							/>
 							<Text
 								margin="0px 0px 0px 40px"
@@ -1240,6 +1244,8 @@ export default (() => {
 								hd-font="700 68px/72px &quot;Epilogue&quot;, sans-serif"
 								lg-font="700 57px/60px &quot;Epilogue&quot;, sans-serif"
 								md-font="700 60px/66px &quot;Epilogue&quot;, sans-serif"
+								sm-font="700 35px/42px &quot;Epilogue&quot;, sans-serif"
+								sm-margin="0px 0px 0px 0px"
 							>
 								Design system
 							</Text>
@@ -1254,6 +1260,7 @@ export default (() => {
 							hd-font="700 68px/72px &quot;Epilogue&quot;, sans-serif"
 							lg-font="700 57px/60px &quot;Epilogue&quot;, sans-serif"
 							md-font="700 60px/66px &quot;Epilogue&quot;, sans-serif"
+							sm-font="700 35px/42px &quot;Epilogue&quot;, sans-serif"
 						>
 							Animation
 						</Text>
@@ -1267,6 +1274,7 @@ export default (() => {
 							hd-font="700 68px/72px &quot;Epilogue&quot;, sans-serif"
 							lg-font="700 57px/60px &quot;Epilogue&quot;, sans-serif"
 							md-font="700 60px/66px &quot;Epilogue&quot;, sans-serif"
+							sm-font="700 35px/42px &quot;Epilogue&quot;, sans-serif"
 						>
 							Components
 						</Text>
@@ -1280,6 +1288,7 @@ export default (() => {
 							hd-font="700 68px/72px &quot;Epilogue&quot;, sans-serif"
 							lg-font="700 57px/60px &quot;Epilogue&quot;, sans-serif"
 							md-font="700 60px/66px &quot;Epilogue&quot;, sans-serif"
+							sm-font="700 35px/42px &quot;Epilogue&quot;, sans-serif"
 						>
 							Publishing
 						</Text>
