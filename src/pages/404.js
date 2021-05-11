@@ -40,6 +40,7 @@ export default (() => {
 			<style place={"endOfHead"} rawKey={"6092d6b9f57a5fbcd5ff262e"}>
 				{".gradient {\n-webkit-background-clip: text !important;\n    -webkit-text-fill-color: transparent;\n}"}
 			</style>
+			<meta name={"robots"} content={"noindex"} place={"endOfHead"} rawKey={"609a6b3ca35266696f4312cd"} />
 		</RawHtml>
 	</Theme>;
 });
