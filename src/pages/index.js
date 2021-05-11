@@ -15,595 +15,625 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
-		<Box padding="0px 0px 0px 0px" background="--color-background" quarkly-title="Background">
-			<Section padding="44px 0 44px 0" quarkly-title="Header" sm-padding="37px 0 37px 0">
+		<Box padding="0px 0px 0px 0px" quarkly-title="Background" background="--color-background">
+			<Section
+				quarkly-title="OneMonitor"
+				padding="0px 0 0px 0"
+				md-padding="0px 0 0px 0"
+				min-height="100vh"
+				background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/bg1.jpg?v=2021-05-11T10:56:55.828Z) 0% 0% /cover no-repeat scroll padding-box"
+			>
 				<Override
 					slot="SectionContent"
-					max-width="1600px"
 					flex-direction="row"
 					flex-wrap="wrap"
-					hd-margin="0px 90px 0px 90px"
-					lg-margin="0px 45px 0px 45px"
-					md-margin="0px 30px 0px 30px"
+					hd-margin="0px 0px 0px 0px"
+					max-width="none"
+					width="100%"
+					padding="0px 0px 0px 0px"
+					hd-width="100%"
+					hd-max-width="1600px"
+					lg-margin="0px 0px 0px 0px"
+					lg-padding="0px 0px 0px 0px"
+					md-margin="0px 0px 0px 0px"
+					md-background="none"
+					md-padding="0px 0px 0px 0px"
+					sm-margin="0px 0px 0px 0px"
+					align-items="flex-start"
 				/>
-				<Box
-					width="30%"
-					display="flex"
-					align-items="center"
-					justify-content="flex-start"
-					quarkly-title="logo-head"
-					md-width="25%"
-					sm-width="50%"
-				>
-					<Link
-						href="/"
+				<Section padding="36px 0 36px 0" quarkly-title="Header" sm-padding="37px 0 37px 0">
+					<Override
+						slot="SectionContent"
+						max-width="1600px"
+						flex-direction="row"
+						flex-wrap="wrap"
+						hd-margin="0px 90px 0px 90px"
+						lg-margin="0px 45px 0px 45px"
+						md-margin="0px 30px 0px 30px"
+					/>
+					<Box
+						width="30%"
 						display="flex"
 						align-items="center"
-						justify-content="center"
-						quarkly-title="Logo"
+						justify-content="flex-start"
+						quarkly-title="logo-head"
+						md-width="25%"
+						sm-width="50%"
 					>
-						<Image
-							loading="lazy"
-							src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Logo.svg?v=2021-05-05T10:20:19.531Z"
-							width="136px"
-							height="auto"
-							quarkly-title="Logo-Image"
-						/>
-					</Link>
-				</Box>
-				<Box
-					width="70%"
-					display="flex"
-					align-items="center"
-					justify-content="flex-end"
-					quarkly-title="menu-head"
-					md-width="75%"
-					sm-width="50%"
-				>
-					<Box
-						quarkly-title="MobileMenu"
-						display="none"
-						sm-display="flex"
-						sm-align-items="center"
-						sm-justify-content="center"
-					>
-						<Components.MobileSide2
-							flex="1 0 auto"
-							lg-position="relative"
-							lg-z-index="5"
-							lg-display="flex"
-							lg-justify-content="flex-end"
-							lg-align-items="center"
+						<Link
+							href="/"
 							display="flex"
 							align-items="center"
-							justify-content="flex-end"
+							justify-content="center"
+							quarkly-title="Logo"
 						>
-							<Override
-								slot="Content"
+							<Image
+								loading="lazy"
+								src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Logo.svg?v=2021-05-05T10:20:19.531Z"
+								width="136px"
+								height="auto"
+								quarkly-title="Logo-Image"
+							/>
+						</Link>
+					</Box>
+					<Box
+						width="70%"
+						display="flex"
+						align-items="center"
+						justify-content="flex-end"
+						quarkly-title="menu-head"
+						md-width="75%"
+						sm-width="50%"
+						sm-padding="0px 0px 0px 0px"
+					>
+						<Box
+							quarkly-title="MobileMenu"
+							display="none"
+							sm-display="flex"
+							sm-align-items="center"
+							sm-justify-content="center"
+							sm-margin="0px 0px 0px 0px"
+						>
+							<Components.MobileSide2
+								flex="1 0 auto"
+								lg-position="relative"
+								lg-z-index="5"
+								lg-display="flex"
+								lg-justify-content="flex-end"
+								lg-align-items="center"
 								display="flex"
 								align-items="center"
-								lg-position="fixed"
-								lg-top={0}
-								lg-left={0}
-								lg-z-index="1"
-								lg-width="100%"
-								lg-height="100%"
-								lg-background="white"
-								lg-flex-direction="column"
-								sm-background="--color-background"
-							/>
-							<Override
-								slot="Button"
-								display="none"
-								lg-display="block"
-								lg-width="44px"
-								lg-height="28px"
-								lg-position="relative"
-								lg-z-index="6"
-								md-margin="0px 0px 0px 0px"
-								sm-width="38px"
-							/>
-							<Override
-								slot="Button Line"
-								lg-background="black"
-								lg-min-height="4px"
-								lg-position="absolute"
-								sm-left="0px"
-								sm-background="--color-snow"
-							/>
-							<Override
-								slot="Button Line1"
-								lg-width="44px"
-								lg-top="0px"
-								lg-right="0px"
-								sm-border-radius="12px"
-								sm-width="38px"
-							/>
-							<Override
-								slot="Button Line2"
-								lg-top="12px"
-								lg-right="0px"
-								sm-left="0px"
-								sm-border-radius="12px"
-								sm-width="29px"
-							/>
-							<Override
-								slot="Button Line3"
-								lg-top="24px"
-								lg-right="0px"
-								sm-border-radius="12px"
-								sm-width="20px"
-							/>
-							<Override slot="Button Line1 :closed" lg-width="44px" />
-							<Override slot="Button Line2 :closed" lg-width="32px" />
-							<Override slot="Button Line3 :closed" lg-width="20px" />
-							<Override slot="Button Line2 :open" lg-opacity="0" lg-width="32px" />
-							<Override slot="Button Line1 :open" lg-width="36px" lg-transform="translateY(12px) rotate(225deg)" />
-							<Override slot="Button Line3 :open" lg-width="36px" lg-transform="translateY(-12px) rotate(135deg)" md-margin="0px 0px 0px 0px" />
-							<Override slot="Content :closed" lg-opacity="0" lg-transition="transform --transitionDuration-normal step-end 0s,opacity --transitionDuration-normal --transitionTimingFunction-easeOut" lg-transform="translateY(-100%)" />
-							<Override slot="Content :open" lg-transform="translateY(0%)" lg-transition="transform --transitionDuration-normal step-start 0s,opacity --transitionDuration-normal --transitionTimingFunction-easeOut" lg-opacity="1" />
-							<Override slot="Button :open" lg-position="fixed" md-margin="14px 0px 0px 0px" />
-							<Box
+								justify-content="flex-end"
+							>
+								<Override
+									slot="Content"
+									display="flex"
+									align-items="center"
+									lg-position="fixed"
+									lg-top={0}
+									lg-left={0}
+									lg-z-index="1"
+									lg-width="100%"
+									lg-height="100%"
+									lg-background="white"
+									lg-flex-direction="column"
+									sm-background="--color-background"
+								/>
+								<Override
+									slot="Button"
+									display="none"
+									lg-display="block"
+									lg-width="44px"
+									lg-height="28px"
+									lg-position="relative"
+									lg-z-index="6"
+									md-margin="0px 0px 0px 0px"
+									sm-width="38px"
+								/>
+								<Override
+									slot="Button Line"
+									lg-background="black"
+									lg-min-height="4px"
+									lg-position="absolute"
+									sm-left="0px"
+									sm-background="--color-snow"
+								/>
+								<Override
+									slot="Button Line1"
+									lg-width="44px"
+									lg-top="0px"
+									lg-right="0px"
+									sm-border-radius="12px"
+									sm-width="38px"
+								/>
+								<Override
+									slot="Button Line2"
+									lg-top="12px"
+									lg-right="0px"
+									sm-left="0px"
+									sm-border-radius="12px"
+									sm-width="29px"
+								/>
+								<Override
+									slot="Button Line3"
+									lg-top="24px"
+									lg-right="0px"
+									sm-border-radius="12px"
+									sm-width="20px"
+								/>
+								<Override slot="Button Line1 :closed" lg-width="44px" />
+								<Override slot="Button Line2 :closed" lg-width="32px" />
+								<Override slot="Button Line3 :closed" lg-width="20px" />
+								<Override slot="Button Line2 :open" lg-opacity="0" lg-width="32px" />
+								<Override slot="Button Line1 :open" lg-width="36px" lg-transform="translateY(12px) rotate(225deg)" />
+								<Override slot="Button Line3 :open" lg-width="36px" lg-transform="translateY(-12px) rotate(135deg)" md-margin="0px 0px 0px 0px" />
+								<Override slot="Content :closed" lg-opacity="0" lg-transition="transform --transitionDuration-normal step-end 0s,opacity --transitionDuration-normal --transitionTimingFunction-easeOut" lg-transform="translateY(-100%)" />
+								<Override slot="Content :open" lg-transform="translateY(0%)" lg-transition="transform --transitionDuration-normal step-start 0s,opacity --transitionDuration-normal --transitionTimingFunction-easeOut" lg-opacity="1" />
+								<Override slot="Button :open" lg-position="fixed" md-margin="14px 0px 0px 0px" />
+								<Box
+									display="flex"
+									align-items="center"
+									justify-content="center"
+									lg-flex-direction="column"
+									lg-margin="80px 0px 0px 0px"
+									lg-width="100%"
+								>
+									<Link
+										href="/home#about"
+										text-decoration-line="initial"
+										color="#000000"
+										font="600 20px --fontFamily-googleMontserrat"
+										padding="10px 13px 10px 12px"
+										transition="opacity 0.4s ease 0s"
+										lg-margin="0px 0px 8px 0px"
+										lg-font="600 24px --fontFamily-googleMontserrat"
+										sm-font="600 20px --fontFamily-googleMontserrat"
+										sm-text-align="center"
+										hover-color="#001A51"
+									>
+										О нас
+									</Link>
+									<Link
+										href="/home#categories"
+										text-decoration-line="initial"
+										color="#000000"
+										font="600 20px --fontFamily-googleMontserrat"
+										padding="10px 13px 10px 12px"
+										transition="opacity 0.4s ease 0s"
+										lg-margin="0px 0px 8px 0px"
+										lg-font="600 24px --fontFamily-googleMontserrat"
+										sm-font="600 20px --fontFamily-googleMontserrat"
+										sm-text-align="center"
+										hover-color="#001A51"
+									>
+										Категории игр
+									</Link>
+									<Link
+										href="/home#team"
+										text-decoration-line="initial"
+										color="#000000"
+										font="600 20px --fontFamily-googleMontserrat"
+										padding="10px 13px 10px 12px"
+										transition="opacity 0.4s ease 0s"
+										lg-margin="0px 0px 8px 0px"
+										lg-font="600 24px --fontFamily-googleMontserrat"
+										sm-font="600 20px --fontFamily-googleMontserrat"
+										sm-text-align="center"
+										hover-color="#001A51"
+									>
+										Состав Союза
+									</Link>
+									<Link
+										href="/home#event"
+										text-decoration-line="initial"
+										color="#000000"
+										font="600 20px --fontFamily-googleMontserrat"
+										padding="10px 13px 10px 12px"
+										transition="opacity 0.4s ease 0s"
+										lg-margin="0px 0px 8px 0px"
+										lg-font="600 24px --fontFamily-googleMontserrat"
+										sm-font="600 20px --fontFamily-googleMontserrat"
+										sm-text-align="center"
+										hover-color="#001A51"
+									>
+										События
+									</Link>
+									<Link
+										href="/home#partners"
+										text-decoration-line="initial"
+										color="#000000"
+										font="600 20px --fontFamily-googleMontserrat"
+										padding="10px 13px 10px 12px"
+										transition="opacity 0.4s ease 0s"
+										lg-margin="0px 0px 8px 0px"
+										lg-font="600 24px --fontFamily-googleMontserrat"
+										sm-font="600 20px --fontFamily-googleMontserrat"
+										sm-text-align="center"
+										hover-color="#001A51"
+									>
+										Партнеры
+									</Link>
+								</Box>
+							</Components.MobileSide2>
+						</Box>
+						<Box quarkly-title="Menu" display="flex" sm-display="none">
+							<Link
+								href="#"
+								text-decoration-line="initial"
+								font="--menu"
+								color="--white"
+								padding="6px 18px 6px 18px"
+								margin="0px 6px 0px 6px"
 								display="flex"
 								align-items="center"
 								justify-content="center"
-								lg-flex-direction="column"
-								lg-margin="80px 0px 0px 0px"
-								lg-width="100%"
+								transition="color 0.3s ease 0s"
+								hover-color="--blue"
 							>
-								<Link
-									href="/home#about"
-									text-decoration-line="initial"
-									color="#000000"
-									font="600 20px --fontFamily-googleMontserrat"
-									padding="10px 13px 10px 12px"
-									transition="opacity 0.4s ease 0s"
-									lg-margin="0px 0px 8px 0px"
-									lg-font="600 24px --fontFamily-googleMontserrat"
-									sm-font="600 20px --fontFamily-googleMontserrat"
-									sm-text-align="center"
-									hover-color="#001A51"
-								>
-									О нас
-								</Link>
-								<Link
-									href="/home#categories"
-									text-decoration-line="initial"
-									color="#000000"
-									font="600 20px --fontFamily-googleMontserrat"
-									padding="10px 13px 10px 12px"
-									transition="opacity 0.4s ease 0s"
-									lg-margin="0px 0px 8px 0px"
-									lg-font="600 24px --fontFamily-googleMontserrat"
-									sm-font="600 20px --fontFamily-googleMontserrat"
-									sm-text-align="center"
-									hover-color="#001A51"
-								>
-									Категории игр
-								</Link>
-								<Link
-									href="/home#team"
-									text-decoration-line="initial"
-									color="#000000"
-									font="600 20px --fontFamily-googleMontserrat"
-									padding="10px 13px 10px 12px"
-									transition="opacity 0.4s ease 0s"
-									lg-margin="0px 0px 8px 0px"
-									lg-font="600 24px --fontFamily-googleMontserrat"
-									sm-font="600 20px --fontFamily-googleMontserrat"
-									sm-text-align="center"
-									hover-color="#001A51"
-								>
-									Состав Союза
-								</Link>
-								<Link
-									href="/home#event"
-									text-decoration-line="initial"
-									color="#000000"
-									font="600 20px --fontFamily-googleMontserrat"
-									padding="10px 13px 10px 12px"
-									transition="opacity 0.4s ease 0s"
-									lg-margin="0px 0px 8px 0px"
-									lg-font="600 24px --fontFamily-googleMontserrat"
-									sm-font="600 20px --fontFamily-googleMontserrat"
-									sm-text-align="center"
-									hover-color="#001A51"
-								>
-									События
-								</Link>
-								<Link
-									href="/home#partners"
-									text-decoration-line="initial"
-									color="#000000"
-									font="600 20px --fontFamily-googleMontserrat"
-									padding="10px 13px 10px 12px"
-									transition="opacity 0.4s ease 0s"
-									lg-margin="0px 0px 8px 0px"
-									lg-font="600 24px --fontFamily-googleMontserrat"
-									sm-font="600 20px --fontFamily-googleMontserrat"
-									sm-text-align="center"
-									hover-color="#001A51"
-								>
-									Партнеры
-								</Link>
-							</Box>
-						</Components.MobileSide2>
-					</Box>
-					<Box quarkly-title="Menu" display="flex" sm-display="none">
-						<Link
-							href="#"
-							text-decoration-line="initial"
-							font="--menu"
-							color="--white"
-							padding="6px 18px 6px 18px"
-							margin="0px 6px 0px 6px"
+								Features
+							</Link>
+							<Link
+								href="#"
+								text-decoration-line="initial"
+								font="--menu"
+								color="--white"
+								padding="6px 18px 6px 18px"
+								margin="0px 6px 0px 6px"
+								display="flex"
+								align-items="center"
+								justify-content="center"
+								transition="color 0.3s ease 0s"
+								hover-color="--blue"
+							>
+								About us
+							</Link>
+						</Box>
+						<Box
 							display="flex"
-							align-items="center"
-							justify-content="center"
-							transition="color 0.3s ease 0s"
-							hover-color="--blue"
+							quarkly-title="Button-Log"
+							margin="0px 0px 0px 66px"
+							md-margin="0px 0px 0px 20px"
+							sm-display="none"
 						>
-							Features
-						</Link>
-						<Link
-							href="#"
-							text-decoration-line="initial"
-							font="--menu"
-							color="--white"
-							padding="6px 18px 6px 18px"
-							margin="0px 6px 0px 6px"
-							display="flex"
-							align-items="center"
-							justify-content="center"
-							transition="color 0.3s ease 0s"
-							hover-color="--blue"
-						>
-							About us
-						</Link>
+							<Link
+								href="/signup"
+								text-decoration-line="initial"
+								font="--menu"
+								color="--white"
+								padding="6px 18px 6px 18px"
+								margin="0px 6px 0px 6px"
+								display="flex"
+								align-items="center"
+								justify-content="center"
+								transition="color 0.3s ease 0s"
+								hover-color="--blue"
+							>
+								Log in
+							</Link>
+							<Link
+								href="/signup"
+								text-decoration-line="initial"
+								font="--menu"
+								color="--white"
+								padding="6px 21px 6px 21px"
+								margin="0px 0px 0px 6px"
+								border-radius="99px"
+								border-width="2px"
+								border-style="solid"
+								border-color="--color-blue"
+								display="flex"
+								align-items="center"
+								justify-content="center"
+								transition="background-color 0.3s ease 0s"
+								hover-background="--color-blue"
+							>
+								Sign up
+							</Link>
+						</Box>
 					</Box>
+					{" "}
+				</Section>
+				<Section quarkly-title="HeroBlock" padding="0px 0 0px 0" md-padding="60px 0 90px 0">
+					<Override
+						slot="SectionContent"
+						flex-direction="row"
+						flex-wrap="wrap"
+						hd-margin="0px 0px 0px 90px"
+						max-width="1600px"
+						width="100%"
+						padding="120px 0px 120px 0px"
+						hd-width="100%"
+						hd-max-width="1600px"
+						lg-margin="0px 0px 0px 45px"
+						lg-padding="35px 0px 35px 0px"
+						md-margin="0px 50px 0px 50px"
+						md-background="none"
+						md-padding="0px 0px 0px 0px"
+						sm-margin="0px 30px 0px 30px"
+					/>
 					<Box
 						display="flex"
-						quarkly-title="Button-Log"
-						margin="0px 0px 0px 66px"
-						md-margin="0px 0px 0px 20px"
-						sm-display="none"
-					>
-						<Link
-							href="/signup"
-							text-decoration-line="initial"
-							font="--menu"
-							color="--white"
-							padding="6px 18px 6px 18px"
-							margin="0px 6px 0px 6px"
-							display="flex"
-							align-items="center"
-							justify-content="center"
-							transition="color 0.3s ease 0s"
-							hover-color="--blue"
-						>
-							Log in
-						</Link>
-						<Link
-							href="/signup"
-							text-decoration-line="initial"
-							font="--menu"
-							color="--white"
-							padding="6px 21px 6px 21px"
-							margin="0px 0px 0px 6px"
-							border-radius="99px"
-							border-width="2px"
-							border-style="solid"
-							border-color="--color-blue"
-							display="flex"
-							align-items="center"
-							justify-content="center"
-							transition="background-color 0.3s ease 0s"
-							hover-background="--color-blue"
-						>
-							Sign up
-						</Link>
-					</Box>
-				</Box>
-				{" "}
-			</Section>
-			<Section quarkly-title="HeroBlock" padding="54px 0 54px 0" md-padding="60px 0 90px 0">
-				<Override
-					slot="SectionContent"
-					flex-direction="row"
-					flex-wrap="wrap"
-					hd-margin="0px 0px 0px 90px"
-					max-width="1600px"
-					width="100%"
-					padding="20px 0px 20px 0px"
-					hd-width="100%"
-					hd-max-width="1600px"
-					lg-margin="0px 0px 0px 45px"
-					lg-padding="35px 0px 35px 0px"
-					md-margin="0px 50px 0px 50px"
-					md-background="none"
-					md-padding="0px 0px 0px 0px"
-					sm-margin="0px 30px 0px 30px"
-				/>
-				<Box
-					display="flex"
-					width="40%"
-					flex-direction="column"
-					align-items="flex-start"
-					padding="0px 0px 0px 0px"
-					justify-content="center"
-					hd-width="40%"
-					lg-width="45%"
-					md-width="100%"
-					md-align-items="center"
-					md-margin="0px 0px 66px 0px"
-				>
-					<Box
-						display="flex"
+						width="40%"
 						flex-direction="column"
 						align-items="flex-start"
-						margin="0px 70px 0px 0px"
-						lg-margin="0px 50px 0px 0px"
+						padding="0px 0px 0px 0px"
+						justify-content="center"
+						hd-width="40%"
+						lg-width="45%"
+						md-width="100%"
 						md-align-items="center"
-						md-justify-content="center"
-						md-margin="0px 60px 0px 60px"
-						sm-margin="0px 0px 0px 0px"
-					>
-						<Components.Masks
-							as="h3"
-							font="--decs"
-							sm-text-align="center"
-							sm-width="110%"
-							sm-font="600 13px/21px &quot;Inter&quot;, sans-serif"
-						/>
-						<Text
-							margin="30px 0px 0px 0px"
-							font="--headline2"
-							color="--white"
-							as="h1"
-							width="80%"
-							hd-width="100%"
-							lg-font="normal 800 57px/61px &quot;Epilogue&quot;, sans-serif"
-							md-text-align="center"
-							md-font="normal 800 60px/66px &quot;Epilogue&quot;, sans-serif"
-							letter-spacing=" -0.01em"
-							sm-width="100%"
-							sm-font="normal 800 35px/42px &quot;Epilogue&quot;, sans-serif"
-						>
-							Make web design feel like home
-						</Text>
-						<Text
-							margin="12px 0px 0px 0px"
-							font="--lead"
-							color="--gray"
-							md-text-align="center"
-							sm-font="normal 400 20px/27px &quot;Inter&quot;, sans-serif"
-						>
-							Use familiar graphic editor tools to create pixel-perfect Web Pages, and not just mockups. Focus on the creative part, and we'll take care of the rest.
-						</Text>
-					</Box>
-					<Box display="flex" margin="54px 0px 0px 0px" quarkly-title="Buttons">
-						<Link
-							href="/signup"
-							padding="9px 25px 9px 25px"
-							font="--menu"
-							text-decoration-line="initial"
-							border-radius="99px"
-							background="--color-orange"
-							color="--background"
-							margin="0px 18px 0px 0px"
-							border-width="2px"
-							border-style="solid"
-							border-color="--color-orange"
-							transition="background-color 0.3s ease 0s"
-							hover-background="transparent"
-							hover-color="--orange"
-							sm-padding="9px 15px 9px 15px"
-						>
-							Try for free
-						</Link>
-						<Link
-							href="#"
-							padding="9px 25px 9px 25px"
-							font="--menu"
-							text-decoration-line="initial"
-							border-radius="99px"
-							margin="0px 0px 0px 0px"
-							color="--gray"
-							border-width="2px"
-							border-style="solid"
-							border-color="--color-space"
-							transition="background-color 0.3s ease 0s"
-							hover-background="--color-space"
-							hover-color="--white"
-							sm-padding="9px 15px 9px 15px"
-						>
-							Watch video
-						</Link>
-					</Box>
-				</Box>
-				<Box
-					display="flex"
-					width="60%"
-					position="relative"
-					align-items="center"
-					justify-content="flex-end"
-					hd-width="60%"
-					lg-width="55%"
-					lg-justify-content="center"
-					lg-align-items="center"
-					md-width="100%"
-				>
-					<Components.QuarklycommunityKitAnimation
-						width="100%"
-						test={false}
-						animation="↓ Slide In"
-						duration="1.3s"
-						timingFunction="linear"
-						trigger="onload"
-						iteration="infinite"
+						md-margin="0px 0px 66px 0px"
 					>
 						<Box
 							display="flex"
-							align-items="center"
-							justify-content="flex-end"
-							position="relative"
+							flex-direction="column"
+							align-items="flex-start"
+							margin="0px 70px 0px 0px"
+							lg-margin="0px 50px 0px 0px"
+							md-align-items="center"
+							md-justify-content="center"
+							md-margin="0px 60px 0px 60px"
+							sm-margin="0px 0px 0px 0px"
+						>
+							<Components.Masks
+								as="h3"
+								font="--decs"
+								sm-text-align="center"
+								sm-width="110%"
+								sm-font="600 13px/21px &quot;Inter&quot;, sans-serif"
+							/>
+							<Text
+								margin="30px 0px 0px 0px"
+								font="--headline2"
+								color="--white"
+								as="h1"
+								width="80%"
+								hd-width="100%"
+								lg-font="normal 800 57px/61px &quot;Epilogue&quot;, sans-serif"
+								md-text-align="center"
+								md-font="normal 800 60px/66px &quot;Epilogue&quot;, sans-serif"
+								letter-spacing=" -0.01em"
+								sm-width="100%"
+								sm-font="normal 800 35px/42px &quot;Epilogue&quot;, sans-serif"
+							>
+								Make web design feel like home
+							</Text>
+							<Text
+								margin="12px 0px 0px 0px"
+								font="--lead"
+								color="--gray"
+								md-text-align="center"
+								sm-font="normal 400 20px/27px &quot;Inter&quot;, sans-serif"
+							>
+								Use familiar graphic editor tools to create pixel-perfect Web Pages, and not just mockups. Focus on the creative part, and we'll take care of the rest.
+							</Text>
+						</Box>
+						<Box display="flex" margin="54px 0px 0px 0px" quarkly-title="Buttons">
+							<Link
+								href="/signup"
+								padding="9px 25px 9px 25px"
+								font="--menu"
+								text-decoration-line="initial"
+								border-radius="99px"
+								background="--color-orange"
+								color="--background"
+								margin="0px 18px 0px 0px"
+								border-width="2px"
+								border-style="solid"
+								border-color="--color-orange"
+								transition="background-color 0.3s ease 0s"
+								hover-background="transparent"
+								hover-color="--orange"
+								sm-padding="9px 15px 9px 15px"
+							>
+								Try for free
+							</Link>
+							<Link
+								href="#"
+								padding="9px 25px 9px 25px"
+								font="--menu"
+								text-decoration-line="initial"
+								border-radius="99px"
+								margin="0px 0px 0px 0px"
+								color="--gray"
+								border-width="2px"
+								border-style="solid"
+								border-color="--color-space"
+								transition="background-color 0.3s ease 0s"
+								hover-background="--color-space"
+								hover-color="--white"
+								sm-padding="9px 15px 9px 15px"
+							>
+								Watch video
+							</Link>
+						</Box>
+					</Box>
+					<Box
+						display="flex"
+						width="60%"
+						position="relative"
+						align-items="center"
+						justify-content="flex-end"
+						hd-width="60%"
+						lg-width="55%"
+						lg-justify-content="center"
+						lg-align-items="center"
+						md-width="100%"
+					>
+						<Components.QuarklycommunityKitAnimation
 							width="100%"
+							test
+							animation="↓ Slide In"
+							duration="1.3s"
+							timingFunction="linear"
+							trigger="onload"
+							iteration="once"
 						>
 							<Box
-								height="100%"
-								border-radius="8px"
-								width="100%"
 								display="flex"
 								align-items="center"
-								justify-content="center"
-								lg-min-height="400px"
-								lg-box-shadow="none"
-								lg-text-shadow="none"
-								md-min-height="520px"
-								hd-box-shadow="none"
-								md-padding="5px 0px 5px 0px"
-								md-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Figure.svg?v=2021-05-06T06:17:36.425Z) center center/contain no-repeat scroll padding-box"
-								sm-min-height="250px"
-								sm-padding="5px 0px 5px 0px"
-								max-width="1066px"
-								background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Figure.svg?v=2021-05-06T06:17:36.425Z) center center/contain no-repeat scroll padding-box"
-								min-height="600px"
-								padding="74px 0px 74px 0px"
-								hd-padding="14px 0px 14px 0px"
-								lg-width="100%"
-								lg-padding="44px 0px 44px 0px"
-								md-align-items="center"
-								md-justify-content="center"
+								justify-content="flex-end"
+								position="relative"
+								width="100%"
 							>
 								<Box
-									box-shadow="0px 90px 240px 100px #000000"
-									position="relative"
-									height="0px"
-									width="0px"
-									min-width="0px"
-									min-height="0px"
-									left="100px"
-									top="-13px"
+									height="100%"
+									border-radius="8px"
+									width="100%"
+									display="flex"
+									align-items="center"
+									justify-content="center"
+									lg-min-height="400px"
+									lg-box-shadow="none"
+									lg-text-shadow="none"
+									md-min-height="520px"
+									hd-box-shadow="none"
+									md-padding="5px 0px 5px 0px"
+									md-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Figure.svg?v=2021-05-06T06:17:36.425Z) center center/contain no-repeat scroll padding-box"
+									sm-min-height="250px"
+									sm-padding="5px 0px 5px 0px"
+									max-width="1066px"
+									background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Figure.svg?v=2021-05-06T06:17:36.425Z) center center/contain no-repeat scroll padding-box"
+									min-height="600px"
+									padding="74px 0px 74px 0px"
+									hd-padding="24px 0px 24px 0px"
+									lg-width="100%"
+									lg-padding="84px 0px 84px 0px"
+									md-align-items="center"
+									md-justify-content="center"
+								>
+									<Box
+										box-shadow="0px 90px 240px 100px #000000"
+										position="relative"
+										height="0px"
+										width="0px"
+										min-width="0px"
+										min-height="0px"
+										left="100px"
+										top="-13px"
+									/>
+									<Image
+										md-width="100%"
+										md-position="absolute"
+										md-height="auto"
+										md-border-radius="5px"
+										md-display="inline-block"
+										md-max-width="670px"
+										md-min-height="420px"
+										sm-min-height="205px"
+										src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/editor%20depreceated.webp?v=2021-05-09T17:41:31.199Z"
+										width="100%"
+										height="auto"
+										position="absolute"
+										box-shadow=" 0 30px 60px 0 rgb(0 0 0 / 15%),0 20px 80px 20px rgb(0 0 0 / 5%)"
+										lg-width="135%"
+										lg-right="-35%"
+										hd-width="110%"
+										hd-right="-10%"
+										md-right="auto"
+										md-bottom="auto"
+										md-top="auto"
+										md-left="auto"
+										sm-margin="0px 0px 0px 0px"
+									/>
+									<Components.PopUp
+										position="relative"
+										z-index="2"
+										left="-20px"
+										md-left="05px"
+										md-top="-20px"
+										md-right="auto"
+										md-bottom="auto"
+										sm-left="0px"
+										sm-top="0px"
+										top="-20px"
+										hd-left="20px"
+									>
+										<Override
+											slot="close"
+											z-index="99999"
+											top="20px"
+											right="20px"
+											bottom="auto"
+											left="auto"
+											size="50px"
+											transition="transform 0.5s ease 0s"
+											hover-transform="rotateZ(90deg)"
+											transform="none"
+										/>
+										<Override
+											slot="wrapper"
+											width="100%"
+											max-width="none"
+											height="100%"
+											background="rgba(24, 28, 34, 0.98)"
+										/>
+										<Override
+											slot="button"
+											border-radius="12px"
+											width="120px"
+											height="120px"
+											background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape.svg?v=2021-05-06T08:15:04.046Z)"
+											padding="8px 11px 4px 24px"
+											focus-box-shadow="none"
+											transition="transform 0.5s ease 0s"
+											hover-transform="rotateZ(360deg)"
+											lg-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape.svg?v=2021-05-06T08:15:04.046Z) 0% 0%/contain"
+											lg-width="98px"
+											lg-height="98px"
+											lg-padding="8px 11px 4px 18px"
+										/>
+									</Components.PopUp>
+								</Box>
+								<Image
+									src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/image%2033%20(1).svg?v=2021-05-08T07:44:47.173Z"
+									position="absolute"
+									left="auto"
+									right="-15px"
+									bottom="auto"
+									top="140px"
+									max-height="246px"
+									height="auto"
+									width="100%"
+									object-position="100% 0%"
+									z-index="1"
+									hd-right="-78px"
+									lg-right="-130px"
+									lg-top="50px"
+									md-right="-15px"
+									sm-max-height="90px"
+									sm-right="-20px"
+									sm-top="60px"
+									md-max-height="186px"
+									md-top="110px"
 								/>
 								<Image
-									md-width="100%"
-									md-position="absolute"
-									md-height="auto"
-									md-border-radius="5px"
-									md-display="inline-block"
-									md-max-width="670px"
-									md-min-height="420px"
-									sm-min-height="205px"
-									src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/editor%20depreceated.webp?v=2021-05-09T17:41:31.199Z"
-									width="100%"
-									height="auto"
+									src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/image%2035.svg?v=2021-05-06T06:03:05.929Z"
 									position="absolute"
-									box-shadow=" 0 30px 60px 0 rgb(0 0 0 / 15%),0 20px 80px 20px rgb(0 0 0 / 5%)"
-									lg-width="135%"
-									lg-right="-35%"
-									hd-width="110%"
-									hd-right="-10%"
-									md-right="auto"
-									md-bottom="auto"
-									md-top="auto"
-									md-left="auto"
-								/>
-								<Components.PopUp
-									position="relative"
-									z-index="2"
 									left="-20px"
-									md-left="05px"
-									md-top="-20px"
-									md-right="auto"
-									md-bottom="auto"
-									sm-left="0px"
-									sm-top="0px"
-									top="-20px"
-									hd-left="20px"
-								>
-									<Override
-										slot="close"
-										z-index="99999"
-										top="20px"
-										right="20px"
-										bottom="auto"
-										left="auto"
-										size="50px"
-										transition="transform 0.5s ease 0s"
-										hover-transform="rotateZ(90deg)"
-										transform="none"
-									/>
-									<Override
-										slot="wrapper"
-										width="100%"
-										max-width="none"
-										height="100%"
-										background="rgba(24, 28, 34, 0.98)"
-									/>
-									<Override
-										slot="button"
-										border-radius="12px"
-										width="120px"
-										height="120px"
-										background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape.svg?v=2021-05-06T08:15:04.046Z)"
-										padding="8px 11px 4px 24px"
-										focus-box-shadow="none"
-										transition="transform 0.5s ease 0s"
-										hover-transform="rotateZ(360deg)"
-										lg-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape.svg?v=2021-05-06T08:15:04.046Z) 0% 0%/contain"
-										lg-width="98px"
-										lg-height="98px"
-										lg-padding="8px 11px 4px 18px"
-									/>
-								</Components.PopUp>
+									right="0px"
+									bottom="auto"
+									top="140px"
+									lg-left="-30px"
+									lg-width="144px"
+									lg-height="306px"
+									lg-top="70px"
+									md-top="110px"
+									sm-width="66px"
+									sm-height="auto"
+									sm-left="-10px"
+									sm-top="60px"
+									hd-left="-20px"
+									hd-top="100px"
+								/>
 							</Box>
-							<Image
-								src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/image%2033%20(1).svg?v=2021-05-08T07:44:47.173Z"
-								position="absolute"
-								left="auto"
-								right="-15px"
-								bottom="auto"
-								top="140px"
-								max-height="246px"
-								height="auto"
-								width="100%"
-								object-position="100% 0%"
-								z-index="1"
-								hd-right="-78px"
-								lg-right="-130px"
-								lg-top="50px"
-								md-right="-15px"
-								sm-max-height="90px"
-								sm-right="-20px"
-								sm-top="60px"
-								md-max-height="186px"
-								md-top="110px"
-							/>
-							<Image
-								src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/image%2035.svg?v=2021-05-06T06:03:05.929Z"
-								position="absolute"
-								left="-20px"
-								right="0px"
-								bottom="auto"
-								top="140px"
-								lg-left="-30px"
-								lg-width="144px"
-								lg-height="306px"
-								lg-top="70px"
-								md-top="110px"
-								sm-width="66px"
-								sm-height="auto"
-								sm-left="-10px"
-								sm-top="60px"
-								hd-left="-20px"
-								hd-top="100px"
-							/>
-						</Box>
-					</Components.QuarklycommunityKitAnimation>
-				</Box>
+						</Components.QuarklycommunityKitAnimation>
+					</Box>
+					{" "}
+				</Section>
 				{" "}
 			</Section>
-			<Section quarkly-title="Step" padding="120px 0 150px 0" background="#0D0A1A" lg-padding="120px 0 120px 0">
+			<Section quarkly-title="Step" padding="120px 0 150px 0" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/bg2.jpg?v=2021-05-11T10:57:16.935Z) 0% 0% /cover no-repeat scroll padding-box" lg-padding="120px 0 120px 0">
 				<Override
 					slot="SectionContent"
 					flex-direction="row"
@@ -792,6 +822,8 @@ export default (() => {
 						md-padding="0px 0px 0px 0px"
 						sm-width="100%"
 						sm-margin="0px 0px 30px 0px"
+						sm-align-items="center"
+						sm-justify-content="center"
 					>
 						<Box
 							display="flex"
@@ -803,7 +835,14 @@ export default (() => {
 							sm-margin="0px 0px 0px 0px"
 							sm-padding="0px 25px 0px 25px"
 						>
-							<Box position="relative" z-index="2" background="#0D0A1A" padding="0px 36px 0px 36px">
+							<Box
+								position="relative"
+								z-index="2"
+								background="#120A2F"
+								padding="0px 36px 0px 36px"
+								md-background="#100A26"
+								sm-background="transparent"
+							>
 								<Text margin="0px 0px 0px 0px" font="--headline3" color="--white" as="h4">
 									1
 								</Text>
@@ -831,6 +870,8 @@ export default (() => {
 						md-padding="0px 0px 0px 0px"
 						sm-width="100%"
 						sm-margin="0px 0px 30px 0px"
+						sm-align-items="center"
+						sm-justify-content="center"
 					>
 						<Box
 							display="flex"
@@ -842,7 +883,14 @@ export default (() => {
 							sm-margin="0px 0px 0px 0px"
 							sm-padding="0px 25px 0px 25px"
 						>
-							<Box position="relative" z-index="2" background="#0D0A1A" padding="0px 36px 0px 36px">
+							<Box
+								position="relative"
+								z-index="2"
+								background="#110A2B"
+								padding="0px 36px 0px 36px"
+								lg-background="#120A2F"
+								sm-background="transparent"
+							>
 								<Text margin="0px 0px 0px 0px" font="--headline3" color="--white" as="h4">
 									2
 								</Text>
@@ -869,6 +917,8 @@ export default (() => {
 						margin="0px 0px 0px 0px"
 						sm-width="100%"
 						sm-margin="0px 0px 30px 0px"
+						sm-align-items="center"
+						sm-justify-content="center"
 					>
 						<Box
 							display="flex"
@@ -880,7 +930,14 @@ export default (() => {
 							sm-margin="0px 0px 0px 0px"
 							sm-padding="0px 25px 0px 25px"
 						>
-							<Box position="relative" z-index="2" background="#0D0A1A" padding="0px 36px 0px 36px">
+							<Box
+								position="relative"
+								z-index="2"
+								background="#0D0A1A"
+								padding="0px 36px 0px 36px"
+								lg-background="#110A2C"
+								sm-background="transparent"
+							>
 								<Text margin="0px 0px 0px 0px" font="--headline3" color="--white" as="h4">
 									3
 								</Text>
@@ -924,7 +981,7 @@ export default (() => {
 		<Section
 			quarkly-title="Hybrid"
 			padding="120px 0 150px 0"
-			background="--color-white"
+			background="url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/hightlight.png?v=2021-05-11T10:59:30.750Z) left center/cover no-repeat,--color-white"
 			lg-padding="120px 0 90px 0"
 			sm-padding="72px 0 72px 0"
 		>
@@ -1346,8 +1403,8 @@ export default (() => {
 		</Section>
 		<Section
 			quarkly-title="Features"
-			padding="100px 0 220px 0"
-			background="--color-black"
+			padding="100px 0 190px 0"
+			background="url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/bg3.jpg?v=2021-05-11T10:57:44.946Z) 0% 50%/cover no-repeat,--color-black"
 			lg-padding="100px 0 160px 0"
 			md-padding="72px 0 100px 0"
 			sm-padding="58px 0 70px 0px"
@@ -1551,10 +1608,27 @@ export default (() => {
 						align-items="center"
 						justify-content="center"
 						min-height="260px"
-						background="linear-gradient(0deg,rgba(0, 0, 0, 0.3) 0%,rgba(0, 0, 0, 0.3) 57.1%),rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Figure3.svg?v=2021-05-08T06:54:57.985Z) center center/contain no-repeat scroll padding-box"
+						background=",rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Figure3.svg?v=2021-05-08T06:54:57.985Z) center center/contain no-repeat scroll padding-box"
 						sm-display="none"
+						position="relative"
 					>
-						<Image loading="lazy" src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/LogoKub.svg?v=2021-05-08T07:01:45.955Z" width="115px" height="auto" />
+						<Box
+							position="absolute"
+							width="100%"
+							height="100%"
+							z-index="4"
+							background="rgba(0, 0, 0, 0) linear-gradient(0deg,rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%) 0% 0% /auto repeat scroll padding-box"
+							opacity="0.5"
+							filter="blur(20px)"
+						/>
+						<Image
+							loading="lazy"
+							src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/LogoKub.svg?v=2021-05-08T07:01:45.955Z"
+							width="115px"
+							height="auto"
+							position="relative"
+							z-index="5"
+						/>
 					</Box>
 					<Box
 						display="flex"
