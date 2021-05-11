@@ -451,7 +451,6 @@ export default (() => {
 					<Box
 						display="flex"
 						width="60%"
-						position="relative"
 						align-items="center"
 						justify-content="flex-end"
 						hd-width="60%"
@@ -469,13 +468,7 @@ export default (() => {
 							trigger="onload"
 							iteration="once"
 						>
-							<Box
-								display="flex"
-								align-items="center"
-								justify-content="flex-end"
-								position="relative"
-								width="100%"
-							>
+							<Box display="flex" align-items="center" justify-content="flex-end" width="100%">
 								<Box
 									height="100%"
 									border-radius="8px"
@@ -565,8 +558,9 @@ export default (() => {
 											slot="wrapper"
 											width="100%"
 											max-width="none"
-											height="100%"
 											background="rgba(24, 28, 34, 0.98)"
+											height="100%"
+											position="fixed"
 										/>
 										<Override
 											slot="button"
@@ -577,12 +571,17 @@ export default (() => {
 											padding="8px 11px 4px 24px"
 											focus-box-shadow="none"
 											transition="transform 0.5s ease 0s"
-											hover-transform="rotateZ(360deg)"
 											lg-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape.svg?v=2021-05-06T08:15:04.046Z) 0% 0%/contain"
 											lg-width="98px"
 											lg-height="98px"
 											lg-padding="8px 11px 4px 18px"
+											transform="scale(1)"
+											hover-transform="scale(1.15)"
 										/>
+										<Override slot="content" margin="0px 0px 0px 0px" />
+										<Override slot="popup" width="100%" />
+										<Override slot="overlay" width="100%" />
+										<Components.YouTubePlayer videoId="xpvE1ytltww" width="100%" src="https://www.youtube.com/watch?v=xpvE1ytltww" />
 									</Components.PopUp>
 								</Box>
 								<Image
@@ -1403,6 +1402,260 @@ export default (() => {
 		</Section>
 		<Section
 			quarkly-title="Features"
+			padding="120px 0 215px 0"
+			background="--color-black"
+			lg-padding="120px 0 120px 0"
+			md-padding="72px 0 95px 0"
+			sm-padding="72px 0 72px 0"
+		>
+			<Override
+				slot="SectionContent"
+				flex-direction="row"
+				flex-wrap="wrap"
+				hd-margin="0px 90px 0px 90px"
+				max-width="1600px"
+				width="100%"
+				padding="0px 0px 0px 0px"
+				hd-width="100%"
+				hd-max-width="1600px"
+				hd-flex-wrap="wrap"
+				lg-margin="0px 45px 0px 45px"
+				md-margin="0px 30px 0px 30px"
+			/>
+			<Box
+				display="flex"
+				width="100%"
+				flex-direction="column"
+				padding="0px 0px 0px 0px"
+				md-width="100%"
+			>
+				<Box padding="0px 0px 0px 0px" display="flex" flex-direction="column">
+					<Box
+						display="flex"
+						flex-direction="column"
+						align-items="flex-start"
+						margin="0px 0px 0px 0px"
+						position="relative"
+						width="100%"
+					>
+						<Box display="flex" flex-direction="column" align-items="flex-start" margin="0px 0px -21px 0px">
+							<Text
+								margin="0px 0px 0px 0px"
+								font="--decs"
+								color="--blue"
+								text-transform="uppercase"
+								letter-spacing="1.2px"
+							>
+								Features
+							</Text>
+						</Box>
+						<Components.Tabs defaultTab="one" width="100%" display="flex" md-flex-direction="column">
+							<Override
+								slot="Tablist"
+								flex-direction="column"
+								width="40%"
+								position="relative"
+								z-index="2"
+								md-width="100%"
+							/>
+							<Override
+								slot="TabPanels"
+								padding="0px 0px 0px 20px"
+								width="60%"
+								md-width="100%"
+								md-order="0"
+								md-padding="0px 0px 0px 0px"
+							/>
+							<Override
+								slot="Tab"
+								letter-spacing="-0.01em"
+								font="--features"
+								background="transparent"
+								text-align="left"
+								padding="12px 0px 12px 0px"
+								color="--gray"
+								width="130%"
+								margin="0px 0px 0px 0px"
+								hd-width="130%"
+								hd-font="700 68px/72px &quot;Epilogue&quot;, sans-serif"
+								lg-font="700 57px/60px &quot;Epilogue&quot;, sans-serif"
+								lg-width="140%"
+								md-width="100%"
+								md-font="700 60px/66px &quot;Epilogue&quot;, sans-serif"
+								sm-font="700 35px/42px &quot;Epilogue&quot;, sans-serif"
+							/>
+							<Override slot="Tab two">
+								Animation
+							</Override>
+							<Override slot="Tab one" margin="80px 0px 0px 0px">
+								<Image
+									loading="lazy"
+									width="62px"
+									height="62px"
+									src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/colors.svg?v=2021-05-06T19:28:32.611Z"
+									margin="-10px 40px 0px 0px"
+									sm-display="none"
+								/>
+								Design system
+							</Override>
+							<Override slot="Tab :active" color="--white" />
+							<Override slot="Tab three">
+								Components
+							</Override>
+							<Override slot="Tab four">
+								Publishing
+							</Override>
+							<Components.Tab tabId="one">
+								<Box
+									display="flex"
+									width="100%"
+									position="relative"
+									align-items="flex-end"
+									justify-content="flex-start"
+									flex-direction="column"
+									md-width="100%"
+								>
+									<Image
+										src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Video1.webp?v=2021-05-08T16:01:07.948Z"
+										left="auto"
+										right="0px"
+										bottom="auto"
+										top="100px"
+										height="auto"
+										width="100%"
+										object-position="100% 0%"
+										z-index="1"
+										border-radius="8px"
+									/>
+									<Text margin="24px 0px 0px 0px" font="--lead" color="#7F8A9E">
+										Create custom presets and introduce changes across multiple projects at any scale necessary.
+									</Text>
+								</Box>
+							</Components.Tab>
+							<Components.Tab tabId="two">
+								<Box
+									display="flex"
+									width="100%"
+									position="relative"
+									align-items="flex-start"
+									justify-content="flex-start"
+									flex-direction="column"
+									md-width="100%"
+								>
+									<Image
+										src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Video-min.webp?v=2021-05-08T16:00:56.889Z"
+										left="auto"
+										right="0px"
+										bottom="auto"
+										top="100px"
+										height="auto"
+										width="100%"
+										object-position="100% 0%"
+										z-index="1"
+										border-radius="8px"
+									/>
+									<Text margin="24px 0px 0px 0px" font="--lead" color="#7F8A9E">
+										Breathe some life into your web-page with stylish, professional-grade animations
+									</Text>
+								</Box>
+							</Components.Tab>
+							<Components.Tab tabId="three">
+								<Box
+									display="flex"
+									width="100%"
+									position="relative"
+									align-items="flex-start"
+									justify-content="flex-start"
+									flex-direction="column"
+									md-width="100%"
+								>
+									<Text
+										margin="0px 0px 27px 0px"
+										font="500 15px/21px --fontFamily-googleInter"
+										color="--white"
+										text-transform="uppercase"
+										letter-spacing="0.12em"
+										padding="3px 9px 3px 9px"
+										background="#4870FF"
+										border-radius="99px"
+									>
+										Coming soon{"\n\n"}
+									</Text>
+									<Image
+										src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Video-4.png?v=2021-05-11T17:56:31.040Z"
+										left="auto"
+										right="0px"
+										bottom="auto"
+										top="100px"
+										height="auto"
+										width="100%"
+										object-position="100% 0%"
+										z-index="1"
+										border-radius="8px"
+									/>
+									<Text margin="24px 0px 0px 0px" font="--lead" color="#7F8A9E">
+										Pack your brightest ideas in custom components for future reuse and improvement.
+										<br />
+										{"\n\n"}
+									</Text>
+								</Box>
+							</Components.Tab>
+							<Components.Tab tabId="four">
+								<Box
+									display="flex"
+									width="100%"
+									position="relative"
+									align-items="flex-start"
+									justify-content="flex-start"
+									flex-direction="column"
+									md-width="100%"
+								>
+									<Image
+										src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Video-5.png?v=2021-05-11T17:57:03.603Z"
+										left="auto"
+										right="0px"
+										bottom="auto"
+										top="100px"
+										height="auto"
+										width="100%"
+										object-position="100% 0%"
+										z-index="1"
+										border-radius="8px"
+										margin="0px 0px 0px 0px"
+									/>
+									<Text margin="24px 0px 0px 0px" font="--lead" color="#7F8A9E">
+										Instantly launch your design ideas into the Web – all it costs is one click.{"\n\n"}
+									</Text>
+								</Box>
+							</Components.Tab>
+						</Components.Tabs>
+						<Box display="flex" margin="120px 0px 0px 0px" quarkly-title="Buttons" md-margin="30px 0px 76px 0px">
+							<Link
+								href="/signup"
+								padding="9px 25px 9px 25px"
+								font="--menu"
+								text-decoration-line="initial"
+								border-radius="99px"
+								background="--color-orange"
+								color="--background"
+								margin="0px 0px 0px 0px"
+								border-width="2px"
+								border-style="solid"
+								border-color="--color-orange"
+								transition="background-color 0.3s ease 0s"
+								hover-background="transparent"
+								hover-color="--orange"
+							>
+								Try it today
+							</Link>
+						</Box>
+					</Box>
+				</Box>
+			</Box>
+			{" "}
+		</Section>
+		<Section
+			quarkly-title="Features"
 			padding="100px 0 190px 0"
 			background="url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/bg3.jpg?v=2021-05-11T10:57:44.946Z) 0% 50%/cover no-repeat,--color-black"
 			lg-padding="100px 0 160px 0"
@@ -1865,7 +2118,7 @@ export default (() => {
 					sm-padding="0px 30px 0px 30px"
 				>
 					<Text margin="0px 0px 24px 0px" color="--white" font="--lead">
-						Power{"\n\n"}
+						Power
 					</Text>
 					<Box display="flex" align-items="center" margin="0px 0px 9px 0px">
 						<Image
@@ -1876,7 +2129,7 @@ export default (() => {
 							margin="0px 12px 0px 0px"
 						/>
 						<Text margin="0px 0px 0px 0px" color="--gray" font="--base">
-							Top-notch animation{"\n\n"}
+							Top-notch animation
 						</Text>
 					</Box>
 					<Box display="flex" align-items="center" margin="0px 0px 9px 0px">
@@ -1888,7 +2141,7 @@ export default (() => {
 							margin="0px 12px 0px 0px"
 						/>
 						<Text margin="0px 0px 0px 0px" color="--gray" font="--base">
-							Pixel-perfect rendering{"\n\n"}
+							Pixel-perfect rendering
 						</Text>
 					</Box>
 					<Box display="flex" align-items="center" margin="0px 0px 9px 0px">
@@ -1900,7 +2153,7 @@ export default (() => {
 							margin="0px 12px 0px 0px"
 						/>
 						<Text margin="0px 0px 0px 0px" color="--gray" font="--base">
-							CSS/Flexbox firepower{"\n\n"}
+							CSS/Flexbox firepower
 						</Text>
 					</Box>
 				</Box>
@@ -1914,7 +2167,7 @@ export default (() => {
 					sm-padding="0px 30px 0px 30px"
 				>
 					<Text margin="0px 0px 24px 0px" color="--white" font="--lead">
-						Efficiency{"\n\n"}
+						Efficiency
 					</Text>
 					<Box display="flex" align-items="center" margin="0px 0px 9px 0px">
 						<Image
@@ -1925,7 +2178,7 @@ export default (() => {
 							margin="0px 12px 0px 0px"
 						/>
 						<Text margin="0px 0px 0px 0px" color="--gray" font="--base">
-							Bulk adjustments{"\n\n"}
+							Bulk adjustments
 						</Text>
 					</Box>
 					<Box display="flex" align-items="center" margin="0px 0px 9px 0px">
@@ -1937,7 +2190,7 @@ export default (() => {
 							margin="0px 12px 0px 0px"
 						/>
 						<Text margin="0px 0px 0px 0px" color="--gray" font="--base">
-							Reusable components{"\n\n"}
+							Reusable components
 						</Text>
 					</Box>
 					<Box display="flex" align-items="center" margin="0px 0px 9px 0px">
@@ -1949,7 +2202,7 @@ export default (() => {
 							margin="0px 12px 0px 0px"
 						/>
 						<Text margin="0px 0px 0px 0px" color="--gray" font="--base">
-							Instant publishing{"\n\n"}
+							Instant publishing
 						</Text>
 					</Box>
 				</Box>

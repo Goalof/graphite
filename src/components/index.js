@@ -1,4 +1,7 @@
 export { default as MobileSide2 } from "./MobileSide2"
 export { default as Masks } from "./Masks"
+export { default as YouTubePlayer } from "./YouTubePlayer"
 export { default as PopUp } from "./PopUp"
 export { default as QuarklycommunityKitAnimation } from "./QuarklycommunityKitAnimation"
+export { default as Tab } from "./Tab"
+export { default as Tabs } from "./Tabs"
