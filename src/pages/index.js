@@ -558,11 +558,12 @@ export default (() => {
 									/>
 									<Override
 										slot="wrapper"
-										width="100%"
+										width="80%"
 										max-width="none"
 										background="rgba(24, 28, 34, 0.98)"
-										height="100%"
+										height="80%"
 										position="fixed"
+										z-index="99999"
 									/>
 									<Override
 										slot="button"
@@ -580,7 +581,7 @@ export default (() => {
 										transform="scale(1)"
 										hover-transform="scale(1.15)"
 									/>
-									<Override slot="content" margin="0px 0px 0px 0px" />
+									<Override slot="content" margin="0px 0px 0px 0px" z-index="9999" />
 									<Override slot="popup" width="100%" />
 									<Override slot="overlay" width="100%" />
 									<Components.YouTubePlayer videoId="xpvE1ytltww" width="100%" src="https://www.youtube.com/watch?v=xpvE1ytltww" />
