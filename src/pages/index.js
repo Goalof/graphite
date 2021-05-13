@@ -1411,19 +1411,14 @@ export default (() => {
 								md-font="700 60px/66px &quot;Epilogue&quot;, sans-serif"
 								sm-font="700 35px/42px &quot;Epilogue&quot;, sans-serif"
 								focus-box-shadow="none"
+								transform="translateX(0px)"
+								transition="transform 0.5s ease 0s"
+								hover-transform="translateX(40px)"
 							/>
 							<Override slot="Tab two">
 								Animation
 							</Override>
 							<Override slot="Tab one" margin="80px 0px 0px 0px">
-								<Image
-									loading="lazy"
-									width="62px"
-									height="62px"
-									src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/colors.svg?v=2021-05-06T19:28:32.611Z"
-									margin="-10px 40px 0px 0px"
-									sm-display="none"
-								/>
 								Design system
 							</Override>
 							<Override slot="Tab :active" color="--white" />

@@ -114,7 +114,7 @@ const SimpleTabs = ({
 	const buttons = useMemo(() => tabs.map(({
 		tabId
 	}, i) => {
-		const onClick = () => setCurrentTab(tabId);
+		const onMouseEnter = () => setCurrentTab(tabId);
 
 		const selected = currentTab === tabId;
 		return <Button
@@ -123,7 +123,7 @@ const SimpleTabs = ({
 			tabIndex={selected ? '0' : '-1'}
 			zIndex={selected ? '2' : '1'}
 			aria-selected={selected}
-			onClick={onClick}
+			onMouseEnter={onMouseEnter}
 			{...override('Tab', `Tab ${tabId}`, selected && 'Tab :active')}
 		>
 			      
