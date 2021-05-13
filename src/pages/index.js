@@ -1483,6 +1483,7 @@ export default (() => {
 								md-width="100%"
 								md-font="700 60px/66px &quot;Epilogue&quot;, sans-serif"
 								sm-font="700 35px/42px &quot;Epilogue&quot;, sans-serif"
+								focus-box-shadow="none"
 							/>
 							<Override slot="Tab two">
 								Animation
