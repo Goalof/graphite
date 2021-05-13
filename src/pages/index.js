@@ -1445,6 +1445,8 @@ export default (() => {
 									justify-content="flex-start"
 									flex-direction="column"
 									md-width="100%"
+									top="0px"
+									right="0px"
 								>
 									<Image
 										src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Video1.webp?v=2021-05-08T16:01:07.948Z"
@@ -1480,6 +1482,8 @@ export default (() => {
 									flex-direction="column"
 									md-width="100%"
 									min-height="700px"
+									top="0px"
+									right="0px"
 								>
 									<Image
 										src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Video-min.webp?v=2021-05-08T16:00:56.889Z"
@@ -1516,6 +1520,8 @@ export default (() => {
 									md-width="100%"
 									height="100%"
 									min-height="700px"
+									top="0px"
+									right="0px"
 								>
 									<Text
 										margin="0px 0px 27px 0px"
@@ -1565,6 +1571,8 @@ export default (() => {
 									flex-direction="column"
 									md-width="100%"
 									min-height="700px"
+									top="0px"
+									right="0px"
 								>
 									<Image
 										src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Video-5.png?v=2021-05-11T17:57:03.603Z"
