@@ -187,9 +187,11 @@ export default (() => {
 										transition="opacity 0.4s ease 0s"
 										lg-margin="0px 0px 8px 0px"
 										lg-font="600 24px --fontFamily-googleMontserrat"
-										sm-font="600 20px --fontFamily-googleMontserrat"
+										sm-font="600 20px/24px --fontFamily-googleInter"
 										sm-text-align="center"
 										hover-color="#001A51"
+										sm-color="--white"
+										sm-margin="0px 0px 12px 0px"
 									>
 										О нас
 									</Link>
@@ -202,9 +204,11 @@ export default (() => {
 										transition="opacity 0.4s ease 0s"
 										lg-margin="0px 0px 8px 0px"
 										lg-font="600 24px --fontFamily-googleMontserrat"
-										sm-font="600 20px --fontFamily-googleMontserrat"
+										sm-font="600 20px/24px --fontFamily-googleInter"
 										sm-text-align="center"
 										hover-color="#001A51"
+										sm-color="--white"
+										sm-margin="0px 0px 12px 0px"
 									>
 										Категории игр
 									</Link>
@@ -217,9 +221,11 @@ export default (() => {
 										transition="opacity 0.4s ease 0s"
 										lg-margin="0px 0px 8px 0px"
 										lg-font="600 24px --fontFamily-googleMontserrat"
-										sm-font="600 20px --fontFamily-googleMontserrat"
+										sm-font="600 20px/24px --fontFamily-googleInter"
 										sm-text-align="center"
 										hover-color="#001A51"
+										sm-color="--white"
+										sm-margin="0px 0px 12px 0px"
 									>
 										Состав Союза
 									</Link>
@@ -232,9 +238,11 @@ export default (() => {
 										transition="opacity 0.4s ease 0s"
 										lg-margin="0px 0px 8px 0px"
 										lg-font="600 24px --fontFamily-googleMontserrat"
-										sm-font="600 20px --fontFamily-googleMontserrat"
+										sm-font="600 20px/24px --fontFamily-googleInter"
 										sm-text-align="center"
 										hover-color="#001A51"
+										sm-color="--white"
+										sm-margin="0px 0px 12px 0px"
 									>
 										События
 									</Link>
@@ -247,9 +255,11 @@ export default (() => {
 										transition="opacity 0.4s ease 0s"
 										lg-margin="0px 0px 8px 0px"
 										lg-font="600 24px --fontFamily-googleMontserrat"
-										sm-font="600 20px --fontFamily-googleMontserrat"
+										sm-font="600 20px/24px --fontFamily-googleInter"
 										sm-text-align="center"
 										hover-color="#001A51"
+										sm-color="--white"
+										sm-margin="0px 0px 12px 0px"
 									>
 										Партнеры
 									</Link>
