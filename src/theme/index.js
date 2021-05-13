@@ -27,13 +27,13 @@ export default {
 		]
 	},
 	"color": {
-		"dark": "#04080C",
+		"dark": "transparent",
 		"darkL1": "#0E1317",
 		"darkL2": "#191E22",
 		"grey": "#6F839F",
 		"greyD1": "#637897",
 		"greyD2": "#586D8E",
-		"light": "#F7FBFF",
+		"light": "transparent",
 		"lightD1": "#EDF2F6",
 		"lightD2": "#E4E8EC",
 		"green": "#00875A",
