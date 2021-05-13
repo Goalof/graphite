@@ -584,7 +584,13 @@ export default (() => {
 									<Override slot="content" margin="0px 0px 0px 0px" z-index="9999" />
 									<Override slot="popup" width="100%" />
 									<Override slot="overlay" width="100%" />
-									<Components.YouTubePlayer videoId="xpvE1ytltww" width="100%" src="https://www.youtube.com/watch?v=xpvE1ytltww" />
+									<Components.YouTubePlayer
+										videoId="xpvE1ytltww"
+										width="100%"
+										src="https://www.youtube.com/watch?v=xpvE1ytltww"
+										position="relative"
+										z-index="99999999"
+									/>
 								</Components.PopUp>
 							</Box>
 							<Image
