@@ -1428,12 +1428,20 @@ export default (() => {
 							<Override slot="Tab four">
 								Publishing
 							</Override>
-							<Components.Tab tabId="one" min-height="700px" position="relative">
+							<Components.Tab
+								tabId="one"
+								min-height="750px"
+								position="absolute"
+								right="0px"
+								top="0px"
+								left="auto"
+								bottom="auto"
+								width="65%"
+							>
 								<Box
 									display="flex"
 									width="100%"
 									position="sticky"
-									align-items="flex-end"
 									justify-content="flex-start"
 									flex-direction="column"
 									md-width="100%"
@@ -1455,7 +1463,14 @@ export default (() => {
 									</Text>
 								</Box>
 							</Components.Tab>
-							<Components.Tab tabId="two" min-height="700px" position="relative">
+							<Components.Tab
+								tabId="two"
+								min-height="750px"
+								position="absolute"
+								top="0px"
+								right="0px"
+								width="65%"
+							>
 								<Box
 									display="flex"
 									width="100%"
@@ -1483,7 +1498,14 @@ export default (() => {
 									</Text>
 								</Box>
 							</Components.Tab>
-							<Components.Tab tabId="three" position="relative" min-height="700px">
+							<Components.Tab
+								tabId="three"
+								position="absolute"
+								min-height="750px"
+								top="0px"
+								right="0px"
+								width="65%"
+							>
 								<Box
 									display="flex"
 									width="100%"
@@ -1526,7 +1548,14 @@ export default (() => {
 									</Text>
 								</Box>
 							</Components.Tab>
-							<Components.Tab tabId="four" min-height="700px" position="relative">
+							<Components.Tab
+								tabId="four"
+								min-height="750px"
+								position="absolute"
+								top="0px"
+								right="0px"
+								width="65%"
+							>
 								<Box
 									display="flex"
 									width="100%"
@@ -1565,14 +1594,13 @@ export default (() => {
 								border-radius="99px"
 								background="--color-orange"
 								color="--background"
-								margin="0px 0px 0px 0px"
+								margin="180px 0px 0px 0px"
 								border-width="2px"
 								border-style="solid"
 								border-color="--color-orange"
 								transition="background-color 0.3s ease 0s"
 								hover-background="transparent"
 								hover-color="--orange"
-								position="absolute"
 								left="0px"
 								right="auto"
 								bottom="0px"
