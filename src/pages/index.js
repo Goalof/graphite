@@ -470,9 +470,7 @@ export default (() => {
 						>
 							<Box display="flex" align-items="center" justify-content="flex-end" width="100%">
 								<Box
-									height="100%"
 									border-radius="8px"
-									width="100%"
 									display="flex"
 									align-items="center"
 									justify-content="center"
@@ -485,15 +483,17 @@ export default (() => {
 									md-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Figure.svg?v=2021-05-06T06:17:36.425Z) center center/contain no-repeat scroll padding-box"
 									sm-min-height="250px"
 									sm-padding="5px 0px 5px 0px"
-									max-width="1066px"
 									background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Figure.svg?v=2021-05-06T06:17:36.425Z) center center/contain no-repeat scroll padding-box"
-									min-height="600px"
 									padding="74px 0px 74px 0px"
 									hd-padding="24px 0px 24px 0px"
 									lg-width="100%"
 									lg-padding="84px 0px 84px 0px"
 									md-align-items="center"
 									md-justify-content="center"
+									height="100%"
+									max-width="1066px"
+									min-height="600px"
+									width="100%"
 								>
 									<Box
 										box-shadow="0px 90px 240px 100px #000000"
@@ -1227,6 +1227,7 @@ export default (() => {
 			lg-padding="120px 0 120px 0"
 			md-padding="72px 0 95px 0"
 			sm-padding="72px 0 72px 0"
+			display="none"
 		>
 			<Override
 				slot="SectionContent"
@@ -1656,7 +1657,7 @@ export default (() => {
 			{" "}
 		</Section>
 		<Section
-			quarkly-title="Features"
+			quarkly-title="EcoSystem"
 			padding="100px 0 190px 0"
 			background="url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/bg3.jpg?v=2021-05-11T10:57:44.946Z) 0% 50%/cover no-repeat,--color-black"
 			lg-padding="100px 0 160px 0"
