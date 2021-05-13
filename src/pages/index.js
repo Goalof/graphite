@@ -1428,7 +1428,7 @@ export default (() => {
 							<Override slot="Tab four">
 								Publishing
 							</Override>
-							<Components.Tab tabId="one">
+							<Components.Tab tabId="one" min-height="700px" position="relative">
 								<Box
 									display="flex"
 									width="100%"
@@ -1437,7 +1437,6 @@ export default (() => {
 									justify-content="flex-start"
 									flex-direction="column"
 									md-width="100%"
-									min-height="700px"
 								>
 									<Image
 										src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Video1.webp?v=2021-05-08T16:01:07.948Z"
@@ -1456,7 +1455,7 @@ export default (() => {
 									</Text>
 								</Box>
 							</Components.Tab>
-							<Components.Tab tabId="two">
+							<Components.Tab tabId="two" min-height="700px" position="relative">
 								<Box
 									display="flex"
 									width="100%"
@@ -1484,7 +1483,7 @@ export default (() => {
 									</Text>
 								</Box>
 							</Components.Tab>
-							<Components.Tab tabId="three" position="relative">
+							<Components.Tab tabId="three" position="relative" min-height="700px">
 								<Box
 									display="flex"
 									width="100%"
@@ -1527,7 +1526,7 @@ export default (() => {
 									</Text>
 								</Box>
 							</Components.Tab>
-							<Components.Tab tabId="four">
+							<Components.Tab tabId="four" min-height="700px" position="relative">
 								<Box
 									display="flex"
 									width="100%"
@@ -1557,7 +1556,7 @@ export default (() => {
 								</Box>
 							</Components.Tab>
 						</Components.Tabs>
-						<Box display="flex" margin="120px 0px 0px 0px" quarkly-title="Buttons" md-margin="30px 0px 76px 0px">
+						<Box display="flex" margin="0px 0px 0px 0px" quarkly-title="Buttons" md-margin="30px 0px 76px 0px">
 							<Link
 								href="/signup"
 								padding="9px 25px 9px 25px"
