@@ -1430,7 +1430,7 @@ export default (() => {
 							</Override>
 							<Components.Tab
 								tabId="one"
-								min-height="750px"
+								min-height="850px"
 								position="absolute"
 								right="0px"
 								top="0px"
@@ -1447,6 +1447,7 @@ export default (() => {
 									md-width="100%"
 									top="0px"
 									right="0px"
+									bottom="0px"
 								>
 									<Image
 										src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Video1.webp?v=2021-05-08T16:01:07.948Z"
@@ -1467,7 +1468,7 @@ export default (() => {
 							</Components.Tab>
 							<Components.Tab
 								tabId="two"
-								min-height="750px"
+								min-height="850px"
 								position="absolute"
 								top="0px"
 								right="0px"
@@ -1484,6 +1485,7 @@ export default (() => {
 									min-height="700px"
 									top="0px"
 									right="0px"
+									bottom="0px"
 								>
 									<Image
 										src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Video-min.webp?v=2021-05-08T16:00:56.889Z"
@@ -1505,7 +1507,7 @@ export default (() => {
 							<Components.Tab
 								tabId="three"
 								position="absolute"
-								min-height="750px"
+								min-height="850px"
 								top="0px"
 								right="0px"
 								width="65%"
@@ -1522,6 +1524,7 @@ export default (() => {
 									min-height="700px"
 									top="0px"
 									right="0px"
+									bottom="0px"
 								>
 									<Text
 										margin="0px 0px 27px 0px"
@@ -1556,7 +1559,7 @@ export default (() => {
 							</Components.Tab>
 							<Components.Tab
 								tabId="four"
-								min-height="750px"
+								min-height="850px"
 								position="absolute"
 								top="0px"
 								right="0px"
@@ -1573,6 +1576,7 @@ export default (() => {
 									min-height="700px"
 									top="0px"
 									right="0px"
+									bottom="0px"
 								>
 									<Image
 										src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Video-5.png?v=2021-05-11T17:57:03.603Z"
