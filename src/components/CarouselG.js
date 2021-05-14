@@ -60,7 +60,7 @@ const slides = [{
 
 const DESKTOP_HD = '1280';
 const Content = styled(Box)`
-	--qtheme-carousel-margin-left: calc((100vw - ${DESKTOP_HD}px) / 2 - 25px);
+	--qtheme-carousel-margin-left: calc((100vw - ${DESKTOP_HD}px) / 2 - 30px);
 	--qtheme-carousel-margin-right: calc((100vw - ${DESKTOP_HD}px) / 2 - 30px);
 
 	&::-webkit-scrollbar {
@@ -103,7 +103,21 @@ const CarouselG = () => {
 			contentRef.current.scrollTo(scrollOptions);
 		}
 	}, []);
-	return <Section position="relative" padding="120px 0 150px 0" background="--color-white">
+	return <Section
+		position="relative"
+		background="--color-white"
+		padding="120px 0 150px 0"
+		sm-padding="60px 0 90px 0px"
+		justify-content="center"
+	>
+		<Override
+			slot="SectionContent"
+			max-width="100%"
+			padding="0px 0px 0px 0px"
+			margin="0px 90px 0px 90px"
+			lg-margin="0px 45px 0px 45px"
+			md-margin="0px 30px 0px 30px"
+		/>
 		<Text
 			margin="0px 0px 30px 0px"
 			font="--decs"
@@ -111,7 +125,7 @@ const CarouselG = () => {
 			text-transform="uppercase"
 			letter-spacing="1.8px"
 		>
-			 UPcOMING FeATURES 
+			 Upcoming features 
 		</Text>
 		<Stack>
 			<StackItem flex="1 1 auto">
@@ -121,7 +135,7 @@ const CarouselG = () => {
 					margin="0px 0px 60px 0px"
 					color="--background"
 					letter-spacing="-0.01em"
-					font="--headline25"
+					font="--hero3"
 					md-font="--headline25"
 					text-align="left"
 				>
@@ -163,7 +177,14 @@ const CarouselG = () => {
 				position="relative"
 				ref={contentRef}
 			>
-				<Box padding-left="--carousel-margin-left" padding-right="--carousel-margin-right" display="flex" min-width="auto">
+				<Box
+					padding="0 70px 0 70px"
+					lg-padding="0 45px 0 45px"
+					md-padding="0 30px 0 30px"
+					sm-padding="0 30px 0 30px"
+					display="flex"
+					min-width="auto"
+				>
 					{slides.map(item => <Box
 						display="flex"
 						flex-direction="column"
@@ -198,11 +219,13 @@ const CarouselG = () => {
 							transform="translate(-15px, 0) rotate(45deg)"
 							margin="2px"
 							background={item.isDone ? '#14CC86' : "#4870FF"}
-							border-radius="5px"
-							width="12px"
-							height="12px"
+							border-radius="3px"
+							width="10px"
+							min-width="10px"
+							height="10px"
+							min-height="10px"
 							position="absolute"
-							bottom="6px"
+							bottom="10px"
 							z-index="2"
 						/>
 					</Box>)}

@@ -28,21 +28,24 @@ export default (() => {
 			>
 				<Section
 					quarkly-title="Header"
-					sm-padding="37px 0 37px 0"
 					justify-content="center"
 					width="100%"
 					padding="36px 0 36px 0"
 					height="114px"
 					box-sizing="border-box"
+					sm-padding="24px 0 24px 0"
+					sm-height="auto"
 				>
 					<Override
 						slot="SectionContent"
-						max-width="1600px"
+						max-width="1920px"
 						hd-margin="0px 90px 0px 90px"
 						lg-margin="0px 45px 0px 45px"
 						md-margin="0px 30px 0px 30px"
 						margin="0px 90px 0px 90px"
 						flex-direction="row"
+						sm-width="100%"
+						width="100%"
 					/>
 					<Box
 						width="30%"
@@ -256,22 +259,22 @@ export default (() => {
 				</Section>
 				<Section
 					quarkly-title="HeroBlock"
-					md-padding="60px 0 90px 0"
 					justify-content="center"
 					width="100%"
 					padding="66px 0 66px 0"
 					height="100%"
+					md-padding="60px 0 90px 0"
 					md-height="auto"
 				>
 					<Override
 						slot="SectionContent"
-						max-width="1600px"
+						max-width="1920px"
 						lg-margin="0px 45px 0px 45px"
-						md-margin="0px 50px 0px 50px"
 						md-background="none"
-						md-padding="0px 0px 0px 0px"
 						sm-margin="0px 30px 0px 30px"
 						margin="0px 90px 0px 90px"
+						md-margin="0px 30px 0px 30px"
+						width="100%"
 					/>
 					<Box
 						margin="0px -15px 0px -15px"
@@ -287,31 +290,31 @@ export default (() => {
 							width="33.33333%"
 							flex-direction="column"
 							align-items="flex-start"
-							justify-content="center"
-							md-width="80%"
-							md-align-items="center"
 							padding="0px 15px 0px 15px"
 							box-sizing="border-box"
 							quarkly-title="Col"
 							lg-min-width="400px"
-							md-margin="0px 0px 48px 0px"
+							md-margin="0px 0px 72px 0px"
+							md-align-items="center"
+							md-width="68%"
+							md-min-width="none"
 						>
 							<Box
 								display="flex"
 								flex-direction="column"
-								md-align-items="center"
-								md-justify-content="center"
 								align-items="flex-start"
 								margin="0px 0px 42px 0px"
+								md-align-items="center"
+								sm-flex-wrap="wrap"
 							>
 								<Components.Masks
 									as="h3"
 									font="--decs"
 									sm-text-align="center"
-									sm-width="110%"
-									sm-font="600 13px/21px &quot;Inter&quot;, sans-serif"
+									sm-font="700 13px/21px &quot;Inter&quot;, sans-serif"
 									letter-spacing="1.8px"
 									margin="0px 0px 30px 0px"
+									sm-width="100%"
 								/>
 								<Text
 									font="normal 800 68px/72px --fontFamily-googleEpilogue"
@@ -322,9 +325,10 @@ export default (() => {
 									md-text-align="center"
 									md-font="normal 800 60px/66px &quot;Epilogue&quot;, sans-serif"
 									letter-spacing=" -0.8px"
-									sm-width="100%"
 									sm-font="normal 800 35px/42px &quot;Epilogue&quot;, sans-serif"
 									margin="0 0px 12px 0px"
+									sm-letter-spacing={0}
+									sm-width="320px"
 								>
 									Make web design feel like home
 								</Text>
@@ -333,7 +337,7 @@ export default (() => {
 									font="--lead"
 									color="--gray"
 									md-text-align="center"
-									sm-font="normal 400 20px/27px &quot;Inter&quot;, sans-serif"
+									sm-width="320px"
 								>
 									Use familiar graphic editor tools to create pixel-perfect Web Pages, and not just mockups. Focus on the creative part, and we'll take care of the rest.
 								</Text>
@@ -398,6 +402,7 @@ export default (() => {
 								src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/figure.svg?v=2021-05-14T12:56:41.978Z"
 								position="absolute"
 								quarkly-title="FigureSVG"
+								max-width="758px"
 							/>
 							<Image
 								md-width="126%"
@@ -410,15 +415,15 @@ export default (() => {
 								box-shadow=" 0 30px 60px 0 rgb(0 0 0 / 15%),0 20px 80px 20px rgb(0 0 0 / 5%)"
 								sm-margin="0px 0px 0px 0px"
 								md-position="relative"
+								max-width="1080px"
 							/>
 							<Box
 								width="68px"
 								height="68px"
 								position="absolute"
 								border-radius="999px"
-								box-shadow="0 90px 240px 100px #000"
+								box-shadow="0 50px 160px 90px #000"
 								quarkly-title="Shadow"
-								background="#030304"
 							/>
 							<Image
 								src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/image%2033.png?v=2021-05-11T11:40:50.491Z"
@@ -437,11 +442,15 @@ export default (() => {
 								md-right={0}
 								md-left="auto"
 								sm-display="none"
+								max-width="212px"
+								hd-left="auto"
+								hd-right="-10vw"
+								md-width="19vw"
 							/>
 							<Image
 								src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/image%2035.png?v=2021-05-11T11:40:47.549Z"
 								position="absolute"
-								left="-48%"
+								left="-15vw"
 								right="auto"
 								sm-width="66px"
 								sm-height="auto"
@@ -453,98 +462,59 @@ export default (() => {
 								margin="-26px 0px 0px 0px"
 								md-left={0}
 								sm-display="none"
+								max-width="212px"
+								hd-left="-12vw"
+								md-width="20vw"
 							/>
-							<Box
-								display="flex"
-								align-items="center"
-								justify-content="center"
-								width="100%"
-								position="absolute"
-							>
-								<Components.PopUp position="absolute" z-index="2">
-									<Override
-										slot="close"
-										z-index="99999"
-										top="20px"
-										right="20px"
-										bottom="auto"
-										left="auto"
-										size="50px"
-										transition="transform 0.5s ease 0s"
-										hover-transform="rotateZ(90deg)"
-										transform="none"
-									/>
-									<Override
-										slot="wrapper"
-										width="80%"
-										max-width="none"
-										background="rgba(24, 28, 34, 0.98)"
-										height="80%"
-										position="fixed"
-										z-index="99999"
-									/>
-									<Override
-										slot="button"
-										border-radius="12px"
-										width="120px"
-										height="120px"
-										background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape.svg?v=2021-05-06T08:15:04.046Z)"
-										padding="8px 11px 4px 24px"
-										focus-box-shadow="none"
-										transition="transform 0.5s ease 0s"
-										lg-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape.svg?v=2021-05-06T08:15:04.046Z) 0% 0%/contain"
-										lg-width="98px"
-										lg-height="98px"
-										lg-padding="8px 11px 4px 18px"
-										transform="scale(1)"
-										hover-transform="scale(1.15)"
-									/>
-									<Override slot="content" margin="0px 0px 0px 0px" z-index="9999" />
-									<Override slot="popup" width="100%" />
-									<Override slot="overlay" width="100%" />
-									<Components.YouTubePlayer
-										videoId="xpvE1ytltww"
-										width="100%"
-										src="https://www.youtube.com/watch?v=xpvE1ytltww"
-										position="relative"
-										z-index="99999999"
-									/>
-								</Components.PopUp>
-								<Box
-									border-radius="8px"
-									display="flex"
-									align-items="center"
-									justify-content="center"
-									lg-min-height="400px"
-									lg-box-shadow="none"
-									lg-text-shadow="none"
-									md-min-height="520px"
-									hd-box-shadow="none"
-									md-padding="5px 0px 5px 0px"
-									sm-padding="5px 0px 5px 0px"
-									padding="24px 0px 24px 0px"
-									lg-width="100%"
-									lg-padding="84px 0px 84px 0px"
-									md-align-items="center"
-									md-justify-content="center"
-									height="100%"
-									max-width="1066px"
-									min-height="600px"
+							<Components.PopUp position="absolute" z-index="2">
+								<Override
+									slot="close"
+									z-index="99999"
+									top="20px"
+									right="20px"
+									bottom="auto"
+									left="auto"
+									size="50px"
+									transition="transform 0.5s ease 0s"
+									hover-transform="rotateZ(90deg)"
+									transform="none"
+								/>
+								<Override
+									slot="wrapper"
+									width="80%"
+									max-width="none"
+									background="rgba(24, 28, 34, 0.98)"
+									height="80%"
+									position="fixed"
+									z-index="99999"
+								/>
+								<Override
+									slot="button"
+									border-radius="12px"
+									width="120px"
+									height="120px"
+									background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape.svg?v=2021-05-06T08:15:04.046Z)"
+									padding="8px 11px 4px 24px"
+									focus-box-shadow="none"
+									transition="transform 0.5s ease 0s"
+									lg-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape.svg?v=2021-05-06T08:15:04.046Z) 0% 0%/contain"
+									lg-width="98px"
+									lg-height="98px"
+									lg-padding="8px 11px 4px 18px"
+									transform="scale(1)"
+									hover-transform="scale(1.15)"
+								/>
+								<Override slot="content" margin="0px 0px 0px 0px" z-index="9999" />
+								<Override slot="popup" width="100%" />
+								<Override slot="overlay" width="100%" />
+								<Components.YouTubePlayer
+									videoId="xpvE1ytltww"
 									width="100%"
-									position="absolute"
-								>
-									<Box
-										box-shadow="0px 90px 240px 100px #000000"
-										position="relative"
-										height="0px"
-										width="0px"
-										min-width="0px"
-										min-height="0px"
-										left="100px"
-										top="-13px"
-									/>
-								</Box>
-							</Box>
+									src="https://www.youtube.com/watch?v=xpvE1ytltww"
+									position="relative"
+									z-index="99999999"
+								/>
+							</Components.PopUp>
 						</Box>
 					</Box>
 					{" "}
@@ -567,6 +537,7 @@ export default (() => {
 					md-justify-content="center"
 					margin="0px 90px 0px 90px"
 					md-margin="0px 30px 0px 30px"
+					width="100%"
 				/>
 				<Box
 					display="flex"
@@ -949,6 +920,7 @@ export default (() => {
 				lg-margin="0px 45px 0px 45px"
 				md-margin="0px 30px 0px 30px"
 				margin="0px 90px 0px 90px"
+				width="100%"
 			/>
 			<Box
 				display="flex"
@@ -1464,13 +1436,11 @@ export default (() => {
 								color="--gray"
 								width="130%"
 								margin="0px 0px 0px 0px"
-								hd-width="130%"
-								hd-font="700 68px/72px &quot;Epilogue&quot;, sans-serif"
 								lg-font="800 57px/60px &quot;Epilogue&quot;, sans-serif"
 								lg-width="140%"
 								md-width="100%"
 								md-font="700 60px/66px &quot;Epilogue&quot;, sans-serif"
-								sm-font="700 35px/42px &quot;Epilogue&quot;, sans-serif"
+								sm-font="800 35px/42px &quot;Epilogue&quot;, sans-serif"
 								focus-box-shadow="none"
 								transform="translateX(0px)"
 								transition="transform 0.5s ease 0s"
@@ -2314,13 +2284,15 @@ export default (() => {
 				position="relative"
 			>
 				<Box
-					background="#030304"
+					background="#020203"
 					width="446px"
 					height="446px"
 					position="absolute"
 					border-radius="999px"
 					filter="blur(108px)"
-					box-shadow="0 0 240px 100px #030304"
+					box-shadow="0 0 240px 100px #020203"
+					sm-width="300px"
+					sm-height="300px"
 				/>
 				<Text
 					margin="0px 0px 18px 0px"
@@ -2338,7 +2310,6 @@ export default (() => {
 					color="--gray"
 					font="--headline4"
 					letter-spacing="-0.01em"
-					hd-font="normal 500 20px/27px &quot;Inter&quot;, sans-serif"
 					sm-text-align="center"
 					position="relative"
 				>
