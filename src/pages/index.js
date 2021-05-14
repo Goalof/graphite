@@ -481,10 +481,10 @@ export default (() => {
 								/>
 								<Override
 									slot="wrapper"
-									width="80%"
+									width="100%"
 									max-width="none"
 									background="rgba(24, 28, 34, 0.98)"
-									height="80%"
+									height="100%"
 									position="fixed"
 									z-index="99999"
 								/>
@@ -2275,7 +2275,7 @@ export default (() => {
 				width="100%"
 				justify-content="center"
 				padding="150px 0px 150px 0px"
-				background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Figure2.svg?v=2021-05-06T20:06:00.273Z) center center/contain no-repeat scroll padding-box"
+				background="rgba(0, 0, 0, 0.86) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Figure2.svg?v=2021-05-06T20:06:00.273Z) center center/contain no-repeat scroll padding-box"
 				md-padding="100px 0px 100px 0px"
 				sm-width="100%"
 				sm-padding="100px 0px30px 100px 30px"
@@ -2284,15 +2284,11 @@ export default (() => {
 				position="relative"
 			>
 				<Box
-					background="#020203"
-					width="446px"
-					height="446px"
+					background="rgba(2, 2, 3, 0.68)"
+					width="100%"
+					height="546px"
 					position="absolute"
 					border-radius="999px"
-					filter="blur(108px)"
-					box-shadow="0 0 240px 100px #020203"
-					sm-width="300px"
-					sm-height="300px"
 				/>
 				<Text
 					margin="0px 0px 18px 0px"
