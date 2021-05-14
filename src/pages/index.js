@@ -358,8 +358,6 @@ export default (() => {
 						<Box
 							display="flex"
 							width="50%"
-							align-items="center"
-							justify-content="flex-end"
 							hd-width="60%"
 							lg-width="55%"
 							lg-justify-content="center"
@@ -371,7 +369,17 @@ export default (() => {
 							quarkly-title="Col"
 						>
 							<Box display="flex" align-items="center" justify-content="flex-end" width="100%">
-								<Image width="64px" height="64px" />
+								<Image
+									width="812.737435546875px"
+									height="657.5350341796875px"
+									src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/figure.svg?v=2021-05-14T12:56:41.978Z"
+									bottom="-97.3305341796875px"
+									left="-207.925px"
+									right="50.153564453125px"
+									top="-46.2217px"
+									position="absolute"
+									quarkly-title="FigureSVG"
+								/>
 								<Box
 									border-radius="8px"
 									display="flex"
@@ -386,7 +394,6 @@ export default (() => {
 									md-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Figure.svg?v=2021-05-06T06:17:36.425Z) center center/contain no-repeat scroll padding-box"
 									sm-min-height="250px"
 									sm-padding="5px 0px 5px 0px"
-									background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Figure.svg?v=2021-05-06T06:17:36.425Z) center center/contain no-repeat scroll padding-box"
 									padding="24px 0px 24px 0px"
 									hd-padding="74px 0px 74px 0px"
 									lg-width="100%"
@@ -499,12 +506,12 @@ export default (() => {
 									src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/image%2033.png?v=2021-05-11T11:40:50.491Z"
 									position="absolute"
 									left="auto"
-									right="-55px"
+									right="0px"
 									bottom="auto"
-									top="100px"
+									top="101px"
 									max-height="246px"
-									height="auto"
-									width="100%"
+									height="228.08245849609375px"
+									width="159.1468505859375px"
 									object-position="100% 0%"
 									z-index="1"
 									hd-right="-130px"
@@ -2482,6 +2489,7 @@ export default (() => {
 			md-padding="60px 0 90px 0"
 			background="--color-background"
 			min-height="100vh"
+			display="none"
 		>
 			<Override
 				slot="SectionContent"
