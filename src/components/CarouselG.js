@@ -78,8 +78,7 @@ const CarouselG = () => {
 			const scrollOptions = {
 				left: SLIDE_WIDTH * 7,
 				// до 7го слайда
-				top: 0,
-				behavior: "smooth"
+				top: 0
 			};
 			contentRef.current.scrollTo(scrollOptions);
 		}
@@ -198,7 +197,7 @@ const CarouselG = () => {
 						<Box
 							transform="translate(-15px, 0) rotate(45deg)"
 							margin="2px"
-							background="#4870FF"
+							background={item.isDone ? '#14CC86' : "#4870FF"}
 							border-radius="5px"
 							width="12px"
 							height="12px"

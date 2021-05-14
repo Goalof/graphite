@@ -91,7 +91,7 @@ export default {
         opacity: 0;
         will-change: transform, opacity, filter;
         transform: translate3d(0px, 30px, 0px);
-        filter: blur(5px);
+        filter: blur(0px);
         transform-style: preserve-3d;
       }
       100% {
