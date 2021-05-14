@@ -2460,6 +2460,7 @@ export default (() => {
 			md-padding="60px 0 90px 0"
 			background="--color-background"
 			min-height="100vh"
+			display="none"
 		>
 			<Override
 				slot="SectionContent"
