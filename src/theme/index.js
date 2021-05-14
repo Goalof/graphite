@@ -16,13 +16,13 @@ export default {
 		"lg": [
 			{
 				"type": "max-width",
-				"value": "1200"
+				"value": "1400"
 			}
 		],
 		"hd": [
 			{
-				"type": "max-width",
-				"value": "1690"
+				"type": "min-width",
+				"value": "1700"
 			}
 		]
 	},
@@ -46,6 +46,7 @@ export default {
 		"white": "#ECF2F5",
 		"background": "#191925",
 		"blue": "#334AF4",
+		"blueLight": "#507FFF",
 		"gray": "#B5C0CC",
 		"space": "#2E3040",
 		"snow": "#FFFFFF",
@@ -68,15 +69,17 @@ export default {
 	"font": {
 		"headline1": "normal 800 101px/108px --fontFamily-googleEpilogue",
 		"headline2": "normal 800 68px/72px --fontFamily-googleEpilogue",
-		"headline3": "normal 500 29px/39px --fontFamily-googleEpilogue",
-		"base": "normal 400 17px/24px --fontFamily-googleInter",
-		"lead": "normal 500 20px/27px --fontFamily-googleInter",
-		"headline25": "normal 700 60px/72px --fontFamily-googleEpilogue",
-		"headline4": "normal 500 24px/30px --fontFamily-googleInter",
-		"menu": "600 17px/24px --fontFamily-googleInter",
-		"features": "700 81px/85px --fontFamily-googleEpilogue",
-		"footer": "600 14px/18px --fontFamily-googleInter",
-		"decs": "600 15px/21px --fontFamily-googleInter"
+		"headline3": "normal 400 29px/39px PTRootUIWeb, sans-serif",
+		"base": "normal 400 17px/24px PTRootUIWeb, sans-serif",
+		"lead": "normal 400 20px/27px PTRootUIWeb, sans-serif",
+		"headline25": "normal 800 60px/72px --fontFamily-googleEpilogue",
+		"hero3": "800 50px/60px --fontFamily-googleEpilogue",
+		"headline4": "normal 400 24px/30px PTRootUIWeb, sans-serif",
+		"menu": "700 17px/24px PTRootUIWeb, sans-serif",
+		"features": "800 81px/85px --fontFamily-googleEpilogue",
+		"footer": "700 14px/18px PTRootUIWeb, sans-serif",
+		"decs": "700 15px/21px PTRootUIWeb, sans-serif",
+		"headline5": "normal 800 20px/27px --fontFamily-googleEpilogue"
 	},
 	"boxShadow": {
 		"m": "0 4px 5px -1px rgba(0, 0, 0, 0.1)",
@@ -220,5 +223,5 @@ export default {
 			}
 		}
 	},
-	"version": 71
+	"version": 115
 }

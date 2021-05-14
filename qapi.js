@@ -28,7 +28,10 @@ export default {
 			"overflow-x": "hidden"
 		},
 		"seo": {
-			"title": "Graphite — Create real sites"
+			"title": "Graphite — Create real sites",
+			"favicon_32px": "https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/favicon.png?v=2021-05-13T15:36:21.485Z",
+			"favicon_apple_152px": "",
+			"background_win10": "#020203"
 		}
 	}
 }
