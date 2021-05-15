@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override, Section } from "@quarkly/components";
 import * as Components from "components";
+import { FiMenu } from "react-icons/fi";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -90,95 +91,70 @@ export default (() => {
 							sm-justify-content="center"
 							sm-margin="0px 0px 0px 0px"
 						>
-							<Components.MobileSide2
-								flex="1 0 auto"
-								lg-position="relative"
-								lg-z-index="5"
-								lg-display="flex"
-								lg-justify-content="flex-end"
-								lg-align-items="center"
-								display="flex"
-								align-items="center"
-								justify-content="flex-end"
-							>
+							<Components.QuarklycommunityKitMobileSidePanel>
 								<Override
 									slot="Content"
-									display="flex"
-									align-items="center"
-									lg-position="fixed"
-									lg-top={0}
-									lg-left={0}
-									lg-z-index="1"
-									lg-width="100%"
-									lg-height="100%"
-									lg-background="white"
-									lg-flex-direction="column"
-									sm-background="--color-background"
-								/>
-								<Override
-									slot="Button"
-									display="none"
-									lg-display="block"
-									lg-width="44px"
-									lg-height="28px"
-									lg-position="relative"
-									lg-z-index="6"
-									md-margin="0px 0px 0px 0px"
-									sm-width="38px"
-								/>
-								<Override
-									slot="Button Line"
-									lg-background="black"
-									lg-min-height="4px"
-									lg-position="absolute"
-									sm-left="0px"
-									sm-background="--color-snow"
-								/>
-								<Override
-									slot="Button Line1"
-									lg-width="44px"
-									lg-top="0px"
-									lg-right="0px"
+									sm-box-shadow="0px 20px 40px rgba(0, 0, 0, 0.1)"
 									sm-border-radius="12px"
-									sm-width="38px"
+									sm-padding="12px 24px 12px 24px"
+									sm-width="116px"
+									sm-min-width="100px"
+									sm-margin="10px 0px 0px 0px"
 								/>
+								<Override slot="Children" sm-text-align="left" sm-display="flex" sm-flex-direction="column" />
+								<Override slot="Content :open" sm-width="116px" sm-min-width="100px" />
 								<Override
-									slot="Button Line2"
-									lg-top="12px"
-									lg-right="0px"
-									sm-left="0px"
-									sm-border-radius="12px"
-									sm-width="29px"
+									slot="Button Text"
+									sm-color="--white"
+									sm-font="--menu"
+									sm-text-transform="uppercase"
+									sm-letter-spacing="1px"
 								/>
-								<Override
-									slot="Button Line3"
-									lg-top="24px"
-									lg-right="0px"
-									sm-border-radius="12px"
-									sm-width="20px"
-								/>
-								<Override slot="Button Line1 :closed" lg-width="44px" />
-								<Override slot="Button Line2 :closed" lg-width="32px" />
-								<Override slot="Button Line3 :closed" lg-width="20px" />
-								<Override slot="Button Line2 :open" lg-opacity="0" lg-width="32px" />
-								<Override slot="Button Line1 :open" lg-width="36px" lg-transform="translateY(12px) rotate(225deg)" />
-								<Override slot="Button Line3 :open" lg-width="36px" lg-transform="translateY(-12px) rotate(135deg)" md-margin="0px 0px 0px 0px" />
-								<Override slot="Content :closed" lg-opacity="0" lg-transition="transform --transitionDuration-normal step-end 0s,opacity --transitionDuration-normal --transitionTimingFunction-easeOut" lg-transform="translateY(-100%)" />
-								<Override slot="Content :open" lg-transform="translateY(0%)" lg-transition="transform --transitionDuration-normal step-start 0s,opacity --transitionDuration-normal --transitionTimingFunction-easeOut" lg-opacity="1" />
-								<Override slot="Button :open" lg-position="fixed" md-margin="14px 0px 0px 0px" />
-								<Box
-									display="flex"
-									align-items="center"
-									justify-content="center"
-									lg-flex-direction="column"
-									lg-margin="80px 0px 0px 0px"
-									lg-width="100%"
+								<Override slot="Button Text :open">
+									menu
+								</Override>
+								<Override slot="Button Text :closed">
+									menu
+								</Override>
+								<Override slot="Button Icon,Button Icon :closed" category="fi" icon={FiMenu} />
+								<Override slot="Button Icon" sm-color="#ffffff" sm-font="30px sans-serif" />
+								<Link
+									href="#"
+									sm-text-decoration-line="initial"
+									sm-font="600 17px/24px PTRootUIWeb, sans-serif"
+									sm-color="--background"
+									sm-padding="9px 0px 9px 0px"
 								>
-									<Link href="#">
-										Some text
-									</Link>
-								</Box>
-							</Components.MobileSide2>
+									Features{"\n\n"}
+								</Link>
+								<Link
+									href="#"
+									sm-text-decoration-line="initial"
+									sm-font="600 17px/24px PTRootUIWeb, sans-serif"
+									sm-color="--background"
+									sm-padding="9px 0px 9px 0px"
+								>
+									About us{"\n\n"}
+								</Link>
+								<Link
+									href="#"
+									sm-text-decoration-line="initial"
+									sm-font="600 17px/24px PTRootUIWeb, sans-serif"
+									sm-color="--background"
+									sm-padding="9px 0px 9px 0px"
+								>
+									Log in{"\n\n"}
+								</Link>
+								<Link
+									href="#"
+									sm-text-decoration-line="initial"
+									sm-font="600 17px/24px PTRootUIWeb, sans-serif"
+									sm-color="--background"
+									sm-padding="9px 0px 9px 0px"
+								>
+									Sign up{"\n\n"}
+								</Link>
+							</Components.QuarklycommunityKitMobileSidePanel>
 						</Box>
 						<Box quarkly-title="Menu" display="flex" sm-display="none">
 							<Link
@@ -710,171 +686,180 @@ export default (() => {
 							</Text>
 						</Box>
 					</Box>
-					<Box
-						width="66.66666%"
+					<Components.Animation
 						display="flex"
-						quarkly-title="Col"
-						position="relative"
-						md-width="100%"
-						md-margin="30px -15px 0px -15px"
-						md-text-align="center"
-						sm-flex-wrap="wrap"
-						box-sizing="border-box"
-						padding="0px 15px 0px 15px"
-						md-padding="0px 0px 0px 0"
+						align-items="center"
+						animation="→ Slide In"
+						test={false}
+						duration="2s"
+						iteration="once"
 					>
 						<Box
+							width="100%"
 							display="flex"
-							width="33.33%"
-							flex-direction="column"
-							align-items="stretch"
-							justify-content="flex-start"
-							hd-width="40%"
-							sm-width="100%"
-							sm-margin="0px 0px 30px 0px"
-							sm-align-items="center"
-							sm-justify-content="center"
+							quarkly-title="Col"
 							position="relative"
+							md-width="100%"
+							md-margin="30px -15px 0px -15px"
+							md-text-align="center"
+							sm-flex-wrap="wrap"
 							box-sizing="border-box"
-							padding="0px 10px 0px 0px"
-							quarkly-title="Step"
-							md-padding="0 15px 0 15px"
-						>
-							<Hr
-								height="1px"
-								padding="0px 0px 0px 0px"
-								background="#4A5060"
-								border-color="#4A5060"
-								position="absolute"
-								left="50px"
-								right="18px"
-								z-index="1"
-								sm-display="none"
-								md-left="100%"
-								md-width="60%"
-								md-margin="16px 0px 16px -30%"
-								border-width={0}
-								top="4px"
-							/>
-							<Box
-								display="flex"
-								flex-direction="column"
-								align-items="stretch"
-								md-align-items="center"
-								sm-margin="0px 0px 0px 0px"
-								sm-padding="0px 25px 0px 25px"
-							>
-								<Text margin="0px 0px 0px 0px" font="--headline3" color="--white" as="h4">
-									1
-								</Text>
-								<Text
-									margin="18px 60px 0px 0px"
-									font="--lead"
-									color="--gray"
-									md-text-align="center"
-									md-margin="18px 0px 0px 0px"
-									lg-margin="18px 30px 0px 0px"
-								>
-									Pick a template or start from scratch
-								</Text>
-							</Box>
-						</Box>
-						<Box
-							display="flex"
-							width="33.33%"
-							flex-direction="column"
-							align-items="stretch"
-							justify-content="flex-start"
-							hd-width="40%"
-							sm-width="100%"
-							sm-margin="0px 0px 30px 0px"
-							sm-align-items="center"
-							sm-justify-content="center"
-							position="relative"
-							box-sizing="border-box"
-							padding="0px 10px 0px 10px"
-							quarkly-title="Step"
-							md-padding="0 15px 0 15px"
-						>
-							<Hr
-								height="1px"
-								padding="0px 0px 0px 0px"
-								background="#4A5060"
-								border-color="#4A5060"
-								position="absolute"
-								left="50px"
-								right="18px"
-								z-index="1"
-								sm-display="none"
-								md-left="100%"
-								md-margin="16px 0px 16px -30%"
-								md-width="60%"
-								top="4px"
-								border-width={0}
-							/>
-							<Box
-								display="flex"
-								flex-direction="column"
-								align-items="stretch"
-								md-align-items="center"
-								sm-margin="0px 0px 0px 0px"
-								sm-padding="0px 25px 0px 25px"
-							>
-								<Text margin="0px 0px 0px 0px" font="--headline3" color="--white" as="h4">
-									2
-								</Text>
-								<Text
-									margin="18px 60px 0px 0px"
-									font="--lead"
-									color="--gray"
-									md-text-align="center"
-									md-margin="18px 0px 0px 0px"
-									lg-margin="18px 30px 0px 0px"
-								>
-									Use familiar tools to design a web-page
-								</Text>
-							</Box>
-						</Box>
-						<Box
-							display="flex"
-							width="33.33%"
-							flex-direction="column"
-							align-items="stretch"
-							justify-content="flex-start"
-							hd-width="40%"
-							sm-width="100%"
-							sm-margin="0px 0px 30px 0px"
-							sm-align-items="center"
-							sm-justify-content="center"
-							box-sizing="border-box"
-							padding="0px 10px 0px 10px"
-							quarkly-title="Step"
-							md-padding="0 15px 0 15px"
+							padding="0px 15px 0px 15px"
+							md-padding="0px 0px 0px 0"
 						>
 							<Box
 								display="flex"
+								width="33.33%"
 								flex-direction="column"
 								align-items="stretch"
-								md-align-items="center"
-								sm-margin="0px 0px 0px 0px"
-								sm-padding="0px 25px 0px 25px"
+								justify-content="flex-start"
+								hd-width="40%"
+								sm-width="100%"
+								sm-margin="0px 0px 30px 0px"
+								sm-align-items="center"
+								sm-justify-content="center"
+								position="relative"
+								box-sizing="border-box"
+								padding="0px 10px 0px 0px"
+								quarkly-title="Step"
+								md-padding="0 15px 0 15px"
 							>
-								<Text margin="0px 0px 0px 0px" font="--headline3" color="--white" as="h4">
-									3
-								</Text>
-								<Text
-									margin="18px 60px 0px 0px"
-									font="--lead"
-									color="--gray"
-									md-text-align="center"
-									md-margin="18px 0px 0px 0px"
-									lg-margin="18px 30px 0px 0px"
+								<Hr
+									height="1px"
+									padding="0px 0px 0px 0px"
+									background="#4A5060"
+									border-color="#4A5060"
+									position="absolute"
+									left="50px"
+									right="18px"
+									z-index="1"
+									sm-display="none"
+									md-left="100%"
+									md-width="60%"
+									md-margin="16px 0px 16px -30%"
+									border-width={0}
+									top="4px"
+								/>
+								<Box
+									display="flex"
+									flex-direction="column"
+									align-items="stretch"
+									md-align-items="center"
+									sm-margin="0px 0px 0px 0px"
+									sm-padding="0px 25px 0px 25px"
 								>
-									Publish your web-page in one click
-								</Text>
+									<Text margin="0px 0px 0px 0px" font="--headline3" color="--white" as="h4">
+										1
+									</Text>
+									<Text
+										margin="18px 60px 0px 0px"
+										font="--lead"
+										color="--gray"
+										md-text-align="center"
+										md-margin="18px 0px 0px 0px"
+										lg-margin="18px 30px 0px 0px"
+									>
+										Pick a template or start from scratch
+									</Text>
+								</Box>
+							</Box>
+							<Box
+								display="flex"
+								width="33.33%"
+								flex-direction="column"
+								align-items="stretch"
+								justify-content="flex-start"
+								hd-width="40%"
+								sm-width="100%"
+								sm-margin="0px 0px 30px 0px"
+								sm-align-items="center"
+								sm-justify-content="center"
+								position="relative"
+								box-sizing="border-box"
+								padding="0px 10px 0px 10px"
+								quarkly-title="Step"
+								md-padding="0 15px 0 15px"
+							>
+								<Hr
+									height="1px"
+									padding="0px 0px 0px 0px"
+									background="#4A5060"
+									border-color="#4A5060"
+									position="absolute"
+									left="50px"
+									right="18px"
+									z-index="1"
+									sm-display="none"
+									md-left="100%"
+									md-margin="16px 0px 16px -30%"
+									md-width="60%"
+									top="4px"
+									border-width={0}
+								/>
+								<Box
+									display="flex"
+									flex-direction="column"
+									align-items="stretch"
+									md-align-items="center"
+									sm-margin="0px 0px 0px 0px"
+									sm-padding="0px 25px 0px 25px"
+								>
+									<Text margin="0px 0px 0px 0px" font="--headline3" color="--white" as="h4">
+										2
+									</Text>
+									<Text
+										margin="18px 60px 0px 0px"
+										font="--lead"
+										color="--gray"
+										md-text-align="center"
+										md-margin="18px 0px 0px 0px"
+										lg-margin="18px 30px 0px 0px"
+									>
+										Use familiar tools to design a web-page
+									</Text>
+								</Box>
+							</Box>
+							<Box
+								display="flex"
+								width="33.33%"
+								flex-direction="column"
+								align-items="stretch"
+								justify-content="flex-start"
+								hd-width="40%"
+								sm-width="100%"
+								sm-margin="0px 0px 30px 0px"
+								sm-align-items="center"
+								sm-justify-content="center"
+								box-sizing="border-box"
+								padding="0px 10px 0px 10px"
+								quarkly-title="Step"
+								md-padding="0 15px 0 15px"
+							>
+								<Box
+									display="flex"
+									flex-direction="column"
+									align-items="stretch"
+									md-align-items="center"
+									sm-margin="0px 0px 0px 0px"
+									sm-padding="0px 25px 0px 25px"
+								>
+									<Text margin="0px 0px 0px 0px" font="--headline3" color="--white" as="h4">
+										3
+									</Text>
+									<Text
+										margin="18px 60px 0px 0px"
+										font="--lead"
+										color="--gray"
+										md-text-align="center"
+										md-margin="18px 0px 0px 0px"
+										lg-margin="18px 30px 0px 0px"
+									>
+										Publish your web-page in one click
+									</Text>
+								</Box>
 							</Box>
 						</Box>
-					</Box>
+					</Components.Animation>
 				</Box>
 				<Link
 					href="/signup"
@@ -1443,7 +1428,7 @@ export default (() => {
 								sm-font="800 35px/42px &quot;Epilogue&quot;, sans-serif"
 								focus-box-shadow="none"
 								transform="translateX(0px)"
-								transition="transform 0.5s ease 0s"
+								transition="transform 1s ease 0s"
 								hover-transform="translateX(40px)"
 							/>
 							<Override slot="Tab two">
@@ -2283,13 +2268,7 @@ export default (() => {
 				box-sizing="border-box"
 				position="relative"
 			>
-				<Box
-					background="rgba(2, 2, 3, 0.68)"
-					width="100%"
-					height="546px"
-					position="absolute"
-					border-radius="999px"
-				/>
+				<Box background="rgba(2, 2, 3, 0.68)" width="100%" height="546px" position="absolute" />
 				<Text
 					margin="0px 0px 18px 0px"
 					color="--white"
@@ -2451,317 +2430,362 @@ export default (() => {
 			{" "}
 		</Section>
 		<Section
-			quarkly-title="HeroBlock"
-			padding="0px 0 0px 0"
-			md-padding="60px 0 90px 0"
-			background="--color-background"
-			min-height="100vh"
-			display="none"
+			quarkly-title="EcoSystem"
+			padding="102px 0 198px 0"
+			background="url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/bg3.jpg?v=2021-05-11T10:57:44.946Z) 0% 50%/cover no-repeat,--color-black"
+			lg-padding="100px 0 160px 0"
+			md-padding="72px 0 100px 0"
+			sm-padding="60px 0 90px 0px"
+			justify-content="center"
 		>
 			<Override
 				slot="SectionContent"
-				flex-direction="row"
-				flex-wrap="wrap"
 				max-width="1600px"
-				width="100%"
-				padding="30px 0px 30px 0px"
-				hd-width="100%"
-				lg-margin="0px 0px 0px 45px"
-				lg-padding="35px 0px 35px 0px"
-				md-margin="0px 50px 0px 50px"
-				md-background="none"
-				md-padding="0px 0px 0px 0px"
-				sm-margin="0px 30px 0px 30px"
-				hd-max-width="1600px"
-				margin="0px 0px 0px 90px"
+				padding="0px 0px 0px 0px"
+				lg-margin="0px 45px 0px 45px"
+				md-margin="0px 30px 0px 30px"
+				margin="0px 90px 0px 90px"
 			/>
 			<Box
+				quarkly-title="Row"
 				display="flex"
-				width="40%"
-				flex-direction="column"
-				align-items="flex-start"
-				justify-content="center"
-				hd-width="40%"
-				lg-width="45%"
-				md-width="100%"
+				margin="0px -15px 0px -15px"
+				md-flex-direction="column"
 				md-align-items="center"
-				md-margin="0px 0px 66px 0px"
 			>
 				<Box
 					display="flex"
+					width="33.33333%"
 					flex-direction="column"
-					margin="0 70px 0px 0px"
-					lg-margin="0px 50px 0px 0px"
-					md-align-items="center"
+					padding="0px 15px 0px 15px"
+					md-width="83.3333%"
 					md-justify-content="center"
-					md-margin="0px 60px 0px 60px"
-					sm-margin="0px 0px 0px 0px"
-					align-items="flex-start"
+					md-margin="0px 0px 15px 0px"
+					quarkly-title="Col"
+					box-sizing="border-box"
+					align-items="stretch"
+					md-align-items="center"
+					sm-width="100%"
+					sm-align-items="flex-start"
 				>
-					<Components.Masks
-						as="h3"
-						font="--decs"
-						sm-text-align="center"
-						sm-width="110%"
-						sm-font="600 13px/21px &quot;Inter&quot;, sans-serif"
-						letter-spacing="1.8px"
-					/>
-					<Text
-						margin="30px 0px 0px 0px"
-						font="normal 800 68px/72px --fontFamily-googleEpilogue"
-						color="--white"
-						as="h1"
-						hd-width="100%"
-						lg-font="normal 800 57px/61px &quot;Epilogue&quot;, sans-serif"
-						md-text-align="center"
-						md-font="normal 800 60px/66px &quot;Epilogue&quot;, sans-serif"
-						letter-spacing=" -1%"
-						sm-width="100%"
-						sm-font="normal 800 35px/42px &quot;Epilogue&quot;, sans-serif"
-					>
-						Make web design feel like home
-					</Text>
-					<Text
-						margin="12px 0px 0px 0px"
-						font="--lead"
-						color="--gray"
-						md-text-align="center"
-						sm-font="normal 400 20px/27px &quot;Inter&quot;, sans-serif"
-						padding="0px 60px 0px 0px"
-					>
-						Use familiar graphic editor tools to create pixel-perfect Web Pages, and not just mockups. Focus on the creative part, and we'll take care of the rest.
-					</Text>
-				</Box>
-				<Box display="flex" margin="54px 0px 0px 0px" quarkly-title="Buttons">
-					<Link
-						href="/signup"
-						padding="9px 25px 9px 25px"
-						font="--menu"
-						text-decoration-line="initial"
-						border-radius="99px"
-						background="--color-orange"
-						color="--background"
-						margin="0px 18px 0px 0px"
-						border-width="2px"
-						border-style="solid"
-						border-color="--color-orange"
-						transition="background-color 0.3s ease 0s"
-						hover-color="--background"
-						sm-padding="9px 15px 9px 15px"
-						hover-background="#F9DD6D"
-						hover-border-color="#F9DD6D"
-						active-background="#E59010"
-						active-border-color="#E59010"
-					>
-						Try for free
-					</Link>
-					<Link
-						href="#"
-						padding="9px 25px 9px 25px"
-						font="--menu"
-						text-decoration-line="initial"
-						border-radius="99px"
-						margin="0px 0px 0px 0px"
-						color="--gray"
-						border-width="2px"
-						border-style="solid"
-						border-color="--color-space"
-						transition="background-color 0.3s ease 0s"
-						hover-background="--color-space"
-						hover-color="--white"
-						sm-padding="9px 15px 9px 15px"
-					>
-						Watch video
-					</Link>
-				</Box>
-			</Box>
-			<Box
-				display="flex"
-				width="60%"
-				align-items="center"
-				justify-content="flex-end"
-				hd-width="60%"
-				lg-width="55%"
-				lg-justify-content="center"
-				lg-align-items="center"
-				md-width="100%"
-				position="relative"
-			>
-				<Box display="flex" align-items="center" justify-content="flex-end" width="100%">
 					<Box
-						border-radius="8px"
+						padding="0px 0px 0px 0px"
 						display="flex"
-						align-items="center"
-						justify-content="center"
-						lg-min-height="400px"
-						lg-box-shadow="none"
-						lg-text-shadow="none"
-						md-min-height="520px"
-						hd-box-shadow="none"
-						md-padding="5px 0px 5px 0px"
-						md-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Figure.svg?v=2021-05-06T06:17:36.425Z) center center/contain no-repeat scroll padding-box"
-						sm-min-height="250px"
-						sm-padding="5px 0px 5px 0px"
-						background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Figure.svg?v=2021-05-06T06:17:36.425Z) center center/contain no-repeat scroll padding-box"
-						padding="24px 0px 24px 0px"
-						hd-padding="74px 0px 74px 0px"
-						lg-width="100%"
-						lg-padding="84px 0px 84px 0px"
+						flex-direction="column"
 						md-align-items="center"
 						md-justify-content="center"
-						height="100%"
-						max-width="1066px"
-						min-height="600px"
-						width="100%"
+						sm-align-items="flex-start"
+						sm-justify-content="flex-start"
 					>
-						<Box
-							box-shadow="0px 90px 240px 100px #000000"
-							position="relative"
-							height="0px"
-							width="0px"
-							min-width="0px"
-							min-height="0px"
-							left="100px"
-							top="-13px"
-						/>
-						<Components.Animation
-							width="100%"
-							height="auto"
-							position="absolute"
-							animation="↑ Slide In"
-							test
-							iteration="once"
+						<Text
+							margin="0px 0px 36px 0px"
+							font="--decs"
+							color="--blueLight"
+							text-transform="uppercase"
+							letter-spacing="1.8px"
 						>
-							<Image
-								md-width="100%"
-								md-position="absolute"
-								md-height="auto"
-								md-border-radius="5px"
-								md-display="inline-block"
-								md-max-width="670px"
-								md-min-height="420px"
-								sm-min-height="205px"
-								src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/editor%20depreceated.webp?v=2021-05-09T17:41:31.199Z"
+							Web ecosystem
+						</Text>
+						<Text
+							font="--hero3"
+							color="#7F8A9E"
+							as="h1"
+							letter-spacing="-0.01em"
+							width="100%"
+							hd-font="normal 700 50px/60px &quot;Epilogue&quot;, sans-serif"
+							md-text-align="center"
+							sm-text-align="left"
+							sm-font="normal 800 35px/40px &quot;Epilogue&quot;, sans-serif"
+							margin="0 0px 30px 0px"
+							lg-white-space="nowrap"
+						>
+							One Vision
+							<br />
+							<Span
+								color="--white"
+								font="--hero3"
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
+								text-indent="0"
+								text-overflow="clip"
+								hyphens="manual"
+								lg-white-space="nowrap"
+								sm-font="normal 800 35px/40px &quot;Epilogue&quot;, sans-serif"
+							>
+								One Solution
+							</Span>
+						</Text>
+						<Text
+							margin="0 0px 0px 0px"
+							font="--lead"
+							color="--gray"
+							md-text-align="center"
+							sm-text-align="left"
+						>
+							From an occasional freelance gig to a full-fledged web design studio – Graphite has all the tools necessary to get the job done. Everything you need – packed in one versatile reliable solution.
+						</Text>
+					</Box>
+					<Box display="flex" margin="111px 0px 0px 0px" quarkly-title="Buttons" md-margin="60px 0px 0px 0px">
+						<Link
+							href="/signup"
+							padding="9px 23px 9px 23px"
+							font="--menu"
+							text-decoration-line="initial"
+							border-radius="99px"
+							background="--color-orange"
+							color="--background"
+							margin="0px 0px 0px 0px"
+							border-width="2px"
+							border-style="solid"
+							border-color="--color-orange"
+							transition="background-color 0.3s ease 0s"
+							hover-color="--background"
+							hover-background="#F9DD6D"
+							hover-border-color="#F9DD6D"
+							active-background="#E59010"
+							active-border-color="#E59010"
+						>
+							Get started
+						</Link>
+					</Box>
+				</Box>
+				<Box
+					display="flex"
+					width="66.66666%"
+					position="relative"
+					padding="0px 15px 0px 15px"
+					quarkly-title="Col"
+					box-sizing="border-box"
+					flex-direction="column"
+					align-items="center"
+					justify-content="center"
+					md-width="100%"
+					md-height="554px"
+					sm-height="auto"
+				>
+					<Box
+						display="flex"
+						flex-wrap="wrap"
+						align-items="center"
+						lg-margin="0px 0px 0px 0px"
+						sm-align-items="flex-start"
+						sm-margin="60px 0px 0px 0px"
+					>
+						<Components.Animation
+							test
+							animation="Vibrate 1"
+							position="absolute"
+							top="-60px"
+							left="20px"
+							right="auto"
+							bottom="auto"
+							duration="20s"
+							lg-display="none"
+						>
+							<Image src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/blue%20circle.svg?v=2021-05-14T20:05:37.227Z" />
+						</Components.Animation>
+						<Components.Animation
+							test
+							animation="Vibrate 2"
+							position="absolute"
+							top="auto"
+							left="120px"
+							right="auto"
+							duration="20s"
+							bottom="-80px"
+							lg-display="none"
+						>
+							<Image src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/bubledown.svg?v=2021-05-14T20:33:52.632Z" />
+						</Components.Animation>
+						<Components.Animation
+							test
+							animation="Flicker"
+							position="absolute"
+							top="100px"
+							left="auto"
+							right="0px"
+							duration="20s"
+							bottom="auto"
+							lg-display="none"
+						>
+							<Image src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/bubleright.svg?v=2021-05-14T20:46:08.044Z" />
+						</Components.Animation>
+						<Box
+							display="flex"
+							align-items="flex-start"
+							sm-margin="0px 4% 30px 0%"
+							sm-width="46%"
+							position="absolute"
+							bottom="auto"
+							left="14%"
+							right="auto"
+							top="56px"
+							width="210px"
+							flex-direction="column"
+							lg-width="144px"
+							lg-left="16%"
+							sm-position="static"
+						>
+							<Text margin="0 0px 12px 0px" font="--menu" color="--white">
+								Layout engine
+							</Text>
+							<Text margin="0 0px 0px 0px" font="--footer" color="--gray">
+								Build your website using auto layout and grid tools
+							</Text>
+						</Box>
+						<Box
+							display="flex"
+							width="210px"
+							align-items="flex-start"
+							sm-margin="0px 0% 30px 4%"
+							sm-width="46%"
+							position="absolute"
+							flex-direction="column"
+							bottom="auto"
+							left="auto"
+							right="16%"
+							top="47px"
+							lg-width="144px"
+							lg-top="53px"
+							lg-right="15%"
+							sm-position="static"
+						>
+							<Text margin="0 0px 12px 0px" font="--menu" color="--white">
+								Code tools
+							</Text>
+							<Text margin="0 0px 0px 0px" font="--footer" color="--gray">
+								Embed live HTML code to your website
+							</Text>
+						</Box>
+						<Box
+							display="flex"
+							width="210px"
+							align-items="flex-start"
+							sm-width="46%"
+							sm-margin="0px 4% 30px 0%"
+							position="absolute"
+							flex-direction="column"
+							bottom="auto"
+							left="10%"
+							right="auto"
+							top="215px"
+							lg-width="144px"
+							lg-left="6%"
+							lg-top="222px"
+							sm-position="static"
+						>
+							<Text margin="0 0px 12px 0px" font="--menu" color="--white">
+								Design system
+							</Text>
+							<Text margin="0 0px 0px 0px" font="--footer" color="--gray">
+								Maintain visual consistency of your websites
+							</Text>
+						</Box>
+						<Box
+							display="flex"
+							width="210px"
+							align-items="flex-start"
+							sm-width="46%"
+							sm-margin="0px 0% 30px 4%"
+							position="absolute"
+							flex-direction="column"
+							bottom="203px"
+							left="auto"
+							right="6%"
+							top="auto"
+							lg-width="144px"
+							lg-right="2%"
+							lg-bottom="211px"
+							sm-position="static"
+						>
+							<Text margin="0 0px 12px 0px" font="--menu" color="--white">
+								Content management
+							</Text>
+							<Text margin="0 0px 0px 0px" font="--footer" color="--gray">
+								Integrate your data from a headless CMS with your website
+							</Text>
+						</Box>
+						<Box
+							display="flex"
+							width="210px"
+							align-items="flex-start"
+							sm-margin="0px 4% 0px 0%"
+							sm-width="46%"
+							position="absolute"
+							flex-direction="column"
+							bottom="52px"
+							left="20%"
+							right="auto"
+							top="auto"
+							lg-width="144px"
+							lg-left="20%"
+							lg-bottom="52px"
+							sm-position="static"
+						>
+							<Text margin="0 0px 12px 0px" font="--menu" color="--white">
+								Asset managment
+							</Text>
+							<Text margin="0 0px 0px 0px" font="--footer" color="--gray">
+								Keep your images, vector, shapes and icons in one place
+							</Text>
+						</Box>
+						<Box
+							display="flex"
+							width="210px"
+							align-items="flex-start"
+							sm-margin="0px 0% 0px 4%"
+							sm-width="46%"
+							position="absolute"
+							flex-direction="column"
+							bottom="42px"
+							left="auto"
+							right="14%"
+							top="auto"
+							lg-width="144px"
+							lg-right="13%"
+							lg-bottom="47px"
+							sm-position="static"
+						>
+							<Text margin="0 0px 12px 0px" font="--menu" color="--white">
+								Hosting, domains, and SSL
+							</Text>
+							<Text margin="0 0px 0px 0px" font="--footer" color="--gray">
+								Get your website live
+							</Text>
+						</Box>
+						<Box
+							display="flex"
+							flex-direction="column"
+							align-items="center"
+							justify-content="center"
+							min-height="266px"
+							background=",rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Figure3.svg?v=2021-05-08T06:54:57.985Z) center center/contain no-repeat scroll padding-box"
+							sm-display="none"
+							position="relative"
+							min-width="266px"
+							margin="0px 0px 0px 0"
+							quarkly-title="Logo"
+						>
+							<Box
+								position="absolute"
+								z-index="4"
+								background="rgba(0, 0, 0, 0) linear-gradient(0deg,rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%) 0% 0% /auto repeat scroll padding-box"
+								opacity="0.5"
+								filter="blur(20px)"
+								height="100%"
 								width="100%"
+							/>
+							<Image
+								loading="lazy"
+								src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/LogoKub.svg?v=2021-05-08T07:01:45.955Z"
+								width="115px"
 								height="auto"
 								position="relative"
-								box-shadow=" 0 30px 60px 0 rgb(0 0 0 / 15%),0 20px 80px 20px rgb(0 0 0 / 5%)"
-								lg-width="135%"
-								lg-right="-35%"
-								hd-width="110%"
-								hd-right="-10%"
-								md-right="auto"
-								md-bottom="auto"
-								md-top="auto"
-								md-left="auto"
-								sm-margin="0px 0px 0px 0px"
-								top="0px"
+								z-index="5"
 							/>
-						</Components.Animation>
-						<Components.PopUp
-							position="relative"
-							z-index="2"
-							left="-20px"
-							md-left="05px"
-							md-top="-20px"
-							md-right="auto"
-							md-bottom="auto"
-							sm-left="0px"
-							sm-top="0px"
-							top="-20px"
-							hd-left="20px"
-						>
-							<Override
-								slot="close"
-								z-index="99999"
-								top="20px"
-								right="20px"
-								bottom="auto"
-								left="auto"
-								size="50px"
-								transition="transform 0.5s ease 0s"
-								hover-transform="rotateZ(90deg)"
-								transform="none"
-							/>
-							<Override
-								slot="wrapper"
-								width="80%"
-								max-width="none"
-								background="rgba(24, 28, 34, 0.98)"
-								height="80%"
-								position="fixed"
-								z-index="99999"
-							/>
-							<Override
-								slot="button"
-								border-radius="12px"
-								width="120px"
-								height="120px"
-								background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape.svg?v=2021-05-06T08:15:04.046Z)"
-								padding="8px 11px 4px 24px"
-								focus-box-shadow="none"
-								transition="transform 0.5s ease 0s"
-								lg-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape.svg?v=2021-05-06T08:15:04.046Z) 0% 0%/contain"
-								lg-width="98px"
-								lg-height="98px"
-								lg-padding="8px 11px 4px 18px"
-								transform="scale(1)"
-								hover-transform="scale(1.15)"
-							/>
-							<Override slot="content" margin="0px 0px 0px 0px" z-index="9999" />
-							<Override slot="popup" width="100%" />
-							<Override slot="overlay" width="100%" />
-							<Components.YouTubePlayer
-								videoId="xpvE1ytltww"
-								width="100%"
-								src="https://www.youtube.com/watch?v=xpvE1ytltww"
-								position="relative"
-								z-index="99999999"
-							/>
-						</Components.PopUp>
+						</Box>
 					</Box>
-					<Image
-						src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/image%2033.png?v=2021-05-11T11:40:50.491Z"
-						position="absolute"
-						left="auto"
-						right="-55px"
-						bottom="auto"
-						top="220px"
-						max-height="246px"
-						height="auto"
-						width="100%"
-						object-position="100% 0%"
-						z-index="1"
-						hd-right="-130px"
-						lg-right="-130px"
-						lg-top="50px"
-						md-right="-15px"
-						sm-max-height="90px"
-						sm-right="-20px"
-						sm-top="60px"
-						md-max-height="186px"
-						md-top="110px"
-					/>
-					<Image
-						src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/image%2035.png?v=2021-05-11T11:40:47.549Z"
-						position="absolute"
-						left="-40px"
-						right="0px"
-						bottom="auto"
-						top="220px"
-						lg-left="-30px"
-						lg-width="144px"
-						lg-height="306px"
-						lg-top="70px"
-						md-top="110px"
-						sm-width="66px"
-						sm-height="auto"
-						sm-left="-10px"
-						sm-top="60px"
-						hd-left="-50px"
-						hd-top="150px"
-						max-height="400px"
-					/>
 				</Box>
 			</Box>
 			{" "}

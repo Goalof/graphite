@@ -91,14 +91,12 @@ export default {
         opacity: 0;
         will-change: transform, opacity, filter;
         transform: translate3d(0px, 30px, 0px);
-        filter: blur(0px);
         transform-style: preserve-3d;
       }
       100% {
        opacity: 1;
        will-change: transform, opacity, filter;
        transform: translate3d(0px, 0px, 0px);
-       filter: blur(0px);
        transform-style: preserve-3d;
       }
     `
@@ -598,22 +596,19 @@ export default {
 	'Vibrate 1': {
 		timingFunction: 'linear',
 		keyframes: keyframes`
-      0% {
+    0% {
         transform: translate(0);
       }
-      20% {
-        transform: translate(-2px, 2px);
+      25% {
+        transform: translate(-10%, 40%);
       }
-      40% {
-        transform: translate(-2px, -2px);
+      50% {
+        transform: translate(40%, 85%);
       }
-      60% {
-        transform: translate(2px, 2px);
+      75% {
+        transform: translate(-10%, 40%);
       }
-      80% {
-        transform: translate(2px, -2px);
-      }
-      100% {
+           100% {
         transform: translate(0);
       }
     `
@@ -621,113 +616,40 @@ export default {
 	'Vibrate 2': {
 		timingFunction: 'linear',
 		keyframes: keyframes`
-      0% {
-        transform: scale(1.03);
+        0% {
+        transform: translate(0);
       }
-      2% {
-        transform: scale(1);
-      }
-      4% {
-        transform: scale(1.03);
-      }
-      8% {
-        transform: scale(1);
-      }
-      12% {
-        transform: scale(1.03);
-      }
-      14% {
-        transform: scale(1);
-      }
-      16% {
-        transform: scale(1.03);
-      }
-      18% {
-        transform: scale(1);
-      }
-      20% {
-        transform: scale(1.03);
-      }
-      22% {
-        transform: scale(1);
-      }
-      24% {
-        transform: scale(1.03);
-      }
-      26% {
-        transform: scale(1);
-      }
-      28% {
-        transform: scale(1.03);
-      }
-      30% {
-        transform: scale(1);
-      }
-      32% {
-        transform: scale(1.03);
-      }
-      34% {
-        transform: scale(1);
-      }
-      36% {
-        transform: scale(1.03);
-      }
-      38% {
-        transform: scale(1);
-      }
-      40% {
-        transform: scale(1.03);
-      }
-      42% {
-        transform: scale(1);
-      }
-      44% {
-        transform: scale(1.03);
-      }
-      46% {
-        transform: scale(1);
-      }
-      48% {
-        transform: scale(1.03);
+      25% {
+        transform: translate(170%, 10%);
       }
       50% {
-        transform: scale(1);
+        transform: translate(200%, -50%);
       }
-      100% {
-        transform: scale(1);
+      75% {
+        transform: translate(170%, 10%);
+      }
+           100% {
+        transform: translate(0);
       }
     `
 	},
 	'Flicker': {
 		timingFunction: 'linear',
 		keyframes: keyframes`
-      0%,
-      100% {
-        opacity: 1;
+   0% {
+        transform: translate(0);
       }
-      41.99% {
-        opacity: 1;
+      25% {
+        transform: translate(-50%, -60%);
       }
-      42% {
-        opacity: 0;
+      50% {
+        transform: translate(-200%, -48%);
       }
-      43% {
-        opacity: 0;
+      75% {
+        transform: translate(-50%, -60%);
       }
-      43.01% {
-        opacity: 1;
-      }
-      47.99% {
-        opacity: 1;
-      }
-      48% {
-        opacity: 0;
-      }
-      49% {
-        opacity: 0;
-      }
-      49.01% {
-        opacity: 1;
+           100% {
+        transform: translate(0);
       }
     `
 	},
