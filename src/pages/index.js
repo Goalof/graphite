@@ -1430,6 +1430,7 @@ export default (() => {
 								transform="translateX(0px)"
 								transition="transform 1s ease 0s"
 								hover-transform="translateX(40px)"
+								sm-width="80%"
 							/>
 							<Override slot="Tab two">
 								Animation
@@ -1665,6 +1666,367 @@ export default (() => {
 							>
 								Try it today
 							</Link>
+						</Box>
+					</Box>
+				</Box>
+			</Box>
+			{" "}
+		</Section>
+		<Section
+			quarkly-title="EcoSystem"
+			padding="102px 0 198px 0"
+			background="url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/bg3.jpg?v=2021-05-11T10:57:44.946Z) 0% 50%/cover no-repeat,--color-black"
+			lg-padding="100px 0 160px 0"
+			md-padding="72px 0 100px 0"
+			sm-padding="60px 0 90px 0px"
+			justify-content="center"
+		>
+			<Override
+				slot="SectionContent"
+				max-width="1600px"
+				padding="0px 0px 0px 0px"
+				lg-margin="0px 45px 0px 45px"
+				md-margin="0px 30px 0px 30px"
+				margin="0px 90px 0px 90px"
+			/>
+			<Box
+				quarkly-title="Row"
+				display="flex"
+				margin="0px -15px 0px -15px"
+				md-flex-direction="column"
+				md-align-items="center"
+			>
+				<Box
+					display="flex"
+					width="33.33333%"
+					flex-direction="column"
+					padding="0px 15px 0px 15px"
+					md-width="83.3333%"
+					md-justify-content="center"
+					md-margin="0px 0px 15px 0px"
+					quarkly-title="Col"
+					box-sizing="border-box"
+					align-items="stretch"
+					md-align-items="center"
+					sm-width="100%"
+					sm-align-items="flex-start"
+				>
+					<Box
+						padding="0px 0px 0px 0px"
+						display="flex"
+						flex-direction="column"
+						md-align-items="center"
+						md-justify-content="center"
+						sm-align-items="flex-start"
+						sm-justify-content="flex-start"
+					>
+						<Text
+							margin="0px 0px 36px 0px"
+							font="--decs"
+							color="--blueLight"
+							text-transform="uppercase"
+							letter-spacing="1.8px"
+						>
+							Web ecosystem
+						</Text>
+						<Text
+							font="--hero3"
+							color="#7F8A9E"
+							as="h1"
+							letter-spacing="-0.01em"
+							width="100%"
+							hd-font="normal 700 50px/60px &quot;Epilogue&quot;, sans-serif"
+							md-text-align="center"
+							sm-text-align="left"
+							sm-font="normal 800 35px/40px &quot;Epilogue&quot;, sans-serif"
+							margin="0 0px 30px 0px"
+							lg-white-space="nowrap"
+						>
+							One Vision
+							<br />
+							<Span
+								color="--white"
+								font="--hero3"
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
+								text-indent="0"
+								text-overflow="clip"
+								hyphens="manual"
+								lg-white-space="nowrap"
+								sm-font="normal 800 35px/40px &quot;Epilogue&quot;, sans-serif"
+							>
+								One Solution
+							</Span>
+						</Text>
+						<Text
+							margin="0 0px 0px 0px"
+							font="--lead"
+							color="--gray"
+							md-text-align="center"
+							sm-text-align="left"
+						>
+							From an occasional freelance gig to a full-fledged web design studio – Graphite has all the tools necessary to get the job done. Everything you need – packed in one versatile reliable solution.
+						</Text>
+					</Box>
+					<Box display="flex" margin="111px 0px 0px 0px" quarkly-title="Buttons" md-margin="60px 0px 0px 0px">
+						<Link
+							href="/signup"
+							padding="9px 23px 9px 23px"
+							font="--menu"
+							text-decoration-line="initial"
+							border-radius="99px"
+							background="--color-orange"
+							color="--background"
+							margin="0px 0px 0px 0px"
+							border-width="2px"
+							border-style="solid"
+							border-color="--color-orange"
+							transition="background-color 0.3s ease 0s"
+							hover-color="--background"
+							hover-background="#F9DD6D"
+							hover-border-color="#F9DD6D"
+							active-background="#E59010"
+							active-border-color="#E59010"
+						>
+							Get started
+						</Link>
+					</Box>
+				</Box>
+				<Box
+					display="flex"
+					width="66.66666%"
+					position="relative"
+					padding="0px 15px 0px 15px"
+					quarkly-title="Col"
+					box-sizing="border-box"
+					flex-direction="column"
+					align-items="center"
+					justify-content="center"
+					md-width="100%"
+					md-height="554px"
+					sm-height="auto"
+				>
+					<Box
+						display="flex"
+						flex-wrap="wrap"
+						align-items="center"
+						lg-margin="0px 0px 0px 0px"
+						sm-align-items="flex-start"
+						sm-margin="60px 0px 0px 0px"
+					>
+						<Components.Animation
+							test
+							animation="Vibrate 1"
+							position="absolute"
+							top="-60px"
+							left="20px"
+							right="auto"
+							bottom="auto"
+							duration="20s"
+							lg-display="none"
+						>
+							<Image src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/blue%20circle.svg?v=2021-05-14T20:05:37.227Z" />
+						</Components.Animation>
+						<Components.Animation
+							test
+							animation="Vibrate 2"
+							position="absolute"
+							top="auto"
+							left="120px"
+							right="auto"
+							duration="20s"
+							bottom="-80px"
+							lg-display="none"
+						>
+							<Image src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/bubledown.svg?v=2021-05-14T20:33:52.632Z" />
+						</Components.Animation>
+						<Components.Animation
+							test
+							animation="Flicker"
+							position="absolute"
+							top="100px"
+							left="auto"
+							right="0px"
+							duration="20s"
+							bottom="auto"
+							lg-display="none"
+						>
+							<Image src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/bubleright.svg?v=2021-05-14T20:46:08.044Z" />
+						</Components.Animation>
+						<Box
+							display="flex"
+							align-items="flex-start"
+							sm-margin="0px 4% 30px 0%"
+							sm-width="46%"
+							position="absolute"
+							bottom="auto"
+							left="14%"
+							right="auto"
+							top="56px"
+							width="210px"
+							flex-direction="column"
+							lg-width="144px"
+							lg-left="16%"
+							sm-position="static"
+						>
+							<Text margin="0 0px 12px 0px" font="--menu" color="--white">
+								Layout engine
+							</Text>
+							<Text margin="0 0px 0px 0px" font="--footer" color="--gray">
+								Build your website using auto layout and grid tools
+							</Text>
+						</Box>
+						<Box
+							display="flex"
+							width="210px"
+							align-items="flex-start"
+							sm-margin="0px 0% 30px 4%"
+							sm-width="46%"
+							position="absolute"
+							flex-direction="column"
+							bottom="auto"
+							left="auto"
+							right="16%"
+							top="47px"
+							lg-width="144px"
+							lg-top="53px"
+							lg-right="15%"
+							sm-position="static"
+						>
+							<Text margin="0 0px 12px 0px" font="--menu" color="--white">
+								Code tools
+							</Text>
+							<Text margin="0 0px 0px 0px" font="--footer" color="--gray">
+								Embed live HTML code to your website
+							</Text>
+						</Box>
+						<Box
+							display="flex"
+							width="210px"
+							align-items="flex-start"
+							sm-width="46%"
+							sm-margin="0px 4% 30px 0%"
+							position="absolute"
+							flex-direction="column"
+							bottom="auto"
+							left="10%"
+							right="auto"
+							top="215px"
+							lg-width="144px"
+							lg-left="6%"
+							lg-top="222px"
+							sm-position="static"
+						>
+							<Text margin="0 0px 12px 0px" font="--menu" color="--white">
+								Design system
+							</Text>
+							<Text margin="0 0px 0px 0px" font="--footer" color="--gray">
+								Maintain visual consistency of your websites
+							</Text>
+						</Box>
+						<Box
+							display="flex"
+							width="210px"
+							align-items="flex-start"
+							sm-width="46%"
+							sm-margin="0px 0% 30px 4%"
+							position="absolute"
+							flex-direction="column"
+							bottom="203px"
+							left="auto"
+							right="6%"
+							top="auto"
+							lg-width="144px"
+							lg-right="2%"
+							lg-bottom="211px"
+							sm-position="static"
+						>
+							<Text margin="0 0px 12px 0px" font="--menu" color="--white">
+								Content management
+							</Text>
+							<Text margin="0 0px 0px 0px" font="--footer" color="--gray">
+								Integrate your data from a headless CMS with your website
+							</Text>
+						</Box>
+						<Box
+							display="flex"
+							width="210px"
+							align-items="flex-start"
+							sm-margin="0px 4% 0px 0%"
+							sm-width="46%"
+							position="absolute"
+							flex-direction="column"
+							bottom="52px"
+							left="20%"
+							right="auto"
+							top="auto"
+							lg-width="144px"
+							lg-left="20%"
+							lg-bottom="52px"
+							sm-position="static"
+						>
+							<Text margin="0 0px 12px 0px" font="--menu" color="--white">
+								Asset managment
+							</Text>
+							<Text margin="0 0px 0px 0px" font="--footer" color="--gray">
+								Keep your images, vector, shapes and icons in one place
+							</Text>
+						</Box>
+						<Box
+							display="flex"
+							width="210px"
+							align-items="flex-start"
+							sm-margin="0px 0% 0px 4%"
+							sm-width="46%"
+							position="absolute"
+							flex-direction="column"
+							bottom="42px"
+							left="auto"
+							right="14%"
+							top="auto"
+							lg-width="144px"
+							lg-right="13%"
+							lg-bottom="47px"
+							sm-position="static"
+						>
+							<Text margin="0 0px 12px 0px" font="--menu" color="--white">
+								Hosting, domains, and SSL
+							</Text>
+							<Text margin="0 0px 0px 0px" font="--footer" color="--gray">
+								Get your website live
+							</Text>
+						</Box>
+						<Box
+							display="flex"
+							flex-direction="column"
+							align-items="center"
+							justify-content="center"
+							min-height="266px"
+							background=",rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Figure3.svg?v=2021-05-08T06:54:57.985Z) center center/contain no-repeat scroll padding-box"
+							sm-display="none"
+							position="relative"
+							min-width="266px"
+							margin="0px 0px 0px 0"
+							quarkly-title="Logo"
+						>
+							<Box
+								position="absolute"
+								z-index="4"
+								background="rgba(0, 0, 0, 0) linear-gradient(0deg,rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%) 0% 0% /auto repeat scroll padding-box"
+								opacity="0.5"
+								filter="blur(20px)"
+								height="100%"
+								width="100%"
+							/>
+							<Image
+								loading="lazy"
+								src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/LogoKub.svg?v=2021-05-08T07:01:45.955Z"
+								width="115px"
+								height="auto"
+								position="relative"
+								z-index="5"
+							/>
 						</Box>
 					</Box>
 				</Box>
@@ -2426,367 +2788,6 @@ export default (() => {
 				<Text margin="21px 0px 0px 0px" color="#4A5060" font="--footer" letter-spacing="-0.01em">
 					© 2020
 				</Text>
-			</Box>
-			{" "}
-		</Section>
-		<Section
-			quarkly-title="EcoSystem"
-			padding="102px 0 198px 0"
-			background="url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/bg3.jpg?v=2021-05-11T10:57:44.946Z) 0% 50%/cover no-repeat,--color-black"
-			lg-padding="100px 0 160px 0"
-			md-padding="72px 0 100px 0"
-			sm-padding="60px 0 90px 0px"
-			justify-content="center"
-		>
-			<Override
-				slot="SectionContent"
-				max-width="1600px"
-				padding="0px 0px 0px 0px"
-				lg-margin="0px 45px 0px 45px"
-				md-margin="0px 30px 0px 30px"
-				margin="0px 90px 0px 90px"
-			/>
-			<Box
-				quarkly-title="Row"
-				display="flex"
-				margin="0px -15px 0px -15px"
-				md-flex-direction="column"
-				md-align-items="center"
-			>
-				<Box
-					display="flex"
-					width="33.33333%"
-					flex-direction="column"
-					padding="0px 15px 0px 15px"
-					md-width="83.3333%"
-					md-justify-content="center"
-					md-margin="0px 0px 15px 0px"
-					quarkly-title="Col"
-					box-sizing="border-box"
-					align-items="stretch"
-					md-align-items="center"
-					sm-width="100%"
-					sm-align-items="flex-start"
-				>
-					<Box
-						padding="0px 0px 0px 0px"
-						display="flex"
-						flex-direction="column"
-						md-align-items="center"
-						md-justify-content="center"
-						sm-align-items="flex-start"
-						sm-justify-content="flex-start"
-					>
-						<Text
-							margin="0px 0px 36px 0px"
-							font="--decs"
-							color="--blueLight"
-							text-transform="uppercase"
-							letter-spacing="1.8px"
-						>
-							Web ecosystem
-						</Text>
-						<Text
-							font="--hero3"
-							color="#7F8A9E"
-							as="h1"
-							letter-spacing="-0.01em"
-							width="100%"
-							hd-font="normal 700 50px/60px &quot;Epilogue&quot;, sans-serif"
-							md-text-align="center"
-							sm-text-align="left"
-							sm-font="normal 800 35px/40px &quot;Epilogue&quot;, sans-serif"
-							margin="0 0px 30px 0px"
-							lg-white-space="nowrap"
-						>
-							One Vision
-							<br />
-							<Span
-								color="--white"
-								font="--hero3"
-								overflow-wrap="normal"
-								word-break="normal"
-								white-space="normal"
-								text-indent="0"
-								text-overflow="clip"
-								hyphens="manual"
-								lg-white-space="nowrap"
-								sm-font="normal 800 35px/40px &quot;Epilogue&quot;, sans-serif"
-							>
-								One Solution
-							</Span>
-						</Text>
-						<Text
-							margin="0 0px 0px 0px"
-							font="--lead"
-							color="--gray"
-							md-text-align="center"
-							sm-text-align="left"
-						>
-							From an occasional freelance gig to a full-fledged web design studio – Graphite has all the tools necessary to get the job done. Everything you need – packed in one versatile reliable solution.
-						</Text>
-					</Box>
-					<Box display="flex" margin="111px 0px 0px 0px" quarkly-title="Buttons" md-margin="60px 0px 0px 0px">
-						<Link
-							href="/signup"
-							padding="9px 23px 9px 23px"
-							font="--menu"
-							text-decoration-line="initial"
-							border-radius="99px"
-							background="--color-orange"
-							color="--background"
-							margin="0px 0px 0px 0px"
-							border-width="2px"
-							border-style="solid"
-							border-color="--color-orange"
-							transition="background-color 0.3s ease 0s"
-							hover-color="--background"
-							hover-background="#F9DD6D"
-							hover-border-color="#F9DD6D"
-							active-background="#E59010"
-							active-border-color="#E59010"
-						>
-							Get started
-						</Link>
-					</Box>
-				</Box>
-				<Box
-					display="flex"
-					width="66.66666%"
-					position="relative"
-					padding="0px 15px 0px 15px"
-					quarkly-title="Col"
-					box-sizing="border-box"
-					flex-direction="column"
-					align-items="center"
-					justify-content="center"
-					md-width="100%"
-					md-height="554px"
-					sm-height="auto"
-				>
-					<Box
-						display="flex"
-						flex-wrap="wrap"
-						align-items="center"
-						lg-margin="0px 0px 0px 0px"
-						sm-align-items="flex-start"
-						sm-margin="60px 0px 0px 0px"
-					>
-						<Components.Animation
-							test
-							animation="Vibrate 1"
-							position="absolute"
-							top="-60px"
-							left="20px"
-							right="auto"
-							bottom="auto"
-							duration="20s"
-							lg-display="none"
-						>
-							<Image src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/blue%20circle.svg?v=2021-05-14T20:05:37.227Z" />
-						</Components.Animation>
-						<Components.Animation
-							test
-							animation="Vibrate 2"
-							position="absolute"
-							top="auto"
-							left="120px"
-							right="auto"
-							duration="20s"
-							bottom="-80px"
-							lg-display="none"
-						>
-							<Image src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/bubledown.svg?v=2021-05-14T20:33:52.632Z" />
-						</Components.Animation>
-						<Components.Animation
-							test
-							animation="Flicker"
-							position="absolute"
-							top="100px"
-							left="auto"
-							right="0px"
-							duration="20s"
-							bottom="auto"
-							lg-display="none"
-						>
-							<Image src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/bubleright.svg?v=2021-05-14T20:46:08.044Z" />
-						</Components.Animation>
-						<Box
-							display="flex"
-							align-items="flex-start"
-							sm-margin="0px 4% 30px 0%"
-							sm-width="46%"
-							position="absolute"
-							bottom="auto"
-							left="14%"
-							right="auto"
-							top="56px"
-							width="210px"
-							flex-direction="column"
-							lg-width="144px"
-							lg-left="16%"
-							sm-position="static"
-						>
-							<Text margin="0 0px 12px 0px" font="--menu" color="--white">
-								Layout engine
-							</Text>
-							<Text margin="0 0px 0px 0px" font="--footer" color="--gray">
-								Build your website using auto layout and grid tools
-							</Text>
-						</Box>
-						<Box
-							display="flex"
-							width="210px"
-							align-items="flex-start"
-							sm-margin="0px 0% 30px 4%"
-							sm-width="46%"
-							position="absolute"
-							flex-direction="column"
-							bottom="auto"
-							left="auto"
-							right="16%"
-							top="47px"
-							lg-width="144px"
-							lg-top="53px"
-							lg-right="15%"
-							sm-position="static"
-						>
-							<Text margin="0 0px 12px 0px" font="--menu" color="--white">
-								Code tools
-							</Text>
-							<Text margin="0 0px 0px 0px" font="--footer" color="--gray">
-								Embed live HTML code to your website
-							</Text>
-						</Box>
-						<Box
-							display="flex"
-							width="210px"
-							align-items="flex-start"
-							sm-width="46%"
-							sm-margin="0px 4% 30px 0%"
-							position="absolute"
-							flex-direction="column"
-							bottom="auto"
-							left="10%"
-							right="auto"
-							top="215px"
-							lg-width="144px"
-							lg-left="6%"
-							lg-top="222px"
-							sm-position="static"
-						>
-							<Text margin="0 0px 12px 0px" font="--menu" color="--white">
-								Design system
-							</Text>
-							<Text margin="0 0px 0px 0px" font="--footer" color="--gray">
-								Maintain visual consistency of your websites
-							</Text>
-						</Box>
-						<Box
-							display="flex"
-							width="210px"
-							align-items="flex-start"
-							sm-width="46%"
-							sm-margin="0px 0% 30px 4%"
-							position="absolute"
-							flex-direction="column"
-							bottom="203px"
-							left="auto"
-							right="6%"
-							top="auto"
-							lg-width="144px"
-							lg-right="2%"
-							lg-bottom="211px"
-							sm-position="static"
-						>
-							<Text margin="0 0px 12px 0px" font="--menu" color="--white">
-								Content management
-							</Text>
-							<Text margin="0 0px 0px 0px" font="--footer" color="--gray">
-								Integrate your data from a headless CMS with your website
-							</Text>
-						</Box>
-						<Box
-							display="flex"
-							width="210px"
-							align-items="flex-start"
-							sm-margin="0px 4% 0px 0%"
-							sm-width="46%"
-							position="absolute"
-							flex-direction="column"
-							bottom="52px"
-							left="20%"
-							right="auto"
-							top="auto"
-							lg-width="144px"
-							lg-left="20%"
-							lg-bottom="52px"
-							sm-position="static"
-						>
-							<Text margin="0 0px 12px 0px" font="--menu" color="--white">
-								Asset managment
-							</Text>
-							<Text margin="0 0px 0px 0px" font="--footer" color="--gray">
-								Keep your images, vector, shapes and icons in one place
-							</Text>
-						</Box>
-						<Box
-							display="flex"
-							width="210px"
-							align-items="flex-start"
-							sm-margin="0px 0% 0px 4%"
-							sm-width="46%"
-							position="absolute"
-							flex-direction="column"
-							bottom="42px"
-							left="auto"
-							right="14%"
-							top="auto"
-							lg-width="144px"
-							lg-right="13%"
-							lg-bottom="47px"
-							sm-position="static"
-						>
-							<Text margin="0 0px 12px 0px" font="--menu" color="--white">
-								Hosting, domains, and SSL
-							</Text>
-							<Text margin="0 0px 0px 0px" font="--footer" color="--gray">
-								Get your website live
-							</Text>
-						</Box>
-						<Box
-							display="flex"
-							flex-direction="column"
-							align-items="center"
-							justify-content="center"
-							min-height="266px"
-							background=",rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/Figure3.svg?v=2021-05-08T06:54:57.985Z) center center/contain no-repeat scroll padding-box"
-							sm-display="none"
-							position="relative"
-							min-width="266px"
-							margin="0px 0px 0px 0"
-							quarkly-title="Logo"
-						>
-							<Box
-								position="absolute"
-								z-index="4"
-								background="rgba(0, 0, 0, 0) linear-gradient(0deg,rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%) 0% 0% /auto repeat scroll padding-box"
-								opacity="0.5"
-								filter="blur(20px)"
-								height="100%"
-								width="100%"
-							/>
-							<Image
-								loading="lazy"
-								src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/LogoKub.svg?v=2021-05-08T07:01:45.955Z"
-								width="115px"
-								height="auto"
-								position="relative"
-								z-index="5"
-							/>
-						</Box>
-					</Box>
-				</Box>
 			</Box>
 			{" "}
 		</Section>
