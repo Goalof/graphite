@@ -650,13 +650,13 @@ export default (() => {
 								max-width="1080px"
 								test={false}
 								animation="↓ Slide In"
-								iteration="infinite"
+								iteration="once"
 								md-position="relative"
 								md-width="126%"
 								md-border-radius="5px"
 								delay="0s"
 								duration="2s"
-								trigger="below"
+								trigger="onload"
 							>
 								<Image
 									md-width="100%"
@@ -693,11 +693,12 @@ export default (() => {
 								md-left="auto"
 								md-right={0}
 								md-width="19vw"
-								duration="2s"
+								duration="2.5s"
 								delay="0s"
 								hd-right="-10vw"
 								hd-left="auto"
-								trigger="below"
+								trigger="onload"
+								iteration="once"
 							>
 								<Image
 									src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/image%2033.png?v=2021-05-11T11:40:50.491Z"
@@ -734,9 +735,10 @@ export default (() => {
 								md-width="20vw"
 								md-left={0}
 								delay="0s"
-								duration="2s"
+								duration="2.5s"
 								hd-left="-12vw"
-								trigger="below"
+								trigger="onload"
+								iteration="once"
 							>
 								<Image
 									src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/image%2035.png?v=2021-05-11T11:40:47.549Z"
