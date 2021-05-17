@@ -5,8 +5,8 @@ export default {
 			"pageUrl": "root",
 			"name": "root",
 			"children": [
-				"60926aa42061a7001e1764a7",
-				"60926aa42061a7001e1764a9"
+				"60926aa42061a7001e1764a9",
+				"60926aa42061a7001e1764a7"
 			]
 		},
 		"60926aa42061a7001e1764a7": {

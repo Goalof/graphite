@@ -1043,6 +1043,7 @@ export default (() => {
 						duration="1.5s"
 						iteration="once"
 						trigger="below"
+						width="66.66666%"
 					>
 						<Box
 							width="100%"
