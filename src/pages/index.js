@@ -693,6 +693,7 @@ export default (() => {
 						test={false}
 						duration="3s"
 						iteration="once"
+						trigger="below"
 					>
 						<Box
 							width="100%"
