@@ -650,11 +650,11 @@ export default (() => {
 								max-width="1080px"
 								test={false}
 								animation="↓ Slide In"
-								iteration="once"
+								iteration="infinite"
 								md-position="relative"
 								md-width="126%"
 								md-border-radius="5px"
-								delay="2s"
+								delay="1s"
 								duration="2s"
 							>
 								<Image
@@ -693,8 +693,9 @@ export default (() => {
 								md-right={0}
 								md-width="19vw"
 								duration="2s"
-								delay="2s"
+								delay="1s"
 								hd-right="-10vw"
+								hd-left="auto"
 							>
 								<Image
 									src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/image%2033.png?v=2021-05-11T11:40:50.491Z"
@@ -730,7 +731,7 @@ export default (() => {
 								test={false}
 								md-width="20vw"
 								md-left={0}
-								delay="2s"
+								delay="1s"
 								duration="2s"
 								hd-left="-12vw"
 							>
@@ -3148,6 +3149,7 @@ export default (() => {
 			</Box>
 			{" "}
 		</Section>
+		<Components.CarouselG />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
