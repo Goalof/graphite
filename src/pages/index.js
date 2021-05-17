@@ -241,6 +241,7 @@ export default (() => {
 					height="100%"
 					md-padding="60px 0 90px 0"
 					md-height="auto"
+					display="none"
 				>
 					<Override
 						slot="SectionContent"
@@ -495,6 +496,306 @@ export default (() => {
 					</Box>
 					{" "}
 				</Section>
+				<Section
+					quarkly-title="HeroBlock-anim"
+					justify-content="center"
+					width="100%"
+					padding="66px 0 66px 0"
+					height="100%"
+					md-padding="60px 0 90px 0"
+					md-height="auto"
+				>
+					<Override
+						slot="SectionContent"
+						max-width="1920px"
+						lg-margin="0px 45px 0px 45px"
+						md-background="none"
+						sm-margin="0px 30px 0px 30px"
+						md-margin="0px 30px 0px 30px"
+						width="100%"
+						margin="0px 90px 0px 90px"
+					/>
+					<Box
+						margin="0px -15px 0px -15px"
+						display="flex"
+						quarkly-title="Row"
+						justify-content="space-between"
+						md-flex-direction="column"
+						md-justify-content="flex-start"
+						md-align-items="center"
+					>
+						<Box
+							display="flex"
+							width="33.33333%"
+							flex-direction="column"
+							align-items="flex-start"
+							padding="0px 15px 0px 15px"
+							box-sizing="border-box"
+							quarkly-title="Col"
+							lg-min-width="400px"
+							md-margin="0px 0px 72px 0px"
+							md-align-items="center"
+							md-width="68%"
+							md-min-width="none"
+						>
+							<Box
+								display="flex"
+								flex-direction="column"
+								align-items="flex-start"
+								margin="0px 0px 42px 0px"
+								md-align-items="center"
+								sm-flex-wrap="wrap"
+							>
+								<Components.Masks
+									as="h3"
+									font="--decs"
+									sm-text-align="center"
+									sm-font="700 13px/21px &quot;Inter&quot;, sans-serif"
+									letter-spacing="1.8px"
+									margin="0px 0px 30px 0px"
+									sm-width="100%"
+								/>
+								<Text
+									font="normal 800 68px/72px --fontFamily-googleEpilogue"
+									color="--white"
+									as="h1"
+									hd-width="100%"
+									lg-font="normal 800 57px/61px &quot;Epilogue&quot;, sans-serif"
+									md-text-align="center"
+									md-font="normal 800 60px/66px &quot;Epilogue&quot;, sans-serif"
+									letter-spacing=" -0.8px"
+									sm-font="normal 800 35px/42px &quot;Epilogue&quot;, sans-serif"
+									margin="0 0px 12px 0px"
+									sm-letter-spacing={0}
+									sm-width="320px"
+								>
+									Make web design feel like home
+								</Text>
+								<Text
+									margin="0px 0px 0px 0px"
+									font="--lead"
+									color="--gray"
+									md-text-align="center"
+									sm-width="320px"
+								>
+									Use familiar graphic editor tools to create pixel-perfect Web Pages, and not just mockups. Focus on the creative part, and we'll take care of the rest.
+								</Text>
+							</Box>
+							<Box display="flex" quarkly-title="Buttons">
+								<Link
+									href="/signup"
+									padding="9px 25px 2px 25px"
+									font="--menu"
+									text-decoration-line="initial"
+									border-radius="99px"
+									background="--color-orange"
+									color="--background"
+									margin="0px 18px 0px 0px"
+									border-width="2px"
+									border-style="solid"
+									border-color="--color-orange"
+									transition="background-color 0.3s ease 0s"
+									hover-color="--background"
+									sm-padding="9px 15px 9px 15px"
+									hover-background="#F9DD6D"
+									hover-border-color="#F9DD6D"
+									active-background="#E59010"
+									active-border-color="#E59010"
+								>
+									Try for free
+								</Link>
+								<Link
+									href="#"
+									padding="9px 25px 9px 25px"
+									font="--menu"
+									text-decoration-line="initial"
+									border-radius="99px"
+									margin="0px 0px 0px 0px"
+									color="--gray"
+									border-width="2px"
+									border-style="solid"
+									border-color="--color-space"
+									transition="background-color 0.3s ease 0s"
+									hover-background="--color-space"
+									hover-color="--white"
+									sm-padding="9px 15px 9px 15px"
+								>
+									Watch video
+								</Link>
+							</Box>
+						</Box>
+						<Box
+							display="flex"
+							width="38.3%"
+							md-width="100%"
+							position="relative"
+							padding="0px 15px 0px 15px"
+							box-sizing="border-box"
+							quarkly-title="Col"
+							align-items="center"
+							justify-content="center"
+						>
+							<Image
+								width="41vw"
+								height="auto"
+								src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/figure.svg?v=2021-05-14T12:56:41.978Z"
+								position="absolute"
+								quarkly-title="FigureSVG"
+								max-width="758px"
+							/>
+							<Components.Animation
+								position="absolute"
+								max-width="1080px"
+								test={false}
+								animation="↓ Slide In"
+								iteration="once"
+								md-position="relative"
+								md-width="126%"
+								md-border-radius="5px"
+							>
+								<Image
+									md-width="100%"
+									md-border-radius="5px"
+									sm-min-height="205px"
+									src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/editor%20depreceated.webp?v=2021-05-09T17:41:31.199Z"
+									box-shadow=" 0 30px 60px 0 rgb(0 0 0 / 15%),0 20px 80px 20px rgb(0 0 0 / 5%)"
+									sm-margin="0px 0px 0px 0px"
+									md-position="relative"
+									width="56vw"
+									max-width="1080px"
+									height="auto"
+								/>
+							</Components.Animation>
+							<Box
+								width="68px"
+								height="68px"
+								position="absolute"
+								border-radius="999px"
+								box-shadow="0 50px 160px 90px #000"
+								quarkly-title="Shadow"
+							/>
+							<Components.Animation
+								width="12.5vw"
+								height="auto"
+								max-width="212px"
+								margin="-156px 0px 0px 0px"
+								position="absolute"
+								left="35vw"
+								bottom="auto"
+								z-index="1"
+								animation="← Slide In"
+								test={false}
+								md-left="auto"
+								md-right={0}
+								md-width="19vw"
+							>
+								<Image
+									src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/image%2033.png?v=2021-05-11T11:40:50.491Z"
+									left="35vw"
+									bottom="auto"
+									height="auto"
+									width="12.5vw"
+									object-position="100% 0%"
+									z-index="1"
+									sm-max-height="90px"
+									sm-right="-20px"
+									sm-top="320px"
+									quarkly-title="PanelRight"
+									margin="0px 0px 0px 0px"
+									md-right={0}
+									md-left="auto"
+									sm-display="none"
+									max-width="212px"
+									hd-left="auto"
+									hd-right="-10vw"
+									md-width="19vw"
+								/>
+							</Components.Animation>
+							<Components.Animation
+								width="12.5vw"
+								max-width="212px"
+								height="auto"
+								margin="-26px 0px 0px 0px"
+								left="-15vw"
+								position="absolute"
+								right="auto"
+								animation="← Slide In"
+								test={false}
+								md-width="20vw"
+								md-left={0}
+							>
+								<Image
+									src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/image%2035.png?v=2021-05-11T11:40:47.549Z"
+									left="-15vw"
+									right="auto"
+									sm-width="66px"
+									sm-height="auto"
+									sm-left="-10px"
+									sm-top="190px"
+									height="auto"
+									width="12.5vw"
+									quarkly-title="PanelLeft"
+									margin="-26px 0px 0px 0px"
+									md-left={0}
+									sm-display="none"
+									max-width="212px"
+									hd-left="-12vw"
+									md-width="20vw"
+								/>
+							</Components.Animation>
+							<Components.PopUp position="absolute" z-index="2">
+								<Override
+									slot="close"
+									z-index="99999"
+									top="20px"
+									right="20px"
+									bottom="auto"
+									left="auto"
+									size="50px"
+									transition="transform 0.5s ease 0s"
+									hover-transform="rotateZ(90deg)"
+									transform="none"
+								/>
+								<Override
+									slot="wrapper"
+									width="100%"
+									max-width="none"
+									background="rgba(24, 28, 34, 0.98)"
+									height="100%"
+									position="fixed"
+									z-index="99999"
+								/>
+								<Override
+									slot="button"
+									border-radius="12px"
+									width="120px"
+									height="120px"
+									background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape.svg?v=2021-05-06T08:15:04.046Z)"
+									padding="8px 11px 4px 24px"
+									focus-box-shadow="none"
+									transition="transform 0.5s ease 0s"
+									lg-background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/shape.svg?v=2021-05-06T08:15:04.046Z) 0% 0%/contain"
+									lg-width="98px"
+									lg-height="98px"
+									lg-padding="8px 11px 4px 18px"
+									transform="scale(1)"
+									hover-transform="scale(1.15)"
+								/>
+								<Override slot="content" margin="0px 0px 0px 0px" z-index="9999" />
+								<Override slot="popup" width="100%" />
+								<Override slot="overlay" width="100%" />
+								<Components.YouTubePlayer
+									videoId="xpvE1ytltww"
+									width="100%"
+									src="https://www.youtube.com/watch?v=xpvE1ytltww"
+									position="relative"
+									z-index="99999999"
+								/>
+							</Components.PopUp>
+						</Box>
+					</Box>
+					{" "}
+				</Section>
 			</Box>
 			<Section
 				quarkly-title="Steps"
@@ -691,7 +992,7 @@ export default (() => {
 						align-items="center"
 						animation="→ Slide In"
 						test={false}
-						duration="3s"
+						duration="1.5s"
 						iteration="once"
 						trigger="below"
 					>
@@ -2040,7 +2341,7 @@ export default (() => {
 			{" "}
 		</Section>
 		<Section
-			quarkly-title="EcoSystem"
+			quarkly-title="EcoSystem-anim"
 			padding="102px 0 198px 0"
 			background="url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/bg3.jpg?v=2021-05-11T10:57:44.946Z) 0% 50%/cover no-repeat,--color-black"
 			lg-padding="100px 0 160px 0"
@@ -2048,6 +2349,7 @@ export default (() => {
 			sm-padding="60px 0 90px 0px"
 			justify-content="center"
 			sm-overflow-x="hidden"
+			display="none"
 		>
 			<Override
 				slot="SectionContent"
