@@ -209,10 +209,16 @@ const CarouselG = () => {
 						>
 							 Done 
 						</Text>}
-						<Text margin="36px 0px 0px -5px" color="--background" font="--menu">
+						<Text margin="36px 0px 0px -5px" sm-margin="0px 0px 0px -12px" color="--background" font="--menu">
 							{item.header}
 						</Text>
-						<Text as="p" color="#7F8A9E" font="500 14px/18px PTRootUIWeb, sans-serif" margin="12px 0 60px -5px">
+						<Text
+							as="p"
+							sm-margin="20px 0px 30px -12px"
+							color="#7F8A9E"
+							font="500 14px/18px PTRootUIWeb, sans-serif"
+							margin="12px 0 60px -5px"
+						>
 							{item.text}
 						</Text>
 						<Box
@@ -233,6 +239,7 @@ const CarouselG = () => {
 			</Content>
 		</Box>
 		<Hr
+			sm-bottom="90px"
 			position="absolute"
 			z-index="1"
 			left="0px"

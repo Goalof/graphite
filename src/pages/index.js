@@ -17,7 +17,7 @@ export default (() => {
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/favicon.png?v=2021-05-13T15:36:21.485Z"} type={"image/x-icon"} />
 			<meta name={"msapplication-TileColor"} content={"#020203"} />
 		</Helmet>
-		<Box quarkly-title="Overview" background="--color-background url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/bgoverview.png?v=2021-05-14T12:10:19.303Z) 0/cover no-repeat scroll padding-box">
+		<Box quarkly-title="Overview" background="--color-background url(https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/bgoverview.png?v=2021-05-14T12:10:19.303Z) 0/cover no-repeat scroll padding-box" sm-overflow-x="hidden">
 			<Box
 				min-height="100vh"
 				display="flex"
@@ -897,6 +897,7 @@ export default (() => {
 			sm-padding="72px 0 72px 0"
 			md-padding="72px 0 150px 0"
 			justify-content="center"
+			sm-overflow-x="hidden"
 		>
 			<Override
 				slot="SectionContent"
@@ -1184,6 +1185,8 @@ export default (() => {
 			md-padding="72px 0 95px 0"
 			sm-padding="72px 0 72px 0"
 			display="none"
+			sm-display="flex"
+			sm-overflow-x="hidden"
 		>
 			<Override
 				slot="SectionContent"
@@ -1366,6 +1369,7 @@ export default (() => {
 			md-padding="72px 0 95px 0"
 			sm-padding="72px 0 72px 0"
 			justify-content="center"
+			sm-overflow-x="hidden"
 		>
 			<Override
 				slot="SectionContent"
@@ -1680,6 +1684,7 @@ export default (() => {
 			md-padding="72px 0 100px 0"
 			sm-padding="60px 0 90px 0px"
 			justify-content="center"
+			sm-overflow-x="hidden"
 		>
 			<Override
 				slot="SectionContent"
@@ -2041,6 +2046,7 @@ export default (() => {
 			md-padding="72px 0 100px 0"
 			sm-padding="60px 0 90px 0px"
 			justify-content="center"
+			sm-overflow-x="hidden"
 		>
 			<Override
 				slot="SectionContent"
@@ -2402,6 +2408,7 @@ export default (() => {
 			md-padding="90px 0 100px 0"
 			sm-padding="60px 0 100px 0"
 			justify-content="center"
+			sm-overflow-x="hidden"
 		>
 			<Override
 				slot="SectionContent"
@@ -2677,7 +2684,13 @@ export default (() => {
 			</Box>
 			{" "}
 		</Section>
-		<Section quarkly-title="Footer" padding="60px 0 84px 0" background="--color-black" justify-content="center">
+		<Section
+			quarkly-title="Footer"
+			padding="60px 0 84px 0"
+			background="--color-black"
+			justify-content="center"
+			sm-overflow-x="hidden"
+		>
 			<Override
 				slot="SectionContent"
 				flex-direction="row"
