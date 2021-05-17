@@ -652,6 +652,8 @@ export default (() => {
 								md-position="relative"
 								md-width="126%"
 								md-border-radius="5px"
+								delay="2s"
+								duration="2s"
 							>
 								<Image
 									md-width="100%"
@@ -688,6 +690,8 @@ export default (() => {
 								md-left="auto"
 								md-right={0}
 								md-width="19vw"
+								duration="2s"
+								delay="2s"
 							>
 								<Image
 									src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/image%2033.png?v=2021-05-11T11:40:50.491Z"
@@ -723,6 +727,8 @@ export default (() => {
 								test={false}
 								md-width="20vw"
 								md-left={0}
+								delay="2s"
+								duration="2s"
 							>
 								<Image
 									src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/image%2035.png?v=2021-05-11T11:40:47.549Z"
