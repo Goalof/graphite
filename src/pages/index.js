@@ -90,6 +90,8 @@ export default (() => {
 							sm-align-items="center"
 							sm-justify-content="center"
 							sm-margin="0px 0px 0px 0px"
+							sm-position="relative"
+							sm-z-index="1"
 						>
 							<Components.QuarklycommunityKitMobileSidePanel>
 								<Override
@@ -692,6 +694,7 @@ export default (() => {
 								md-width="19vw"
 								duration="2s"
 								delay="2s"
+								hd-right="-10vw"
 							>
 								<Image
 									src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/image%2033.png?v=2021-05-11T11:40:50.491Z"
@@ -729,6 +732,7 @@ export default (() => {
 								md-left={0}
 								delay="2s"
 								duration="2s"
+								hd-left="-12vw"
 							>
 								<Image
 									src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/image%2035.png?v=2021-05-11T11:40:47.549Z"
@@ -770,6 +774,8 @@ export default (() => {
 									height="100%"
 									position="fixed"
 									z-index="99999"
+									md-align-items="center"
+									md-justify-content="center"
 								/>
 								<Override
 									slot="button"
@@ -787,16 +793,44 @@ export default (() => {
 									transform="scale(1)"
 									hover-transform="scale(1.15)"
 								/>
-								<Override slot="content" margin="0px 0px 0px 0px" z-index="9999" />
-								<Override slot="popup" width="100%" />
-								<Override slot="overlay" width="100%" />
-								<Components.YouTubePlayer
-									videoId="xpvE1ytltww"
-									width="100%"
-									src="https://www.youtube.com/watch?v=xpvE1ytltww"
-									position="relative"
-									z-index="99999999"
+								<Override
+									slot="content"
+									margin="0px 0px 0px 0px"
+									z-index="9999"
+									sm-display="flex"
+									sm-align-items="center"
+									sm-justify-content="center"
+									md-display="flex"
+									md-align-items="center"
+									md-justify-content="center"
 								/>
+								<Override slot="popup" width="100%" />
+								<Override
+									slot="overlay"
+									width="100%"
+									sm-align-items="center"
+									sm-justify-content="center"
+									md-display="flex"
+									md-align-items="center"
+									md-justify-content="center"
+								/>
+								<Box
+									md-width="100%"
+									md-height="100vh"
+									md-display="flex"
+									md-align-items="center"
+									md-justify-content="center"
+								>
+									<Components.YouTubePlayer
+										videoId="xpvE1ytltww"
+										width="100%"
+										src="https://www.youtube.com/watch?v=xpvE1ytltww"
+										position="relative"
+										z-index="99999999"
+										md-align-items="center"
+										md-justify-content="center"
+									/>
+								</Box>
 							</Components.PopUp>
 						</Box>
 					</Box>
@@ -1014,6 +1048,7 @@ export default (() => {
 							box-sizing="border-box"
 							padding="0px 15px 0px 15px"
 							md-padding="0px 0px 0px 0"
+							sm-margin="30px 0px 0px 0px"
 						>
 							<Box
 								display="flex"

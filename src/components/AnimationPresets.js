@@ -27,7 +27,7 @@ export default {
       }
     `
 	},
-	'Slide In': {
+	'→ Slide In': {
 		timingFunction: 'ease-in',
 		keyframes: keyframes`
         0% {
