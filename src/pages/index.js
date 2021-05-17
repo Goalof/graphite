@@ -1030,7 +1030,7 @@ export default (() => {
 					<Components.Animation
 						display="flex"
 						align-items="center"
-						animation="→ Slide In"
+						animation="Flip In"
 						test={false}
 						duration="1.5s"
 						iteration="once"

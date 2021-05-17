@@ -169,14 +169,14 @@ export default {
 		timingFunction: 'ease-in',
 		keyframes: keyframes`
       0% {
-        opacity: 0;
-        will-change: transform, opacity;
-        transform: rotateY(-60deg); 
+        will-change: transform, opacity, filter;
+        transform: translate3d(-80px, 0px, 0px);
+        transform-style: preserve-3d;
       }
       100% {
-       opacity: 1;
-       will-change: transform, opacity;
-       transform: rotateY(0deg);
+  will-change: transform, opacity, filter;
+       transform: translate3d(0px, 0px, 0px);
+       transform-style: preserve-3d;
       }
     `
 	},
