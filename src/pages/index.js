@@ -700,27 +700,29 @@ export default (() => {
 								trigger="onload"
 								iteration="once"
 							>
-								<Image
-									src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/image%2033.png?v=2021-05-11T11:40:50.491Z"
-									left="35vw"
-									bottom="auto"
-									height="auto"
-									width="12.5vw"
-									object-position="100% 0%"
-									z-index="1"
-									sm-max-height="90px"
-									sm-right="-20px"
-									sm-top="320px"
-									quarkly-title="PanelRight"
-									margin="0px 0px 0px 0px"
-									md-right={0}
-									md-left="auto"
-									sm-display="none"
-									max-width="212px"
-									hd-left="auto"
-									hd-right="-10vw"
-									md-width="19vw"
-								/>
+								<Components.Animation trigger="above" animation="↑ Slide Out" test={false} iteration="infinite">
+									<Image
+										src="https://uploads.quarkly.io/60926aa42061a7001e1764a4/images/image%2033.png?v=2021-05-11T11:40:50.491Z"
+										left="35vw"
+										bottom="auto"
+										height="auto"
+										width="12.5vw"
+										object-position="100% 0%"
+										z-index="1"
+										sm-max-height="90px"
+										sm-right="-20px"
+										sm-top="320px"
+										quarkly-title="PanelRight"
+										margin="0px 0px 0px 0px"
+										md-right={0}
+										md-left="auto"
+										sm-display="none"
+										max-width="212px"
+										hd-left="auto"
+										hd-right="-10vw"
+										md-width="19vw"
+									/>
+								</Components.Animation>
 							</Components.Animation>
 							<Components.Animation
 								width="12.5vw"
@@ -3154,7 +3156,6 @@ export default (() => {
 			</Box>
 			{" "}
 		</Section>
-		<Components.CarouselG />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
