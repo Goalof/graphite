@@ -691,7 +691,7 @@ export default (() => {
 						align-items="center"
 						animation="→ Slide In"
 						test={false}
-						duration="2s"
+						duration="3s"
 						iteration="once"
 					>
 						<Box
